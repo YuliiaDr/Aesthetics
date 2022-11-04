@@ -45,6 +45,7 @@ table {
     border-collapse:collapse;
     border-spacing:0;
 }
+
 img {
 	border-style:none;
 	max-width:100%;
@@ -91,7 +92,7 @@ input:focus::-webkit-input-placeholder{color:#000;}
   position:relative;
   overflow: hidden;
   /* width:1075px; */
-	/* margin:0 auto; */
+	margin:0 auto;
 }
 
 header,
@@ -142,14 +143,20 @@ section {
   width: 1075px;
 } */
 
+.navigation-menu {
+  margin:57px;
+}
+
 .navigation-menu-list,
 .user-utilities-list {
   display: flex;
+  justify-content: space-around;
+  gap: 20px;
 }
 
-.navigation-menu-item {
+/* .navigation-menu-item {
   margin-right: 40px;
-}
+} */
 
 .user-utilities-list {
   gap: 20px;
