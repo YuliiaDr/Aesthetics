@@ -1,4 +1,4 @@
-/* Example */ 
+/* Example */
 /* @font-face {
     font-family: 'Corbel';
     src: url('../fonts/Corbel.eot');
@@ -10,3 +10,23 @@
     font-style: normal;
 }
 */
+body {
+  font-family: Candara;
+  font-size: 26px;
+}
+
+h2 {
+  font-family: Poiret One;
+  font-size: 60px;
+  line-height: 1.17;
+  text-align: left;
+}
+
+.main-info-text {
+  line-height: 1.23;
+}
+
+.navigation-menu-item {
+  line-height: 1.23;
+  text-align: left;
+}

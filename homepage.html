@@ -3,6 +3,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1" />
+	<!-- <link href="//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara" rel="stylesheet" type="text/css"/> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/all.css" type="text/css"/>
 	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
 	<script src="js/main.js"></script>
@@ -10,40 +14,34 @@
 </head>
 <body>
 	<div id="wrapper">
-		<header class="header">
+		<header>
 			<div class="layout">
-				<div class="logo">
-					<a href="#" target="_blank" rel="noopener noreferrer">
-						<img src="./images/logo_2.png" alt="logo">
-					</a>
-					<h1 class="hidden">Aesthetics</h1>
-				</div>
-				<div class="navigation">
-					<nav class="navigation-menu">
-						<ul class="navigation-menu-list">
-							<li class="navigation-menu-item">
-								<a href="#">Каталог</a>
-							</li>
-							<li class="navigation-menu-item">
-								<a href="#">Доставка та оплата</a>
-							</li>
-							<li class="navigation-menu-item">
-								<a href="#">Блог</a>
-							</li>
-							<li class="navigation-menu-item">
-								<a href="#">Контакти</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="user-utilities">
-					<ul class="user-utilities-list">
+				<h1 class="hidden">Aesthetics</h1>
+				<a href="#" target="_blank" rel="noopener noreferrer">
+					<img src="./images/logo_2.png" alt="logo" class="header-logo">
+				</a>
+				<nav>
+					<ul class="nav-menu">
+						<li>
+							<a href="#">Каталог</a>
+						</li>
+						<li>
+							<a href="#">Доставка та оплата</a>
+						</li>
+						<li>
+							<a href="#">Блог</a>
+						</li>
+						<li>
+							<a href="#">Контакти</a>
+						</li>
+					</ul>
+					<ul class="user-utilities">
 						<li>
 							<a href="#">
 								<img src="./images/icon_cabinet.png" alt="cabinet icon">
 							</a>
 						</li>
-						<li>
+						<li class="favorite">
 							<a href="#">
 								<img src="./images/icon_favorite.png" alt="favorite icon">
 							</a>
@@ -54,82 +52,91 @@
 							</a>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
 		</header>
 		<main>
 			<div id="content">
-				<section class="main-info">
-						<div class="layout">
-							<div class="main-info-content">
-								<h2 class="main-info-title">
-									Український бренд доглядової косметики для обличчя
-								</h2>
-								<p class="main-info-text">
-									Українська професійна косметика AESTHETICS користується великою популярністю завдяки високій якості, ефективності та оптимальної вартості. Це косметика для домашнього використання, яка забезпечує салонний догляд.
-								</p>
-								<a href="#" target="_blank" rel="noopener noreferrer" class="main-info-link">
-									<img src="./images/catalogue_btn.png" alt="catalogue button">
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
 				<section class="first-view">
-					<div class="layout">
-						<div class="first-view-layout">
-							<h2 class="hidden">Новинка від AESTHETICS</h2>
-							<p>Зволожуюча сиворотка для обличчя</p>
-							<form class="" action="homepage.html" method="post">
+						<div class="text">
+							<h2>
+								Український бренд
+								<br> доглядової косметики
+								<br> для обличчя
+							</h2>
+							<p>
+								Українська професійна косметика AESTHETICS користується великою популярністю завдяки високій якості, ефективності та оптимальної вартості. Це косметика для домашнього використання, яка забезпечує салонний догляд.
+							</p>
+							<a href="#" target="_blank" rel="noopener noreferrer">Каталог</a>
+						</div>
+						<div class="img-holder">
+							<img src="../images/woman_palm_leave.png" alt="woman hidding after palm tree leave">
+						</div>
+				</section>
+				<section class="novelty">
+					<!-- <div class="layout"> -->
+						<div class="img-holder">
+							<img src="../images/hero_banner.png" alt="Serum Bottles">
+							<!-- <h2 class="novelty-title">Новинка від AESTHETICS</h2>
+							<p class="novelty-text">Зволожуюча сиворотка для обличчя</p> -->
+						</div>
+						<div class="radio-btn">
+							<form action="homepage.html" method="post">
 								<input type="radio" id="newProductRadioBtn1" name="newProduct" checked>
 								<input type="radio" id="newProductRadioBtn2" name="newProduct">
 								<input type="radio" id="newProductRadioBtn3" name="newProduct">
 							</form>
 						</div>
-						<a href="#" target="_blank" rel="noopener noreferrer">
-						<img src="./images/catalogue_btn.png" alt="catalogue button">
-					  </a>
-				  </div>
+						<div class="catalogue-btn">
+							<a href="#" target="_blank" rel="noopener noreferrer">Каталог</a>
+						</div>
+				  <!-- </div> -->
 				</section>
 				<section class="blog">
 					<div class="layout">
 						<h2 class="hidden">Блог прев'ю</h2>
 						<ul>
 							<li>
-								<img src="./images/acne_stress.png" alt="Eye and palm leave">
-								<h3>
-									Акне та стрес
-								</h3>
-								<p>
-									Досить часто високий рівень кортизолу буває в людей, які не дотримуються «біологічного годинника». Природа нам дала режим : «лягай спати об 10-11 вечора, в цей час твоє тіло випрацьовує мелатонін -  один із щитів захисту твого організму». Тепер питання: «о котрій годині лягаєте спати ви?...
-							  </p>
-								<a href="#" target="_blank" rel="noopener noreferrer">
-									<img src="./images/more_details_btn.png" alt="More details button">
-								</a>
+								<article class="acne-stress">
+									<img src="./images/acne_stress.png" alt="Eye and palm leave">
+									<h3>
+										Акне та стрес
+									</h3>
+									<p>
+										Досить часто високий рівень кортизолу буває в людей, які не дотримуються «біологічного годинника». Природа нам дала режим : «лягай спати об 10-11 вечора, в цей час твоє тіло випрацьовує мелатонін -  один із щитів захисту твого організму». Тепер питання: «о котрій годині лягаєте спати ви?...
+									</p>
+									<a href="#" target="_blank" rel="noopener noreferrer">
+										<img src="./images/more_details_btn.png" alt="More details button">
+									</a>
+								</article>
 							</li>
 							<li>
-								<h3>
-									Догляд за обличчям
-								</h3>
-								<p>
-									Добре відомо, що типи шкіри можна поділити на 4 види (є й інші розподіли, наводжу цей, бо, як на мене, він найзрозуміліший): нормальна – в міру суха та зволожена, добре збалансована; суха – груба на дотик , шершава, тьмяна; жирна – блищить та має видимі розкриті пори.
-							  </p>
-								<a href="#" target="_blank" rel="noopener noreferrer">
-									<img src="./images/more_details_btn.png" alt="More details button">
-								</a>
-									<img src="./images/face_care.png" alt="Woman smears her face with cream">
+								<article class="face-care">
+									<h3>
+										Догляд за обличчям
+									</h3>
+									<p>
+										Добре відомо, що типи шкіри можна поділити на 4 види (є й інші розподіли, наводжу цей, бо, як на мене, він найзрозуміліший): нормальна – в міру суха та зволожена, добре збалансована; суха – груба на дотик , шершава, тьмяна; жирна – блищить та має видимі розкриті пори.
+									</p>
+									<a href="#" target="_blank" rel="noopener noreferrer">
+										<img src="./images/more_details_btn.png" alt="More details button">
+									</a>
+										<img src="./images/face_care.png" alt="Woman smears her face with cream">
+								</article>
 							</li>
 							<li>
-								<img src="./images/addictivity.png" alt="Cream in hands">
-								<h3>
-									Звикання до косметики
-								</h3>
-								<p>
-									Медицина говорить про те, що справжнє звикання може бути до антибіотиків та гормонів. І то через безконтрольне і неправильне застосування. Що ховається за тим, що нам здається, що шкіра звикла? Результат був, а зараз ні?...
-                </p>
-								<a href="#" target="_blank" rel="noopener noreferrer">
-									<img src="./images/more_details_btn.png" alt="More details button">
-								</a>
+								<article class="cosmetics-addictivity">
+									<img src="./images/addictivity.png" alt="Cream in hands">
+									<h3>
+										Звикання до косметики
+									</h3>
+									<p>
+										Медицина говорить про те, що справжнє звикання може бути до антибіотиків та гормонів. І то через безконтрольне і неправильне застосування. Що ховається за тим, що нам здається, що шкіра звикла? Результат був, а зараз ні?...
+	                </p>
+									<a href="#" target="_blank" rel="noopener noreferrer">
+										<img src="./images/more_details_btn.png" alt="More details button">
+									</a>
+								</article>
 							</li>
 						</ul>
 					</div>
