@@ -177,59 +177,52 @@ nav {
 /* ------------------------------First-View Section */
 
 .first-view{
-  display: flex;
+  /* display: flex;
   flex-direction: row-reverse;
   /* max-height: 804px; */
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
 }
 
 .first-view .img-holder{
   display: block;
   /* justify-content: flex-end; */
-
-  width: 58%;
-  height: 804px;
+  max-width: 1123px;
+  /* width: 58%; */
+  max-height: 804px;
   z-index: 1;
   position: relative;
+  margin: 0 0 0 auto;
 }
 
 .first-view .img-holder img{
   width: 100%;
   height: 100%;
   display: block;
+  overflow: hidden;
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 /* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
 
 .first-view .text{
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  z-index: 2;
-  /* top: 75px;
-  left: 22%; */
   width: 55.93%;
-  /* height: 653px; */
-  max-height: 653px;
-  /* display: block;
-  overflow: hidden; */
-  margin-left: 22.03%;
-  margin-right: 22.03%;
   margin-top: 75px;
-
-  text-align: left;
-
-  /* display: flex;
-  justify-content: center;
-  position: absolute;
+  margin-left: 22%;
+  margin-right: 22%;
+  /* height: 653px; */
+/* margin: 75px auto auto auto; */
+  max-height: 653px;
+  /* overflow: visible; */
   z-index: 2;
-  width: 5.21%;
-  margin-left: 47.39%;
-  margin-top: -40px; */
+  text-align: left;
 }
 
 .first-view .text h2{
-  max-width: 800px;
+  max-width: 580px;
   font-family: 'Poiret One';
   font-style: normal;
   font-weight: 400;
@@ -273,7 +266,7 @@ nav {
     display: block;
     overflow: hidden;
     width: 100%;
-    max-height: 1920px;
+    max-width: 1920px;
     margin: 0 0 100px 0;
     /* max-height: 804px; */
     /* position: relative; */
@@ -285,13 +278,14 @@ nav {
     display: block;
     max=width: 1920px;
     height: 100%;
-    z-index: 1;
-    position: relative;
+    /* z-index: 1;
+    position: relative; */
   }
 
   .novelty .img-holder img{
     width: 100%;
     height: 100%;
+    min-height: 238px;
     display: block;
     overflow: hidden;
   }
@@ -335,4 +329,171 @@ margin-left: 423px;
   margin: 38px auto 0 auto;
   background-color: #4B6049;
   color: #FFFBF5;
+}
+
+
+
+.blog {
+  margin: 0 auto 100px auto;
+}
+
+.blog .layout ul {
+  display: flex;
+  flex-direction: column;
+  gap: 123px;
+  margin: 0 auto 91px auto;
+}
+
+.blog .layout li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.blog .img-holder{
+  display: block;
+  min-width: 328px;
+  height: 100%;
+}
+
+.blog .img-holder img{
+  width: 100%;
+  height: 100%;
+  /* min-height: 347px; */
+  display: block;
+  overflow: hidden;
+}
+
+.blog .text {
+  max-width: 522px;
+}
+
+.blog h3 {
+  margin: 0 0 12px 0;
+  font-family: 'Candara';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+}
+
+.blog p {
+  font-family: 'Candara';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #484847;
+}
+
+.blog a img{
+  margin: 12px 0 0 0;
+  width: 235px;
+  height: 50px;
+}
+
+.blog .show-more-btn{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 65px;
+}
+
+
+
+.footer-quick-contacts ul{
+  /* float: right; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 15px;
+  padding-bottom: 8px;
+  height: fit-content;
+}
+
+.footer-main {
+  background-color: #4B6049;
+  min-height: 192px;
+}
+
+.footer-main .layout{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-logo img {
+  max-width: 232px;
+  max-height: 134px;
+  margin: 29px 87px 28px 15px;
+}
+
+.footer-main-content{
+  display: flex;
+}
+
+.footer-nav{
+  margin: 38px 39px 25px 0;
+}
+
+.footer-main-content .working-hours{
+  margin: 38px 53px auto 0;
+}
+
+footer h3{
+  font-weight: 400;
+}
+
+.footer-main-content .contacts{
+  margin: 36px auto auto 0;
+}
+
+.footer-main-content .footer-nav,
+.footer-main-content .working-hours,
+.footer-main-content .contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  font-family: 'Candara';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFBF5;
+}
+
+.footer-main .payment-methods{
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  padding: 17px 0 0 70px;
+  /* position: absolute;
+  /* top: 90%; */
+  /* left: 76%;
+  bottom: 12px; */
+}
+
+.footer-main .payment-methods .mastercard{
+  width: 52px;
+  height: 32px;
+}
+
+.footer-main .payment-methods .visa-apay {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  align-items: center;
+}
+
+.footer-main .payment-methods .visa img{
+  width: 76px;
+  /* height: 24px; */
+}
+
+.footer-main .payment-methods .apay img{
+  width: 82px;
+  height: 34px;
 }
