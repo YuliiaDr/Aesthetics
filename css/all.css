@@ -420,10 +420,11 @@ margin-left: 423px;
 .footer-main .layout{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   height: 100%;
 }
 
-.footer-logo img {
+.footer-logo {
   max-width: 232px;
   max-height: 134px;
   margin: 29px 87px 28px 15px;
@@ -469,7 +470,7 @@ footer h3{
   justify-content: space-between;
   gap: 25px;
   align-items: center;
-  padding: 17px 0 0 70px;
+  padding: 17px 0 0 56px;
   /* position: absolute;
   /* top: 90%; */
   /* left: 76%;
