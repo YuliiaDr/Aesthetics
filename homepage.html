@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1" />
-	<!-- <link href="//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara" rel="stylesheet" type="text/css"/> -->
+	<link href="//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara" rel="stylesheet" type="text/css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
@@ -35,24 +35,45 @@
 							<a href="#">Контакти</a>
 						</li>
 					</ul>
-					<ul class="user-utilities">
-						<li>
-							<a href="#">
-								<img src="./images/icon_cabinet.png" alt="cabinet icon">
-							</a>
-						</li>
-						<li class="favorite">
-							<a href="#">
-								<img src="./images/icon_favorite.png" alt="favorite icon">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="./images/icon_basket.png" alt="basket icon">
-							</a>
-						</li>
-					</ul>
 				</nav>
+				<ul class="user-utilities">
+					<li class="nav-cabinet">
+						<a href="#">
+							<!-- <div class="image">
+								<div class="front">
+									<img src="./images/iconcabinet.svg" alt="cabinet icon" width="36">
+								</div>
+								<div class="back">
+									<img src="./images/icon_cabinet_hover.svg" alt="cabinet icon">
+								</div>
+							</div> -->
+						</a>
+					</li>
+					<li class="nav-favorite">
+						<a href="#">
+							<!-- <div class="image">
+								<div class="front">
+									<img src="./images/iconfavorite.svg" alt="favorite icon" width="36">
+								</div>
+								<div class="back">
+									<img src="./images/icon_favorite_hover.svg" alt="favorite icon">
+								</div>
+							</div> -->
+						</a>
+					</li>
+					<li class="nav-basket">
+						<a href="#">
+							<!-- <div class="image">
+								<div class="front">
+									<img src="./images/iconbasket.svg" alt="basket icon">
+								</div>
+								<div class="back">
+									<img src="./images/icon_basket_hover.svg" alt="basket icon">
+								</div>
+							</div> -->
+						</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<main>
@@ -61,37 +82,36 @@
 					<div class="img-holder">
 						<img src="../images/woman_palm_leave.png" alt="woman hidding after palm tree leave">
 					</div>
-						<div class="text">
-							<h2>
-								Український бренд
-								<br> доглядової косметики
-								<br> для обличчя
-							</h2>
-							<p>
-								Українська професійна косметика AESTHETICS користується великою популярністю завдяки високій якості, ефективності та оптимальної вартості. Це косметика для домашнього використання, яка забезпечує салонний догляд.
-							</p>
-							<a href="#" target="_blank" rel="noopener noreferrer">Каталог</a>
+					<div class="text">
+						<h2>
+							Український бренд
+							<br> доглядової косметики
+							<br> для обличчя
+						</h2>
+						<p>
+							Українська професійна косметика AESTHETICS користується великою популярністю завдяки високій якості, ефективності та оптимальної вартості. Це косметика для домашнього використання, яка забезпечує салонний догляд.
+						</p>
+						<div class="catalogue-btn-container">
+							<a href="#" target="_blank" rel="noopener noreferrer nofollow">Каталог</a>
 						</div>
-
+					</div>
 				</section>
 				<section class="novelty">
-					<!-- <div class="layout"> -->
-						<div class="img-holder">
-							<img src="../images/hero_banner.png" alt="Serum Bottles">
-							<!-- <h2 class="novelty-title">Новинка від AESTHETICS</h2>
-							<p class="novelty-text">Зволожуюча сиворотка для обличчя</p> -->
-						</div>
-						<div class="radio-btn">
-							<form action="homepage.html" method="post">
-								<input type="radio" id="newProductRadioBtn1" name="newProduct" checked>
-								<input type="radio" id="newProductRadioBtn2" name="newProduct">
-								<input type="radio" id="newProductRadioBtn3" name="newProduct">
-							</form>
-						</div>
-						<div class="catalogue-btn">
-							<a href="#" target="_blank" rel="noopener noreferrer">Каталог</a>
-						</div>
-				  <!-- </div> -->
+					<div class="img-holder">
+						<img src="../images/hero_banner.png" alt="Serum Bottles">
+						<!-- <h2 class="novelty-title">Новинка від AESTHETICS</h2>
+						<p class="novelty-text">Зволожуюча сиворотка для обличчя</p> -->
+					</div>
+					<div class="radio-btn">
+						<form action="homepage.html" method="post">
+							<input type="radio" id="newProductRadioBtn1" name="newProduct" checked>
+							<input type="radio" id="newProductRadioBtn2" name="newProduct">
+							<input type="radio" id="newProductRadioBtn3" name="newProduct">
+						</form>
+					</div>
+					<div class="catalogue-btn-container">
+						<a href="#" target="_blank" rel="noopener noreferrer nofollow">Каталог</a>
+					</div>
 				</section>
 				<section class="blog">
 					<div class="layout">
@@ -108,9 +128,7 @@
 									<p>
 										Досить часто високий рівень кортизолу буває в людей, які не дотримуються «біологічного годинника». Природа нам дала режим : «лягай спати об 10-11 вечора, в цей час твоє тіло випрацьовує мелатонін -  один із щитів захисту твого організму». Тепер питання: «о котрій годині лягаєте спати ви?...
 									</p>
-									<a href="#" target="_blank" rel="noopener noreferrer">
-										<img src="./images/more_details_btn.png" alt="More details button">
-									</a>
+									<a href="#" target="_blank" rel="noopener noreferrer nofollow" class="more-details-btn">Детальніше</a>
 								</div>
 							</li>
 							<li class="face-care">
@@ -121,9 +139,7 @@
 									<p>
 										Добре відомо, що типи шкіри можна поділити на 4 види (є й інші розподіли, наводжу цей, бо, як на мене, він найзрозуміліший): нормальна – в міру суха та зволожена, добре збалансована; суха – груба на дотик , шершава, тьмяна; жирна – блищить та має видимі розкриті пори.
 									</p>
-									<a href="#" target="_blank" rel="noopener noreferrer">
-										<img src="./images/more_details_btn.png" alt="More details button">
-									</a>
+									<a href="#" target="_blank" rel="noopener noreferrer nofollow" class="more-details-btn">Детальніше</a>
 								</div>
 								<div class="img-holder">
 										<img src="./images/face_care.png" alt="Woman smears her face with cream">
@@ -145,16 +161,12 @@
 								 	<p>
 										Результат був, а зараз ні?...
 	                </p>
-									<a href="#" target="_blank" rel="noopener noreferrer">
-										<img src="./images/more_details_btn.png" alt="More details button">
-									</a>
+									<a href="#" target="_blank" rel="noopener noreferrer nofollow" class="more-details-btn">Детальніше</a>
 								</div>
 							</li>
 						</ul>
-						<div class="show-more-btn">
-							<a href="#" target="_blank" rel="noopener noreferrer">
-								<img src="./images/show_more_btn.png" alt="Show more button">
-							</a>
+						<div class="show-more">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
 						</div>
 					</div>
 				</section>
@@ -167,24 +179,24 @@
 						Швидкі контакти
 					</h2>
 					<ul>
-						<li>
+						<li class="footer-instagram">
 							<a href="#" target="_blank" rel="noopener noreferrer">
-							  <img src="./images/icon_instagram.png" alt="Instagram icon">
+							  <!-- <img src="./images/icon_instagram.png" alt="Instagram icon"> -->
 						  </a>
 						</li>
-						<li>
+						<li class="footer-email">
 							<a href="#" target="_blank" rel="noopener noreferrer">
-								<img src="./images/icon_email.png" alt="E-mail icon">
+								<!-- <img src="./images/icon_email.png" alt="E-mail icon"> -->
 							</a>
 						</li>
-						<li>
+						<li class="footer-phone">
 							<a href="#" target="_blank" rel="noopener noreferrer">
-								<img src="./images/icon_phone.png" alt="Phone icon">
+								<!-- <img src="./images/icon_phone.png" alt="Phone icon"> -->
 							</a>
 						</li>
-						<li>
+						<li class="footer-location">
 							<a href="#" target="_blank" rel="noopener noreferrer">
-								<img src="./images/icon_location.png" alt="Location icon">
+								<!-- <img src="./images/icon_location.png" alt="Location icon"> -->
 							</a>
 						</li>
 					</ul>
@@ -195,75 +207,83 @@
 					<h2 class="hidden">
 						Додаткова інформація
 					</h2>
-					<!-- <div class="footer-logo"> -->
+					<div class="footer-logo">
 						<a href="#" target="_blank" rel="noopener noreferrer">
-						<img src="./images/logo_3.png" alt="logo" class="footer-logo">
+						<img src="./images/logo_3.png" alt="logo" width="232">
 					  </a>
-					<!-- </div> -->
-					<div class="footer-main-content">
-						<div class="footer-nav">
-							<ul>
-								<li>
-									<p>
-										Каталог
-									</p>
-								</li>
-								<li>
-									<p>
-										Доставка та оплата
-									</p>
-								</li>
-								<li>
-									<p>
-										Блог
-									</p>
-								</li>
-								<li>
-									<p>
-										Контакти
-									</p>
-								</li>
-							</ul>
-						</div>
-						<div class="working-hours">
-							<h3>
-								Режим роботи:
-							</h3>
-							<ul>
-								<li>
-									Понеділок - Субота
-								</li>
-								<li>
-									З 9:00 до 21:00
-								</li>
-							</ul>
-						</div>
-						<div class="footer-last">
-							<div class="contacts">
+					</div>
+					<div class="footer-nav">
+						<ul>
+							<li>
 								<p>
-									Політика конфіденційності
+									Каталог
 								</p>
-								<ul>
-									<li>
-										<a href="tel:+380635542221">+38 (063) 554 22 21</a>
-									</li>
-									<li>
-										<a href="tel:+380956789900">+38 (095) 678 99 00</a>
-									</li>
-								</ul>
+							</li>
+							<li>
+								<p>
+									Доставка та оплата
+								</p>
+							</li>
+							<li>
+								<p>
+									Блог
+								</p>
+							</li>
+							<li>
+								<p>
+									Контакти
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="working-hours">
+						<h3>
+							Режим роботи:
+						</h3>
+						<ul>
+							<li>
+								Понеділок - Субота
+							</li>
+							<li>
+								З 9:00 до 21:00
+							</li>
+						</ul>
+					</div>
+					<div class="footer-last">
+						<div class="contacts">
+							<p>
+								Політика конфіденційності
+							</p>
+							<ul>
+								<li>
+									<a href="tel:+380635542221">+38 (063) 554 22 21</a>
+								</li>
+								<li>
+									<a href="tel:+380956789900">+38 (095) 678 99 00</a>
+								</li>
+							</ul>
+						</div>
+						<div class="payment-methods">
+							<ul>
+								<li class="mastercard">
+									<!-- <img src="./images/icon_mastercard.png" alt="Mastercard icon"> -->
+								</li>
+								<li class="visa">
+									<!-- <img src="./images/icon_visa.png" alt="Visa icon"> -->
+								</li>
+								<li class="apay">
+									<!-- <img src="./images/icon_apay.png" alt="Apple pay icon"> -->
+								</li>
+							</ul>
+							<!-- <div class="mastercard">
+								<img src="./images/icon_mastercard.png" alt="Mastercard icon">
 							</div>
-							<div class="payment-methods">
-								<div class="mastercard">
-									<img src="./images/icon_mastercard.png" alt="Mastercard icon">
+								<div class="visa">
+									<img src="./images/icon_visa.png" alt="Visa icon">
 								</div>
-								<div class="visa-apay">
-									<div class="visa">
-										<img src="./images/icon_visa.png" alt="Visa icon">
-									</div>
-									<div class="apay">
-										<img src="./images/icon_apay.png" alt="Apple pay icon">
-									</div>
-								</div>
+								<div class="apay">
+									<img src="./images/icon_apay.png" alt="Apple pay icon">
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -271,5 +291,8 @@
 			</section>
 		</footer>
 	</div>
+	<a href="#" class="main-scroll" id="main-scroll" style="visibility: visible;">
+		<img src="./images/round_scroll.png" alt="Scroll up">
+ </a>
 </body>
 </html>
