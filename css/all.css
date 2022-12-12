@@ -441,38 +441,38 @@ nav {
 
 /* ------------------------------Blog Main-Page Section */
 
-.blog ul {
+.main-blog ul {
   display: flex;
   flex-direction: column;
   gap: 123px;
   margin: 0 auto 91px auto;
 }
 
-.blog li {
+.main-blog li {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.blog .img-holder{
+.main-blog .img-holder{
   display: block;
   overflow: hidden;
   min-width: 328px;
   height: 100%;
 }
 
-.blog .img-holder img{
+.main-blog .img-holder img{
   display: block;
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
 
-.blog .text {
+.main-blog .text {
   max-width: 522px;
 }
 
-.blog h3 {
+.main-blog h3 {
   color: var(--primary-header-color);
   margin: 0 0 12px 0;
   font-size: 40px;
@@ -480,11 +480,11 @@ nav {
   line-height: 1.23;
 }
 
-.blog p {
+.main-blog p {
   line-height: 1.23;
 }
 
-.blog .more-details-btn{
+.main-blog .more-details-btn{
   display: block;
   position: relative;
   width: 200px;
@@ -498,7 +498,7 @@ nav {
   text-align: center;
 }
 
-.blog .more-details-btn::after {
+.main-blog .more-details-btn::after {
   content: url("../images/icon_arrow_right.png");
   position: absolute;
   right: -38px;
@@ -506,10 +506,14 @@ nav {
   opacity: 0;
 }
 
-.blog .more-details-btn:hover::after {
+.main-blog .more-details-btn:hover::after {
   opacity: 1;
   transition: opacity 500ms ease-in-out;
 }
+
+
+
+/* ------------------------------Show More Btn */
 
 .show-more {
   display: flex;
@@ -947,7 +951,7 @@ footer .apay:hover{
 
 
 
-/* ------------------------------Product Card Page */
+/* ------------------------------Arrow Return Back */
 
 .arrow-back{
   width: 32px;
@@ -958,6 +962,10 @@ footer .apay:hover{
 .arrow-back:focus{
   transform: rotate(360deg);
 }
+
+
+
+/* ------------------------------Product Card Page */
 
 .product-info{
   margin: 18px auto 0 auto;
@@ -1009,6 +1017,10 @@ footer .apay:hover{
   color: var(--primary-text-color);
 }
 
+
+
+/* ------------------------------Product's Star Rating */
+
 .star-rating{
   display: flex;
   align-items: center;
@@ -1058,6 +1070,10 @@ footer .apay:hover{
   line-height: 20px;
   }
 }
+
+
+
+/* ------------------------------Product Card Page/Price, To favorite, To basket */
 
 .description-main .price-fav{
   display: flex;
@@ -1127,6 +1143,10 @@ footer .apay:hover{
 .description-main .tobasket-btn-container button:focus {
    outline: none;
 }
+
+
+
+/* ------------------------------Tabs/Ingridients Tab Section */
 
 .tabs {
   position: block;
@@ -1202,6 +1222,10 @@ footer .apay:hover{
   transition: all 350ms ease-in-out;
 }
 
+
+
+/* ------------------------------Reviews Tab */
+
 .reviews button{
   width: 200px;
   height: 50px;
@@ -1254,6 +1278,10 @@ footer .apay:hover{
   margin: 41px auto 0 auto;
 }
 
+
+
+/* ------------------------------Related Items Section */
+
 .related-items{
   margin-bottom: 47px;
 }
@@ -1278,18 +1306,22 @@ footer .apay:hover{
 
 
 
+/* ------------------------------Delivery-Payment Page */
+
 .delivery-payment{
   margin: 70px auto;
   display: flex;
   flex-direction: column;
   gap: 70px;
+  align-items: center;
+  width: 950px;
 }
 
 .delivery-payment .payment,
-.delivery-payment .np-delivery{
+.delivery-payment .np-delivery.
+.delivery-payment .courier-delivery{
   display: flex;
   flex-direction: column;
-  width: 950px;
 }
 
 .delivery-payment .payment-title{
@@ -1301,7 +1333,8 @@ footer .apay:hover{
   background-color: var(--primary-accent-color);
 }
 
-.delivery-payment .payment-title h3{
+.delivery-payment .payment-title h3,
+.delivery-payment .courier-delivery-title h3{
   font-family: "Candara",sans-serif;
   font-weight: 400;
   font-size: 26px;
@@ -1330,7 +1363,7 @@ footer .apay:hover{
   line-height: 1.23;
 }
 
-.delivery-payment .np-delivery .delivery-title{
+.delivery-payment .np-delivery .np-delivery-title{
   width: 398px;
   padding-top: 26px;
   padding-bottom: 27px;
@@ -1339,7 +1372,7 @@ footer .apay:hover{
   background-color: var(--primary-accent-color);
 }
 
-.delivery-payment .np-delivery .delivery-title h3{
+.delivery-payment .np-delivery .np-delivery-title h3{
   font-family: "Candara",sans-serif;
   font-weight: 400;
   font-size: 26px;
@@ -1347,10 +1380,163 @@ footer .apay:hover{
   color: var(--secondary-text-color);
 }
 
-.delivery-payment .np-delivery .delivery-title p{
+.delivery-payment .np-delivery .np-delivery-title p,
+.delivery-payment .courier-delivery .courier-delivery-title p{
   font-family: "Candara",sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   color: var(--secondary-text-color);
 }
+
+.courier-delivery .delivery-payment-info{
+  padding-right: 9px;
+}
+
+.courier-delivery .delivery-payment-info .delivery-payment-text{
+  max-width: 892px;
+  height:1200px;
+}
+
+.delivery-payment .courier-delivery-title{
+  width: 398px;
+  padding-top: 26px;
+  padding-bottom: 27px;
+  padding-left: 47px;
+  margin: 0 0 0 auto;
+  background-color: var(--primary-accent-color);
+}
+
+
+
+
+/* ------------------------------Delivery-Payment Page Scrollbar */
+
+.courier-delivery .scrollbar{
+	float: left;
+	height: 448px;
+	overflow-y: scroll;
+  border-left: 0.5px solid #484847;
+  padding-left: 27px;
+  padding-right: 9px;
+  color: var(--primary-accent-color);
+}
+.delivery-payment .courier-delivery .delivery-payment-text{
+  width: 892px;
+  /* padding-right: 0px; */
+}
+
+/* .scrollbar::-webkit-scrollbar {
+  width: 20px;
+  border-left: 0.5px solid var(--primary-accent-color);
+}
+
+.scrollbar::-webkit-scrollbar-track{
+	background-color: white;
+  border-left: 0.5px solid var(--primary-accent-color);
+  height: 400px;
+  border-right: 3px solid white;
+  padding-left: 3px solid white;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+  background-color: var(--primary-accent-color);
+  height: 150px;
+  width:14px;
+}
+
+::-webkit-scrollbar-button{
+  content: url("../images/icon_default_up.png");
+  width: 8px;
+  height: 5px;
+}
+
+ */
+
+ /* ------------------------------Blog Acne and Stress Page */
+
+ .arrow-back-blog{
+   width: 32px;
+   transition: all 500ms ease-in-out;
+   margin: 18px auto 0 0;
+ }
+
+ .arrow-back-blog:hover,
+ .arrow-back-blog:focus{
+   transform: rotate(360deg);
+}
+
+.blog-acne-stress{
+  font-family: "Candara", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  margin-bottom: 68px;
+}
+
+.blog-acne-stress h1{
+  font-family: "Candara", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.225;
+  color: #000000;
+  margin: 0 auto 30px 66px;
+}
+
+.blog-acne-stress .acne-stress-beginning,
+.blog-acne-stress .acne-stress-end{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 21px;
+  margin-bottom: 30px;
+}
+
+/* .blog-acne-stress .acne-stress-beginning{
+
+} */
+.blog-acne-stress .cortisol,
+.blog-acne-stress .bio-clock{
+  max-width: 552px;
+}
+
+.blog-acne-stress .cortisol{
+  margin: 51px 0 72px 0;
+}
+
+
+.blog-acne-stress .indent{
+  padding-left: 20px;
+}
+
+.blog-acne-stress .bio-clock{
+  margin-top: 55px;
+}
+
+.blog-acne-stress .img-holder{
+   display: block;
+   overflow: hidden;
+   max-width: 500px;
+   max-height: 500px;
+}
+
+ .blog-acne-stress .img{
+   display: block;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   /* max-width: 234px;
+   max-height: 233px; */
+   margin-bottom: 13px;
+ }
+
+ .blog-acne-stress .stress{
+   display: block;
+   margin-bottom: 72px;
+ }
+
+ .blog-acne-stress .summary{
+
+ }
