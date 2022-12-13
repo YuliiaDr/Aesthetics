@@ -293,11 +293,12 @@ nav {
 .first-view .img-holder{
   display: block;
   max-width: 1123px;
-  /* width: 58%; */
   max-height: 804px;
-  position: relative;
+  position: absolute;
   z-index: 1;
-  margin: 0 0 0 auto;
+  right: 0;
+  top: 0;
+  /* margin: 0 0 0 auto; */
 }
 
 .first-view .img-holder img{
@@ -308,9 +309,9 @@ nav {
 }
 
 .first-view .text{
-  position: absolute;
+  position: relative;
   z-index: 2;
-  width: 55.93%;
+  /* width: 55.93%; */
   max-height: 653px;
   margin-top: 75px;
   margin-left: 21%;
@@ -678,19 +679,19 @@ footer .apay{
 }
 
 footer .mastercard{
-  background: url("../images/icon_mastercard.png") no-repeat center;
+  background: url("./images/icon_mastercard.png") no-repeat center;
   width: 52px;
   height: 32px;
 }
 
 footer .visa{
-  background: url("../images/icon_visa.png") no-repeat center;
+  background: url("./images/icon_visa.png") no-repeat center;
   width: 76px;
   height: 24px;
 }
 
 footer .apay{
-  background: url("../images/icon_apay.png") no-repeat center;
+  background: url("./images/icon_apay.png") no-repeat center;
   width: 82px;
   height: 34px;
 }
@@ -1587,6 +1588,10 @@ footer .apay:hover{
   margin-bottom: 5px;
 }
 
+.contacts .contacts-text .initial{
+  display: block;
+}
+
 .contacts .contacts-text .initial p{
   margin-bottom: 5px;
 }
@@ -1667,6 +1672,7 @@ footer .apay:hover{
 }
 
 .contacts .secondary{
+  display: none;
   width: 425px;
   height: 128px;
   margin: 111px 71px 111px 46px;
@@ -1690,10 +1696,6 @@ footer .apay:hover{
   white-space: nowrap;
 }
 
-.contacts #active{
+.contacts .active{
   display: block;
-}
-
-.contacts #notactive{
-  display: none;
 }

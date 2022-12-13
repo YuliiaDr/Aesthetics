@@ -10,15 +10,110 @@
 	<link rel="stylesheet" href="./css/all.css" type="text/css"/>
 	<link rel="stylesheet" href="./css/fonts.css" type="text/css"/>
 	<script src="js/main.js"></script>
-	<title>Contacts-AESTHETICS</title>
+	<title>Error-AESTHETICS</title>
+	<style>
+       .content{
+				background-image: url("./images/img_mistake.png");
+				background-size: 100% auto;
+				background-position: center;
+				/* background-repeat:no-repeat; */
+				/* width: 1920px;
+				height: 1280px; */
+      }
+			header{
+				color: var(--secondary-text-color);
+			}
+			main{
+				height:100vh;
+			}
+
+			.nav-menu{
+			  border-bottom: 0.5px solid var(--secondary-text-color);
+			}
+
+			.nav-cabinet a{
+			  background: url("../images/iconcabinet_white.png") no-repeat center;
+			}
+
+			.nav-cabinet a:hover{
+			  background: url("../images/icon_cabinet_hover.svg") no-repeat center;
+			}
+
+			.nav-favorite a{
+			  background: url("../images/iconfavorite_white.png") no-repeat center;
+			}
+
+			.nav-favorite a:hover{
+			  background: url("../images/icon_favorite_hover.svg") no-repeat center;
+			}
+
+			.nav-basket a{
+			  background: url("../images/iconbasket_white.png") no-repeat center;
+			}
+
+			.nav-basket a:hover{
+			  background: url("../images/icon_basket_hover.svg") no-repeat center;
+			}
+
+			.footer-main .payment-methods ul{
+			  display: flex;
+			  align-items: flex-end;
+			  justify-content: space-between;
+			  gap: 25px;
+			  padding: 17px 0 0 58px;
+			}
+
+			.mastercard,
+			.visa,
+			.apay{
+			  transition: all 500ms ease-in-out;
+			}
+
+			.mastercard{
+			  background: url("../images/icon_mastercard.png") no-repeat center;
+			  width: 52px;
+			  height: 32px;
+			}
+
+			.visa{
+			  background: url("../images/icon_visa.png") no-repeat center;
+			  width: 76px;
+			  height: 24px;
+			}
+
+			.apay{
+			  background: url("../images/icon_apay.png") no-repeat center;
+			  width: 82px;
+			  height: 34px;
+			}
+
+			.mastercard:hover,
+			.visa:hover,
+			.apay:hover{
+			 transform: rotate(360deg);
+			}
+
+			.mastercard:hover{
+			  background: url("../images/icon_mastercard_color.png") no-repeat center;
+			}
+
+			.visa:hover{
+			  background: url("../images/icon_visa_color.png") no-repeat center;
+			}
+
+			.apay:hover{
+			  background: url("../images/icon_apay_color.png") no-repeat center;
+			}
+  </style>
 </head>
 <body>
 	<div id="wrapper">
+		<div class="content">
 		<header>
 			<div class="layout">
-        <h1 class="hidden">Контакти-Aesthetics</h1>
-				<a href="../homepage.html" target="_blank" rel="noopener noreferrer">
-					<img src="../images/logo_2.png" alt="logo" class="header-logo">
+        <h1 class="hidden">Error-Aesthetics</h1>
+				<a href="./homepage.html" target="_blank" rel="noopener noreferrer">
+					<img src="./images/logo_3.png" alt="logo" class="header-logo">
 				</a>
 				<nav>
 					<ul class="nav-menu">
@@ -53,48 +148,6 @@
 			</div>
 		</header>
 		<main>
-			<div id="content">
-        <section class="contacts layout">
-          <h2 class="hidden">Секція контактів</h2>
-          <div class="img-holder">
-            <img src="./images/contact_image.png" alt="Dispenser on the background of the cup">
-          </div>
-          <div class="contacts-text">
-            <div class="initial">
-              <h3>
-                Режим роботи:
-              </h3>
-              <p>
-                Понеділок - Субота
-              </p>
-              <p>
-                З 9:00 до 21:00
-              </p>
-              <ul>
-                <li>
-                  <a href="tel:+380635542221">+38 (063) 554 22 21</a>
-                </li>
-                <li>
-                  <a href="tel:+380956789900">+38 (095) 678 99 00</a>
-                </li>
-              </ul>
-              <form class="contact-form" action="" method="post">
-                <div class="contact-input">
-                  <input type="text" placeholder="Ваше ім’я" name="name" required autofocus>
-                  <input type="tel" placeholder="Номер телефону" name="number" required>
-                </div>
-                <div class="callback-btn-container">
-                  <button type="button" name="button">Передзвоніть</button>
-                </div>
-              </form>
-            </div>
-            <div class="secondary">
-              <h3>Дякуємо!</h3>
-              <p>Ми вже телефонуємо вам</p>
-            </div>
-          </div>
-        </section>
-			</div>
 		</main>
     <footer>
 			<section class="footer-quick-contacts">
@@ -122,6 +175,7 @@
 					</ul>
 				</div>
 			</section>
+			</div>
 			<section class="footer-main">
 				<div class="layout">
 					<h2 class="hidden">
