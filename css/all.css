@@ -130,6 +130,15 @@ section{
   width: 100%;
 }
 
+.main-scroll {
+  position: fixed;
+  z-index: 4;
+  width: 50px;
+  height: 50px;
+  left: 80.5%;
+  top: 271px;
+}
+
 
 
 /* ------------------------------Navigation Section */
@@ -304,14 +313,14 @@ nav {
   width: 55.93%;
   max-height: 653px;
   margin-top: 75px;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 20.5%;
   text-align: left;
 }
 
 .first-view .text h2{
   max-width: 580px;
   font-family: 'Poiret One';
+  font-style: normal;
   font-weight: 400;
   font-size: 60px;
   line-height: 1.17;
@@ -628,11 +637,11 @@ nav {
 }
 
 .footer-nav{
-  margin: 38px 36px 25px 0;
+  margin: 38px 37px 25px 0;
 }
 
 .working-hours{
-  margin: 38px 50px auto 0;
+  margin: 38px 51px auto 0;
 }
 
 .working-hours h3{
@@ -702,15 +711,6 @@ footer .visa:hover{
 
 footer .apay:hover{
   background: url("../images/icon_apay_color.png") no-repeat center;
-}
-
-.main-scroll {
-  position: fixed;
-  z-index: 2;
-  width: 50px;
-  height: 50px;
-  left: 80.5%;
-  top: 271px;
 }
 
 
@@ -1537,6 +1537,163 @@ footer .apay:hover{
    margin-bottom: 72px;
  }
 
- .blog-acne-stress .summary{
 
- }
+
+ /* ------------------------------Contacts Page */
+
+.contacts{
+  display: flex;
+  margin: 19px auto 21px auto;
+}
+
+.contacts .img-holder{
+  display: block;
+  /* max-width: 1123px; */
+  /* width: 58%; */
+  max-height: 608px;
+  position: absolute;
+  z-index: 1;
+}
+
+.contacts .img-holder img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.contacts .contacts-text{
+  position: relative;
+  z-index: 2;
+  max-width: 582px;
+  max-height: 390px;
+  margin: 110px auto 108px 20px;
+  color: var(--secondary-text-color);
+  background-color: rgba(75, 96, 73, 0.3);
+  backdrop-filter: blur(7.5px);
+  padding: 20px;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.22;
+  color: var(--secondary-text-color);
+}
+
+.contacts .contacts-text .initial h3{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 5px;
+}
+
+.contacts .contacts-text .initial p{
+  margin-bottom: 5px;
+}
+
+.contacts .contacts-text .initial ul{
+  margin-top: 25px;
+}
+
+.contacts .contacts-text .initial ul::after{
+  content: "";
+  display: block;
+  max-width: 490px;
+  border-bottom: 1px solid #FFFBF5;
+  margin: 30px auto 30px 0;
+}
+
+.contact-form{
+  display: flex;
+  grid-gap: 39px;
+}
+
+.contacts input{
+  display: block;
+  width: 276px;
+  height:50px;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  background-color: transparent;
+  border: 1px solid var(--secondary-text-color);
+  padding-left: 15px;
+}
+
+.contacts input::placeholder{
+  color: #B2B2B2;
+}
+.contacts input:first-child{
+  margin-bottom: 5px;
+}
+
+.contacts .callback-btn-container {
+  display: block;
+  margin-top: 38px;
+  width: 219px;
+  height:59px;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid var(--secondary-text-color);
+}
+
+.contacts button{
+  display: block;
+  overflow: hidden;
+  max-width: 219px;
+  max-height: 59px;
+  padding: 10px 32.5px 10px 32.5px;
+  margin: 8px 8px -8px -8px;
+  text-align: center;
+  font-family: 'Candara', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.5;
+  background-color: var(--primary-accent-color);
+  color: var(--secondary-text-color);
+  transition: all 300ms ease-in-out;
+  border: none;
+}
+
+.contacts button:hover {
+  transform: translateY(-9px) translateX(7px);
+}
+
+.contacts button:focus {
+   outline: none;
+}
+
+.contacts .secondary{
+  width: 425px;
+  height: 128px;
+  margin: 111px 71px 111px 46px;
+}
+
+.contacts .secondary h3{
+  font-family: 'Poiret One';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.17;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.contacts .secondary p{
+  font-family: 'Poiret One';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.17;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.contacts #active{
+  display: block;
+}
+
+.contacts #notactive{
+  display: none;
+}
