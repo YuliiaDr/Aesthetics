@@ -672,45 +672,45 @@ nav {
   padding: 17px 0 0 58px;
 }
 
-footer .mastercard,
-footer .visa,
-footer .apay{
+.payment-methods .mastercard,
+.payment-methods .visa,
+.payment-methods .apay{
   transition: all 500ms ease-in-out;
 }
 
-footer .mastercard{
-  background: url("./images/icon_mastercard.png") no-repeat center;
+.payment-methods .mastercard{
+  background: url("../images/icon_mastercard.png") no-repeat center;
   width: 52px;
   height: 32px;
 }
 
-footer .visa{
-  background: url("./images/icon_visa.png") no-repeat center;
+.payment-methods .visa{
+  background: url("../images/icon_visa.png") no-repeat center;
   width: 76px;
   height: 24px;
 }
 
-footer .apay{
-  background: url("./images/icon_apay.png") no-repeat center;
+.payment-methods .apay{
+  background: url("../images/icon_apay.png") no-repeat center;
   width: 82px;
   height: 34px;
 }
 
-footer .mastercard:hover,
-footer .visa:hover,
-footer .apay:hover{
+.payment-methods .mastercard:hover,
+.payment-methods .visa:hover,
+.payment-methods .apay:hover{
  transform: rotate(360deg);
 }
 
-footer .mastercard:hover{
+.payment-methods .mastercard:hover{
   background: url("../images/icon_mastercard_color.png") no-repeat center;
 }
 
-footer .visa:hover{
+.payment-methods .visa:hover{
   background: url("../images/icon_visa_color.png") no-repeat center;
 }
 
-footer .apay:hover{
+.payment-methods .apay:hover{
   background: url("../images/icon_apay_color.png") no-repeat center;
 }
 
@@ -1413,11 +1413,11 @@ footer .apay:hover{
 
 /* ------------------------------Delivery-Payment Page Scrollbar */
 
-.courier-delivery .scrollbar{
+.courier-delivery .delivery-payment-info{
 	float: left;
 	height: 448px;
-	overflow-y: scroll;
-  border-left: 0.5px solid #484847;
+  overflow-y: scroll;
+  /* border-left: 0.5px solid #484847; */
   padding-left: 27px;
   padding-right: 9px;
   color: var(--primary-accent-color);
@@ -1426,21 +1426,33 @@ footer .apay:hover{
   width: 892px;
   /* padding-right: 0px; */
 }
-
-/* .scrollbar::-webkit-scrollbar {
-  width: 20px;
+/* .courier-delivery .delivery-payment-info::-webkit-scrollbar {
+  width: 14px;
+  height: 400px;
   border-left: 0.5px solid var(--primary-accent-color);
+  position: absolute;
+  top: 13px;
 }
 
-.scrollbar::-webkit-scrollbar-track{
+.courier-delivery .delivery-payment-info::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, var(--primary-accent-color) 0%, var(--primary-accent-color) 5%, white 5%, white 18%, var(--primary-accent-color) 18%, var(--primary-accent-color) 82%, white 82%, white 95%, rgb(17, 125, 54) 95%, var(--primary-accent-color) 100%);
+    background-clip: padding-box;
+}
+
+.courier-delivery .delivery-payment-info::-webkit-scrollbar-track {
+    background: white;
+    border-left: 1px solid var(--primary-accent-color);
+    border-right: 1px solid var(--primary-accent-color);
+} */
+/* .scrollbar::-webkit-scrollbar-track{
 	background-color: white;
   border-left: 0.5px solid var(--primary-accent-color);
   height: 400px;
   border-right: 3px solid white;
   padding-left: 3px solid white;
-}
+} */
 
-.scrollbar::-webkit-scrollbar-thumb
+/* .scrollbar::-webkit-scrollbar-thumb
 {
   background-color: var(--primary-accent-color);
   height: 150px;
@@ -1451,9 +1463,8 @@ footer .apay:hover{
   content: url("../images/icon_default_up.png");
   width: 8px;
   height: 5px;
-}
+} */
 
- */
 
  /* ------------------------------Blog Acne and Stress Page */
 
@@ -1699,3 +1710,330 @@ footer .apay:hover{
 .contacts .active{
   display: block;
 }
+
+
+
+/* ------------------------------Gratitude Page */
+
+.gratitude{
+  margin: 17px 0 18px 0;
+}
+
+.gratitude .img-holder{
+  display: block;
+  /* max-width: 1123px; */
+  /* width: 58%; */
+  max-height: 642px;
+  position: absolute;
+  z-index: 1;
+}
+
+.gratitude .img-holder img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.gratitude .gratitude-text{
+  position: relative;
+  z-index: 2;
+  max-width: 749px;
+  max-height: 244px;
+  margin: 199px auto;
+  padding: 60px;
+  color: var(--secondary-text-color);
+  background-color: rgba(75, 96, 73, 0.3);
+  backdrop-filter: blur(7.5px);
+  text-align: center;
+}
+
+.gratitude .gratitude-text h3{
+  font-family: 'Poiret One';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.17;
+  color: var(--secondary-text-color);
+}
+
+.gratitude .gratitude-text p{
+  font-family: "Candara", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.22;
+  color: var(--secondary-text-color);
+}
+
+
+
+/* ------------------------------Basket Page */
+
+/* ----------Order Section*/
+
+.basket{
+  max-width: 877px;
+  margin: 0 auto;
+}
+.basket h1{
+  margin: 54px auto 20px auto;
+  text-align: center;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.22;
+  color: var(--primary-text-color);
+}
+.basket .basket-info{
+  /* max-width: 877px; */
+  margin-bottom: 50px;
+}
+/* input#one,
+input#two,  */
+.content {
+    display: none;
+    /* background: #ba2020;
+    line-height: 25px;
+    padding: 5px 25px;
+    color: #fff;
+    font: normal 1em/150% Sans-Serif;
+    min-width: 200px; */
+}
+
+#one:checked ~ .one,
+#two:checked ~ .two,
+#three:checked ~ .three {
+  display: block;
+}
+
+.order-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.order-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  transition: background 300ms ease-in-out;
+}
+
+.label-one,
+.label-two {
+  cursor: pointer;
+  height: 51px;
+  margin-bottom: 20px;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.23;
+  color: #000000;
+  transition: background 300ms ease-in-out;
+  display: inline-block;
+  transition: all 300ms ease-in-out;
+}
+.label-two{
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.order-radio#one+label::before {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: 50% 50%; */
+  content: url(../images/list_one_notactive.png);
+  transition: all 300ms ease-in-out;
+}
+.order-radio#two+label::before {
+  content: url(../images/list_two_notactive.png);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-size: 50% 50%; */
+  color: var(--primary-accent-color);
+  transition: all 300ms ease-in-out;
+}
+.order-radio#one:checked+label::before {
+  content: url(../images/list_one_active.png);
+  transition: all 300ms ease-in-out;
+}
+.order-radio#two:checked+label::before {
+  content: url(../images/list_two_active.png);
+  transition: all 300ms ease-in-out;
+}
+стили при наведении курсора на радио */
+.order-radio:not(:disabled):not(:checked)+label:hover::before{
+    /* transform: scale(1.1); */
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+/* .order-radio:not(:disabled):active+label::before {
+  background-color: #484847;
+  border-color: #484847;
+} */
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+/* .order-radio:focus:not(:checked)+label::before {
+  border-color: #484847;
+} */
+/* .basket .basket-info .personal-info .label-one,
+.basket .basket-info .payment-delivery-info .label-two{
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  margin: 0 auto 20px auto;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.23;
+  color: #000000;
+} */
+.basket .basket-info .content.one form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+  /* display: none; */
+}
+.basket .basket-info .content.one form .field{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.basket .basket-info .content.one form .field input{
+  width: 368px;
+  height: 50px;
+  border: 0.5px solid #000000;
+  padding-left: 10px;
+}
+.basket .basket-info .content.two .tab-payment-delivery{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+}
+.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method .delivery-method,
+.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method .payment-method{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method h3,
+.basket .basket-info .content.two .tab-payment-delivery .address h3{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000000;
+}
+.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method form div label{
+  display: flex;
+  /* gap: 15px; */
+  align-items: center;
+}
+.basket .basket-info .content.two .tab-payment-delivery .address{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 266px;
+}
+.basket .basket-info .content.two .tab-payment-delivery .address form{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  font-family: 'Candara';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--primary-text-color);
+}
+.basket .basket-info .content.two .tab-payment-delivery .address form div{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.basket .basket-info .content.two .tab-payment-delivery .address form div label:nth-of-type(n+2){
+  padding-left: 36px;
+}
+
+/* .basket .basket-info .payment-delivery-info .tab-payment-delivery .address form div input{
+  align-self:flex-start;
+} */
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-radio+label {
+  display: inline-flex;
+  align-items: flex-start;
+  user-select: none;
+}
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #484847;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-radio:checked+label::before {
+  border: 1px solid #484847;
+  background-color: white;
+  background-image: url("../images/icon_btn_check.png");
+  background-size: 10px;
+}
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked)+label:hover::before{
+    border-color: #484847;
+    box-shadow: 0 0 0 0.5px #484847;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active+label::before {
+  background-color: #484847;
+  border-color: #484847;
+}
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio:focus:not(:checked)+label::before {
+  border-color: #484847;
+}
+/* .basket .basket-info .payment-delivery-info .tab-payment-delivery .address form div label .column-address{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+} */
