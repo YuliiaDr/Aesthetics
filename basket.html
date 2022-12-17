@@ -9,8 +9,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/all.css" type="text/css"/>
 	<link rel="stylesheet" href="./css/fonts.css" type="text/css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/main.js"></script>
-	<title>Making an order-AESTHETICS</title>
+	<title>Placing an order-AESTHETICS</title>
 </head>
 <body>
 	<div id="wrapper">
@@ -57,7 +58,7 @@
 				<h1>Оформлення замовлення</h1>
         <section class="basket-info">
 					<h2 class="hidden">Замовлення</h2>
-					<input type="radio" name="basket-tab" id="one" class="order-radio"checked>
+					<input type="radio" name="basket-tab" id="one" class="order-radio" checked>
 					<label for="one" class="label-one">Особисті данні</label>
 					<input type="radio" name="basket-tab" id="two" class="order-radio">
 					<label for="two" class="label-two">Оплата / Доставка</label>
@@ -132,6 +133,93 @@
 					</div>
         </section>
 				<section class="basket-items">
+					<h2 class="hidden">Перелік товарів</h2>
+					<ul class="scrollbar">
+						<li>
+							<div class="img-holder">
+								<img src="./images/catalogue_antiox_cream.png" alt="Antioxidant face cream">
+							</div>
+							<h3>
+								Антиоксидантний крем для обличчя
+							</h3>
+							<input type="number" name="quantity" min="1" max="10" value="1">
+							<p>
+								850 грн
+							</p>
+							<button type="button" aria-label="Remove item from cart"></button>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum for eyes zone">
+							</div>
+							<h3>
+								Антивікова сироватка для зони навколо очей
+							</h3>
+							<input type="number" name="quantity" min="1" max="10" value="1">
+							<p>
+								900 грн
+							</p>
+							<button type="button" aria-label="Remove item from cart"></button>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="./images/catalogue_lotion_norm_comb.png" alt="Lotion for normal and combinated skin types">
+							</div>
+							<h3>
+								Лосьон для нормальної та комбінованої шкіри
+							</h3>
+							<input type="number" name="quantity" min="1" max="10" value="1">
+							<p>
+								1050 грн
+							</p>
+							<button type="button" aria-label="Remove item from cart"></button>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="./images/catalogue_antiox_cream.png" alt="Antioxidant face cream">
+							</div>
+							<h3>
+								Антиоксидантний крем для обличчя
+							</h3>
+							<input type="number" name="quantity" min="1" max="10" value="1">
+							<p>
+								850 грн
+							</p>
+							<button type="button" aria-label="Remove item from cart"></button>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum for eyes zone">
+							</div>
+							<h3>
+								Антивікова сироватка для зони навколо очей
+							</h3>
+							<input type="number" name="quantity" min="1" max="10" value="1">
+							<p>
+								900 грн
+							</p>
+							<button type="button" aria-label="Remove item from cart"></button>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="./images/catalogue_lotion_norm_comb.png" alt="Lotion for normal and combinated skin types">
+							</div>
+							<h3>
+								Лосьон для нормальної та комбінованої шкіри
+							</h3>
+							<input type="number" name="quantity" min="1" max="10" value="1">
+							<p>
+								1050 грн
+							</p>
+							<button type="button" aria-label="Remove item from cart"></button>
+						</li>
+					</ul>
+					<p class="total">
+						Загальна сумма: <span> 5600</span> грн
+					</p>
+					<div class="tobasket-btn-container">
+						<button type="button" name="button">Оформити</button>
+					</div>
 				</section>
 			</div>
 		</div>
