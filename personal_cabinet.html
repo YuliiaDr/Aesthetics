@@ -9,16 +9,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/all.css" type="text/css"/>
 	<link rel="stylesheet" href="./css/fonts.css" type="text/css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/main.js"></script>
-	<title>Gratitude-AESTHETICS</title>
+	<title>My cabinet-AESTHETICS</title>
 </head>
 <body>
 	<div id="wrapper">
 		<header>
 			<div class="layout">
-        <h1 class="hidden">Дякуємо-Aesthetics</h1>
-				<a href="../homepage.html" target="_blank" rel="noopener noreferrer">
-					<img src="../images/logo_2.png" alt="logo" class="header-logo">
+				<a href="./homepage.html" target="_blank" rel="noopener noreferrer">
+					<img src="./images/logo_2.png" alt="logo" class="header-logo">
 				</a>
 				<nav>
 					<ul class="nav-menu">
@@ -54,15 +54,68 @@
 		</header>
 		<main>
 			<div id="content">
-        <section class="gratitude">
-          <h2 class="hidden">Дякуємо за замовлення!</h2>
-          <div class="img-holder">
-            <img src="./images/img_gratitude.png" alt="Bottle near with stone and olives">
-          </div>
-          <div class="gratitude-text">
-						<h3>Дякуємо за замовлення!</h3>
-						<p>Оплата пройшла успішно</p>
-          </div>
+				<h1 class="hidden">Особистий кабінет</h1>
+				<section class="cabinet-info">
+					<h2>Особистий кабінет</h2>
+						<input type="radio" name="cabinet-tab" id="lb-contact" class="cabinet-radio" checked>
+						<label for="lb-contact" class="label-contact">Контактна інформація </label>
+						<input type="radio" name="cabinet-tab" id="lb-address" class="cabinet-radio">
+						<label for="lb-address" class="label-address">Адресна книга</label>
+						<input type="radio" name="cabinet-tab" id="lb-wishlist" class="cabinet-radio">
+						<label for="lb-wishlist" class="label-wishlist">Список бажань</label>
+						<input type="radio" name="cabinet-tab" id="lb-order" class="cabinet-radio">
+						<label for="lb-order" class="label-order">Історія замовлень</label>
+					<div class="content cabinet-address">
+						<div class="cabinet-address-main">
+							<ul class="delivery-address" action="homepage.html" method="post">
+								<li class="first-delivery-address">
+									<img src="./images/list_one_active.png" alt="first list icon">
+									<div class="address-one-info">
+										<p>Шевченко Світлана</p>
+										<p>Місто КиЇв</p>
+										<p>Градинська 11б, 85</p>
+										<p>+38 068 564 77 99</p>
+										<div class="change-address">
+											<button type="button" name="edit">Редагувати</button>
+											<button type="button" name="delete">Видалити</button>
+										</div>
+									</div>
+								</li>
+								<li class="second-delivery-address">
+									<img src="./images/list_two_active.png" alt="second list icon">
+									<div class="address-two-info">
+										<p>Шевченко Світлана</p>
+										<p>Місто Харків</p>
+										<p>Трінклера 18, 65</p>
+										<p>+38 068 564 77 99</p>
+										<div class="change-address">
+											<button type="button" name="edit">Редагувати</button>
+											<button type="button" name="delete">Видалити</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<fieldset>
+						    <legend>Додати нову адресу:</legend>
+						    <input type="text" id="name-surname" name="name-surname" placeholder="ПІБ" required>
+						    <input type="text" id="city" name="city" placeholder="Місто" required>
+								<div>
+									<input type="text" id="city" name="city" placeholder="Вулиця" required>
+									<input type="text" id="block" name="block" placeholder="Корпус">
+									<input type="num" id="flat" name="flat" placeholder="Квартира">
+								</div>
+								<input type="text" id="post-number" name="post-name" placeholder="Поштове відділення" required>
+						    <input type="tel" id="tel-number" name="tel-number" placeholder="Номер телефону" required>
+							</fieldset>
+						</div>
+						<div class="save-btn-container">
+							<button type="submit" name="button">Зберегти</button>
+						</div>
+					</div>
+					<div class="content wishlist">
+					</div>
+					<div class="content order">
+					</div>
         </section>
 			</div>
 		</main>
