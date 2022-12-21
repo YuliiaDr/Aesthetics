@@ -2201,23 +2201,23 @@ content: url(../images/list_one_active.png);
   width: 866px;
 } */
 
-.basket-items .scrollbar::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar {
   border: 0.5px solid var(--primary-accent-color);
   width: 20px;
   height: 300px;
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
-.basket-items .scrollbar::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb {
   background: linear-gradient(90deg, var(--primary-accent-color) 0%, var(--primary-accent-color) 5%, white 5%, white 18%, var(--primary-accent-color) 18%, var(--primary-accent-color) 82%, white 82%, white 95%, rgb(17, 125, 54) 95%, var(--primary-accent-color) 100%);
   /* background-clip: padding-box; */
   /* height: 150px; */
 }
-.basket-items .scrollbar::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track {
   border-left: 1px solid var(--primary-accent-color);
   border-right: 1px solid var(--primary-accent-color);
   height: 300px;
 }
-.basket-items .scrollbar::-webkit-scrollbar-button:single-button:vertical:decrement {
+.scrollbar::-webkit-scrollbar-button:single-button:vertical:decrement {
   height: 18px;
   width: 20px;
   background-position: center 6px;
@@ -2226,7 +2226,7 @@ content: url(../images/list_one_active.png);
   background-repeat: no-repeat;
   transition: all 300ms ease-in-out;
 }
-.basket-items .scrollbar::-webkit-scrollbar-button:single-button:vertical:increment {
+.scrollbar::-webkit-scrollbar-button:single-button:vertical:increment {
   height: 18px;
   width: 20px;
   background-position: center 6px;
@@ -2234,7 +2234,7 @@ content: url(../images/list_one_active.png);
   background-position: center 6px;
   background-repeat: no-repeat;
 }
-.basket-items .scrollbar::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+.scrollbar::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
   height: 18px;
   width: 20px;
   background-position: center 6px;
@@ -2242,7 +2242,7 @@ content: url(../images/list_one_active.png);
   background-position: center 6px;
   background-repeat: no-repeat;
 }
-.basket-items .scrollbar::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+.scrollbar::-webkit-scrollbar-button:single-button:vertical:increment:hover {
   height: 18px;
   width: 20px;
   background-position: center 6px;
@@ -2321,7 +2321,6 @@ content: url(../images/list_one_active.png);
 .cabinet-info .cabinet-address{
   margin: 28px auto 0 auto;
   width: 928px;
-
 }
 .cabinet-info .cabinet-address .cabinet-address-main{
   display: flex;
@@ -2435,6 +2434,152 @@ content: url(../images/list_one_active.png);
 .save-btn-container button:focus {
    outline: none;
 }
+
+
+
+/* ----------Wishlist Section*/
+
+.cabinet-info .cabinet-wishlist{
+  margin: 74px auto 73px auto;
+  width: 928px;
+}
+.cabinet-info .cabinet-wishlist .scrollbar{
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+  height: 297px;
+  width: 928px;
+}
+.cabinet-info .cabinet-wishlist .scrollbar li{
+  display: flex;
+  justify-content: space-between;
+  /* gap:70px; */
+  border-bottom: 0.5px solid var(--primary-accent-color);
+  width: 808px;
+  height: 98px;
+  padding: 9px 0 9px 0;
+}
+.cabinet-info .cabinet-wishlist ul li .img-holder{
+  width:80px;
+  height: 80px;
+  margin: 0 18px 0 0;
+}
+.cabinet-info .cabinet-wishlist ul li .img-holder img{
+  width: 80px;
+  height: 100%;
+}
+.cabinet-info .cabinet-wishlist .rating-availability{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 134px;
+  margin-right: 48px;
+}
+.cabinet-info .cabinet-wishlist .rating-availability .star-rating{
+  margin: 0 0 0 0;
+}
+.cabinet-info .cabinet-wishlist .rating-availability p:first-of-type{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #484847;
+}
+.cabinet-info .cabinet-wishlist ul li h3{
+  width: 208px;
+  height: 48px;
+  margin: 0 72px 0 0;
+  text-align: left;
+  font-family: 'Candara', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-accent-color);
+}
+
+/* .cabinet-info .cabinet-wishlist ul li input{
+  width: 86px;
+  height: 49px;
+  padding: 5px 17px 5px 17px;
+  margin: 24.5px 100px 24.5px 0;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  border: 1px solid #484847;
+} */
+.cabinet-info .cabinet-wishlist .wishlist-price{
+  width: 70px;
+  margin: 0 0 0 0;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+}
+.wishlist-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 0 78px;
+}
+
+.wishlist-buttons .tobasket-btn-container {
+  display: block;
+  width: 97px;
+  height:25px;
+  position: relative;
+  border: 0.5px solid var(--primary-accent-color);
+  margin: 3.6px 0 0 0;
+}
+
+.wishlist-buttons .tobasket-btn-container button{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 97px;
+  height: 25px;
+  padding: 2px 13px 2px 13px;
+  margin: 3.6px 3.6px -3.6px -3.6px;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-accent-color);
+  /* background: url("../images/btn_to_basket.png") center no-repeat; */
+  border: none;
+  transition: all 300ms ease-in-out;
+}
+
+.wishlist-buttons .tobasket-btn-container button:hover {
+  transform: translateY(-4.6px) translateX(3px);
+}
+
+.wishlist-buttons .tobasket-btn-container button:focus {
+   outline: none;
+}
+.wishlist-buttons .wishlist-delete{
+  border: none;
+  padding: 0;
+  background-color: white;
+  text-decoration: underline;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.wishlist-buttons .wishlist-delete:hover,
+.wishlist-buttons .wishlist-delete:focus{
+  transition: all 200ms ease-in-out;
+  transform: scale(1.05);
+}
+
 /* .custom-cabinet-radio {
   position: absolute;
   z-index: -1;
