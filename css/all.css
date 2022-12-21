@@ -2067,16 +2067,19 @@ content: url(../images/list_one_active.png);
   padding-top: 3.5px;
   padding-bottom: 3.5px;
   /* padding-right: 30px; */
-  height: 293px;
+  height: 298px;
   width: 916px;
 }
 .basket .basket-items .scrollbar li{
   display: flex;
   justify-content: space-between;
   /* gap:70px; */
-  border-bottom: 0.5px solid var(--primary-accent-color);
+  border-top: 0.5px solid var(--primary-accent-color);
   width: 862px;
   height: 98px;
+}
+.basket .basket-items .scrollbar li:last-of-type{
+  border-bottom: 0.5px solid var(--primary-accent-color);
 }
 .basket .basket-items ul li .img-holder{
   width:80px;
@@ -2257,7 +2260,7 @@ content: url(../images/list_one_active.png);
 
 .cabinet-info{
   width: 928px;
-  margin: 56px auto 10px auto;
+  margin: 56px auto 0 auto;
 }
 
 .cabinet-info h2{
@@ -2287,6 +2290,8 @@ content: url(../images/list_one_active.png);
   position: absolute;
   z-index: -1;
   opacity: 0;
+  margin: 0;
+  padding: 0;
 }
 .cabinet-radio+label {
   display: inline-flex;
@@ -2300,6 +2305,8 @@ content: url(../images/list_one_active.png);
 .label-order{
   cursor: pointer;
   height: 51px;
+  padding: 0;
+  margin-right: 39px;
   margin-bottom: 20px;
   font-family: 'Candara', sans-serif;
   font-weight: 400;
@@ -2309,6 +2316,9 @@ content: url(../images/list_one_active.png);
   display: inline-block;
   transition: all 300ms ease-in-out;
 }
+.label-order{
+  margin-right: 0px;
+}
 .cabinet-radio:checked+label {
   transition: all 300ms ease-in-out;
   text-decoration: underline;
@@ -2316,10 +2326,121 @@ content: url(../images/list_one_active.png);
 
 
 
+/* ----------Personal Info Section*/
+
+.content.content-personal-info{
+  height: 422px;
+  margin: 28px auto 10px auto;
+  width: 928px;
+}
+/* .content.content-personal-info .personal-info-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+} */
+.content-personal-info form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 422px;
+}
+.content-personal-info .personal-info-first{
+  height: 300px;
+  margin-right: 191px;
+  margin-bottom: 43px;
+  justify-content: space-between;
+}
+.content-personal-info .personal-info-second{
+  height: 190px;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.content-personal-info form div{
+  display: flex;
+  flex-direction: column;
+}
+.content-personal-info form label{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+.content-personal-info form input{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  height: 50px;
+  color: var(--primary-text-color);
+  padding: 10px;
+  width: 368px;
+  border: 0.5px solid #484847;
+}
+.save-btn-container {
+  display: block;
+  margin: 0 auto 0 0;
+  width: 219px;
+  height:59px;
+  position: relative;
+  left: 8px;
+  border: 1px solid var(--primary-accent-color);
+}
+.save-btn-container button{
+  display: block;
+  overflow: hidden;
+  width: 219px;
+  height: 59px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.5;
+  padding: 10px 57px;
+  margin: 8px 8px -8px -8px;
+  background-color: var(--primary-accent-color);
+  color: var(--secondary-text-color);
+  transition: all 500ms ease-in-out;
+  font-family: 'Candara', sans-serif;
+  border: none;
+}
+.save-btn-container button:hover {
+  transform: translateY(-8px) translateX(8px);
+}
+.save-btn-container button:focus {
+   outline: none;
+}
+.exit-btn{
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 13px 73.5px;
+  border: 1.5px solid var(--primary-text-color);
+  margin: 0 auto 0 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--primary-accent-color);
+  text-align: center;
+}
+
+.exit-btn::after {
+  content: url("../images/icon_arrow_right.png");
+  position: absolute;
+  top: 15px;
+  right: -35px;
+  width: 70px;
+  opacity: 0;
+}
+
+.exit-btn:hover::after {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+
 /* ----------Address Section*/
 
 .cabinet-info .cabinet-address{
-  margin: 28px auto 0 auto;
+  margin: 28px auto 18px auto;
   width: 928px;
 }
 .cabinet-info .cabinet-address .cabinet-address-main{
@@ -2403,38 +2524,10 @@ content: url(../images/list_one_active.png);
 .cabinet-address fieldset div input{
   width: 100px;
 }
-.save-btn-container {
-  display: block;
+.cabinet-address .save-btn-container {
   margin: 0 auto 10px 0;
-  width: 219px;
-  height:59px;
-  position: relative;
   left: 8px;
-  border: 1px solid var(--primary-accent-color);
 }
-.save-btn-container button{
-  display: block;
-  overflow: hidden;
-  width: 219px;
-  height: 59px;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.5;
-  padding: 10px 57px;
-  margin: 8px 8px -8px -8px;
-  background-color: var(--primary-accent-color);
-  color: var(--secondary-text-color);
-  transition: all 500ms ease-in-out;
-  font-family: 'Candara', sans-serif;
-  border: none;
-}
-.save-btn-container button:hover {
-  transform: translateY(-8px) translateX(8px);
-}
-.save-btn-container button:focus {
-   outline: none;
-}
-
 
 
 /* ----------Wishlist Section*/
