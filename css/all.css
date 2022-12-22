@@ -287,7 +287,7 @@ nav {
   display: flex;
   overflow: hidden;
   width: 100%;
-  height: fit-content;
+  height: 804px;
 }
 
 .first-view .img-holder{
@@ -344,6 +344,7 @@ nav {
   top: -8px;
   left: 8px;
   border: 1px solid var(--primary-accent-color);
+  margin-bottom: 83px;
 }
 
 .first-view .text a {
@@ -2259,7 +2260,8 @@ content: url(../images/list_one_active.png);
 /* ------------------------------Cabinet Page */
 
 .cabinet-info{
-  width: 928px;
+  min-width: 928px;
+  max-width: 1016px;
   margin: 56px auto 0 auto;
 }
 
@@ -2330,7 +2332,7 @@ content: url(../images/list_one_active.png);
 
 .content.content-personal-info{
   height: 422px;
-  margin: 28px auto 10px auto;
+  margin: 28px auto 10px 0;
   width: 928px;
 }
 /* .content.content-personal-info .personal-info-wrapper{
@@ -2345,13 +2347,13 @@ content: url(../images/list_one_active.png);
   height: 422px;
 }
 .content-personal-info .personal-info-first{
-  height: 300px;
+  height: 302px;
   margin-right: 191px;
   margin-bottom: 43px;
   justify-content: space-between;
 }
 .content-personal-info .personal-info-second{
-  height: 190px;
+  height: 192px;
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -2425,7 +2427,7 @@ content: url(../images/list_one_active.png);
 .exit-btn::after {
   content: url("../images/icon_arrow_right.png");
   position: absolute;
-  top: 15px;
+  top: 14px;
   right: -35px;
   width: 70px;
   opacity: 0;
@@ -2440,7 +2442,7 @@ content: url(../images/list_one_active.png);
 /* ----------Address Section*/
 
 .cabinet-info .cabinet-address{
-  margin: 28px auto 18px auto;
+  margin: 28px auto 18px 0;
   width: 928px;
 }
 .cabinet-info .cabinet-address .cabinet-address-main{
@@ -2533,7 +2535,7 @@ content: url(../images/list_one_active.png);
 /* ----------Wishlist Section*/
 
 .cabinet-info .cabinet-wishlist{
-  margin: 74px auto 73px auto;
+  margin: 74px auto 73px 0;
   width: 928px;
 }
 .cabinet-info .cabinet-wishlist .scrollbar{
@@ -2671,6 +2673,131 @@ content: url(../images/list_one_active.png);
 .wishlist-buttons .wishlist-delete:focus{
   transition: all 200ms ease-in-out;
   transform: scale(1.05);
+}
+
+
+
+/* ----------Order History Section*/
+
+.cabinet-order{
+  width: 1016px;
+
+  margin: 39px auto 64px auto;
+}
+.cabinet-order-wrapper{
+  width: 1016px;
+  height: 421px;
+  display: flex;
+  justify-content: space-between;
+}
+.cabinet-order-one,
+.cabinet-order-two{
+  width: 466px;
+}
+.cabinet-order-one h3,
+.cabinet-order-two h3{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.order-history-header{
+  width: 426px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.order-history-header p:first-of-type{
+  width: 156px;
+}
+.order-history-header p:last-of-type{
+  text-align: left;
+}
+.order-history-body{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 304px;
+  overflow-y: scroll;
+}
+.order-history-body li{
+  width: 426px;
+  height: 98px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-top: 0.5px solid #4B6049;
+  border-bottom: 0.5px solid #4B6049;
+  display: flex;
+}
+.order-history-body li .img-holder{
+  width: 80px;
+  height: 80px;
+  margin-right: 9px;
+}
+.order-history-body li .name-quantity{
+  width: 208px;
+  margin-right: 11px;
+}
+.order-history-body li .name-quantity h4{
+  width: 220px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+}
+.order-history-body li .name-quantity p{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #484847;
+}
+.order-history-body .rating-price{
+  width: 118px;
+}
+.order-history-body .rating-price .star-rating{
+  text-align: right;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.order-history-body .rating-price p{
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #484847;
+  padding-bottom: 6px;
+}
+.order-history-body .scrollbar::-webkit-scrollbar-track {
+  height: 300px;
+}
+.cabinet-order-wrapper .cabinet-order-total{
+  text-align: right;
+  font-family: 'Candara', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #000000;
+  margin-top: 14px;
+  margin-right: 40px;
+}
+.cabinet-order .show-more{
+  margin: 59px auto 64px auto;
+}
+.cabinet-order .show-more a{
+  width: 200px;
+  height: 50px;
 }
 
 /* .custom-cabinet-radio {
