@@ -2272,7 +2272,7 @@ label::after+.filter-input:checked {
   color: var(--primary-text-color);
 }
 .basket .basket-info{
-  max-width: 877px;
+  width: 877px;
   margin-bottom: 47px;
 }
 /* input#one,
