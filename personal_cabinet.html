@@ -17,36 +17,61 @@
 	<div id="wrapper">
 		<header>
 			<div class="layout">
+				<h1 class="hidden">Особистий кабінет- Aesthetics</h1>
 				<a href="./homepage.html" target="_blank" rel="noopener noreferrer">
 					<img src="./images/logo_2.png" alt="logo" class="header-logo">
 				</a>
 				<nav>
 					<ul class="nav-menu">
 						<li>
-							<a href="./catalogue.html" rel="noopener noreferrer">Каталог</a>
+							<a href="./catalogue.html" target="_blank" rel="noopener noreferrer">Каталог</a>
 						</li>
 						<li>
-              <a href="./delivery_payment.html" rel="noopener noreferrer">Доставка та оплата</a>
+							<a href="./delivery_payment.html" target="_blank" rel="noopener noreferrer">Доставка та оплата</a>
 						</li>
 						<li>
-							<a href="./blog/acne_stress.html" rel="noopener noreferrer">Блог</a>
+							<a href="./blog/acne_stress.html" target="_blank" rel="noopener noreferrer">Блог</a>
 						</li>
 						<li>
-              <a href="./contacts.html" rel="noopener noreferrer">Контакти</a>
+							<a href="./contacts.html" target="_blank" rel="noopener noreferrer">Контакти</a>
 						</li>
 					</ul>
 				</nav>
 				<ul class="user-utilities">
 					<li class="nav-cabinet">
 						<a href="./personal_cabinet.html" target="_blank" rel="noopener noreferrer">
+							<!-- <div class="image">
+								<div class="front">
+									<img src="./images/iconcabinet.svg" alt="cabinet icon" width="36">
+								</div>
+								<div class="back">
+									<img src="./images/icon_cabinet_hover.svg" alt="cabinet icon">
+								</div>
+							</div> -->
 						</a>
 					</li>
 					<li class="nav-favorite">
-						<a href="#wish-list" target="_blank" rel="noopener noreferrer">
+						<a href="./personal_cabinet.html#wish-list" target="_blank" rel="noopener noreferrer">
+							<!-- <div class="image">
+								<div class="front">
+									<img src="./images/iconfavorite.svg" alt="favorite icon" width="36">
+								</div>
+								<div class="back">
+									<img src="./images/icon_favorite_hover.svg" alt="favorite icon">
+								</div>
+							</div> -->
 						</a>
 					</li>
 					<li class="nav-basket">
-						<a href="./basket.html" rel="noopener noreferrer">
+						<a href="./basket.html" target="_blank" rel="noopener noreferrer">
+							<!-- <div class="image">
+								<div class="front">
+									<img src="./images/iconbasket.svg" alt="basket icon">
+								</div>
+								<div class="back">
+									<img src="./images/icon_basket_hover.svg" alt="basket icon">
+								</div>
+							</div> -->
 						</a>
 					</li>
 				</ul>
@@ -91,7 +116,7 @@
 								</div>
 								<div>
 									<label for="birth-date-cabinet">Дата народження</label>
-									<input type="date" name="birth-date" id="birth-date-cabinet" placeholder="8.10.1989">
+									<input type="text" name="birth-date" id="birth-date-cabinet" placeholder="8.10.1989">
 								</div>
 							</div>
 							<a href="./homepage.html" class="exit-btn">Вийти</a>
@@ -99,7 +124,7 @@
 					</div>
 					<div class="content cabinet-address">
 						<div class="cabinet-address-main">
-							<ul class="delivery-address" action="homepage.html" method="post">
+							<ul class="delivery-address">
 								<li class="first-delivery-address">
 									<img src="./images/list_one_active.png" alt="first list icon">
 									<div class="address-one-info">
@@ -132,9 +157,9 @@
 						    <input type="text" id="name-surname" name="name-surname" placeholder="ПІБ" required>
 						    <input type="text" id="city" name="city" placeholder="Місто" required>
 								<div>
-									<input type="text" id="city" name="city" placeholder="Вулиця" required>
+									<input type="text" id="street" name="street" placeholder="Вулиця" required>
 									<input type="text" id="block" name="block" placeholder="Корпус">
-									<input type="num" id="flat" name="flat" placeholder="Квартира">
+									<input type="number" id="flat" name="flat" placeholder="Квартира">
 								</div>
 								<input type="text" id="post-number" name="post-name" placeholder="Поштове відділення" required>
 						    <input type="tel" id="tel-number" name="tel-number" placeholder="Номер телефону" required>
@@ -144,25 +169,25 @@
 							<button type="submit" name="button">Зберегти</button>
 						</div>
 					</div>
-					<div class="content cabinet-wishlist" id="wish-list">
+					<div class="content cabinet-wishlist">
 						<h2 class="hidden">Список бажань</h2>
-						<ul class="scrollbar">
+						<ul class="scrollbar" id="wish-list">
 							<li>
 								<div class="img-holder">
 									<img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin">
 								</div>
 								<div class="rating-availability">
-									<div class="star-rating">
-	                  <input type="radio" name="stars" id="star-a" value="5">
-	                  <label for="star-a"></label>
-	                  <input type="radio" name="stars" id="star-b" value="4">
-	                  <label for="star-b"></label>
-	                  <input type="radio" name="stars" id="star-c" value="3">
-	                  <label for="star-c"></label>
-	                  <input type="radio" name="stars" id="star-d" value="2">
-	                  <label for="star-d"></label>
-	                  <input type="radio" name="stars" id="star-e" value="1">
-	                  <label for="star-e"></label>
+									<div class="star-rating-4">
+	                  <input type="radio" name="star-4" id="star-u" value="5">
+	                  <label for="star-u"></label>
+	                  <input type="radio" name="star-4" id="star-v" value="4">
+	                  <label for="star-v"></label>
+	                  <input type="radio" name="star-4" id="star-w" value="3">
+	                  <label for="star-w"></label>
+	                  <input type="radio" name="star-4" id="star-x" value="2">
+	                  <label for="star-x"></label>
+	                  <input type="radio" name="star-4" id="star-y" value="1">
+	                  <label for="star-y"></label>
 	                </div>
 									<p class="availability-fluid-dry-skin">В наявності</p>
 								</div>
@@ -184,17 +209,17 @@
 									<img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream for oily skin">
 								</div>
 								<div class="rating-availability">
-									<div class="star-rating">
-	                  <input type="radio" name="stars" id="star-a" value="5">
-	                  <label for="star-a"></label>
-	                  <input type="radio" name="stars" id="star-b" value="4">
-	                  <label for="star-b"></label>
-	                  <input type="radio" name="stars" id="star-c" value="3">
-	                  <label for="star-c"></label>
-	                  <input type="radio" name="stars" id="star-d" value="2">
-	                  <label for="star-d"></label>
-	                  <input type="radio" name="stars" id="star-e" value="1">
-	                  <label for="star-e"></label>
+									<div class="star-rating-5">
+	                  <input type="radio" name="star-5" id="star-z" value="5">
+	                  <label for="star-z"></label>
+	                  <input type="radio" name="star-5" id="star-a1" value="4">
+	                  <label for="star-a1"></label>
+	                  <input type="radio" name="star-5" id="star-a2" value="3">
+	                  <label for="star-a2"></label>
+	                  <input type="radio" name="star-5" id="star-a3" value="2">
+	                  <label for="star-a3"></label>
+	                  <input type="radio" name="star-5" id="star-a4" value="1">
+	                  <label for="star-a4"></label>
 	                </div>
 									<p>Залишилось 3 шт</p>
 								</div>
@@ -216,17 +241,17 @@
 									<img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin">
 								</div>
 								<div class="rating-availability">
-									<div class="star-rating">
-	                  <input type="radio" name="stars" id="star-a" value="5">
-	                  <label for="star-a"></label>
-	                  <input type="radio" name="stars" id="star-b" value="4">
-	                  <label for="star-b"></label>
-	                  <input type="radio" name="stars" id="star-c" value="3">
-	                  <label for="star-c"></label>
-	                  <input type="radio" name="stars" id="star-d" value="2">
-	                  <label for="star-d"></label>
-	                  <input type="radio" name="stars" id="star-e" value="1">
-	                  <label for="star-e"></label>
+									<div class="star-rating-6">
+	                  <input type="radio" name="star-6" id="star-a5" value="5">
+	                  <label for="star-a5"></label>
+	                  <input type="radio" name="star-6" id="star-a6" value="4">
+	                  <label for="star-a6"></label>
+	                  <input type="radio" name="star-6" id="star-a7" value="3">
+	                  <label for="star-a7"></label>
+	                  <input type="radio" name="star-6" id="star-a8" value="2">
+	                  <label for="star-a8"></label>
+	                  <input type="radio" name="star-6" id="star-a9" value="1">
+	                  <label for="star-a9"></label>
 	                </div>
 									<p class="availability-fluid-dry-skin">В наявності</p>
 								</div>
@@ -248,17 +273,17 @@
 									<img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin">
 								</div>
 								<div class="rating-availability">
-									<div class="star-rating">
-	                  <input type="radio" name="stars" id="star-a" value="5">
-	                  <label for="star-a"></label>
-	                  <input type="radio" name="stars" id="star-b" value="4">
-	                  <label for="star-b"></label>
-	                  <input type="radio" name="stars" id="star-c" value="3">
-	                  <label for="star-c"></label>
-	                  <input type="radio" name="stars" id="star-d" value="2">
-	                  <label for="star-d"></label>
-	                  <input type="radio" name="stars" id="star-e" value="1">
-	                  <label for="star-e"></label>
+									<div class="star-rating-7">
+	                  <input type="radio" name="star-7" id="star-a10" value="5">
+	                  <label for="star-a10"></label>
+	                  <input type="radio" name="star-7" id="star-a11" value="4">
+	                  <label for="star-a11"></label>
+	                  <input type="radio" name="star-7" id="star-a12" value="3">
+	                  <label for="star-a12"></label>
+	                  <input type="radio" name="star-7" id="star-a13" value="2">
+	                  <label for="star-a13"></label>
+	                  <input type="radio" name="star-7" id="star-a14" value="1">
+	                  <label for="star-a14"></label>
 	                </div>
 									<p class="availability-fluid-dry-skin">В наявності</p>
 								</div>
@@ -280,23 +305,23 @@
 									<img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream for oily skin">
 								</div>
 								<div class="rating-availability">
-									<div class="star-rating">
-	                  <input type="radio" name="stars" id="star-a" value="5">
-	                  <label for="star-a"></label>
-	                  <input type="radio" name="stars" id="star-b" value="4">
-	                  <label for="star-b"></label>
-	                  <input type="radio" name="stars" id="star-c" value="3">
-	                  <label for="star-c"></label>
-	                  <input type="radio" name="stars" id="star-d" value="2">
-	                  <label for="star-d"></label>
-	                  <input type="radio" name="stars" id="star-e" value="1">
-	                  <label for="star-e"></label>
+									<div class="star-rating-8">
+	                  <input type="radio" name="star-8" id="star-a15" value="5">
+	                  <label for="star-a15"></label>
+	                  <input type="radio" name="star-8" id="star-a16" value="4">
+	                  <label for="star-a16"></label>
+	                  <input type="radio" name="star-8" id="star-a17" value="3">
+	                  <label for="star-a17"></label>
+	                  <input type="radio" name="star-8" id="star-a18" value="2">
+	                  <label for="star-a18"></label>
+	                  <input type="radio" name="star-8" id="star-a19" value="1">
+	                  <label for="star-a19"></label>
 	                </div>
 									<p>Залишилось 3 шт</p>
 								</div>
 								<h3>
 									Матуючий денний крем для жирної шкіри
-								</h3>
+								</h3>-8
 								<p class="wishlist-price">
 									680 грн
 								</p>
@@ -312,17 +337,17 @@
 									<img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin">
 								</div>
 								<div class="rating-availability">
-									<div class="star-rating">
-	                  <input type="radio" name="stars" id="star-a" value="5">
-	                  <label for="star-a"></label>
-	                  <input type="radio" name="stars" id="star-b" value="4">
-	                  <label for="star-b"></label>
-	                  <input type="radio" name="stars" id="star-c" value="3">
-	                  <label for="star-c"></label>
-	                  <input type="radio" name="stars" id="star-d" value="2">
-	                  <label for="star-d"></label>
-	                  <input type="radio" name="stars" id="star-e" value="1">
-	                  <label for="star-e"></label>
+									<div class="star-rating-9">
+	                  <input type="radio" name="star-9" id="star-a20" value="5">
+	                  <label for="star-a20"></label>
+	                  <input type="radio" name="star-9" id="star-a21" value="4">
+	                  <label for="star-a21"></label>
+	                  <input type="radio" name="star-9" id="star-a22" value="3">
+	                  <label for="star-a22"></label>
+	                  <input type="radio" name="star-9" id="star-a23" value="2">
+	                  <label for="star-a23"></label>
+	                  <input type="radio" name="star-9" id="star-a24" value="1">
+	                  <label for="star-a24"></label>
 	                </div>
 									<p class="availability-fluid-dry-skin">В наявності</p>
 								</div>
@@ -369,17 +394,17 @@
 											<p>1 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-10">
+			                  <input type="radio" name="star-10" id="star-a25" value="5">
+			                  <label for="star-a25"></label>
+			                  <input type="radio" name="star-10" id="star-a26" value="4">
+			                  <label for="star-a26"></label>
+			                  <input type="radio" name="star-10" id="star-a27" value="3">
+			                  <label for="star-a27"></label>
+			                  <input type="radio" name="star-10" id="star-a28" value="2">
+			                  <label for="star-a28"></label>
+			                  <input type="radio" name="star-10" id="star-a29" value="1">
+			                  <label for="star-a29"></label>
 			                </div>
 											<p>860 грн</p>
 										</div>
@@ -393,17 +418,17 @@
 											<p>2 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-11">
+			                  <input type="radio" name="star-11" id="star-a30" value="5">
+			                  <label for="star-a30"></label>
+			                  <input type="radio" name="star-11" id="star-a31" value="4">
+			                  <label for="star-a31"></label>
+			                  <input type="radio" name="star-11" id="star-a32" value="3">
+			                  <label for="star-a32"></label>
+			                  <input type="radio" name="star-11" id="star-a33" value="2">
+			                  <label for="star-a33"></label>
+			                  <input type="radio" name="star-11" id="star-a34" value="1">
+			                  <label for="star-a34"></label>
 			                </div>
 											<p>1460 грн</p>
 										</div>
@@ -417,17 +442,17 @@
 											<p>1 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-12">
+			                  <input type="radio" name="star-12" id="star-a36" value="5">
+			                  <label for="star-a36"></label>
+			                  <input type="radio" name="star-12" id="star-a37" value="4">
+			                  <label for="star-a37"></label>
+			                  <input type="radio" name="star-12" id="star-a38" value="3">
+			                  <label for="star-a38"></label>
+			                  <input type="radio" name="star-12" id="star-a39" value="2">
+			                  <label for="star-a39"></label>
+			                  <input type="radio" name="star-12" id="star-a-40" value="1">
+			                  <label for="star-a-40"></label>
 			                </div>
 											<p>900 грн</p>
 										</div>
@@ -441,17 +466,17 @@
 											<p>1 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-13">
+			                  <input type="radio" name="star-13" id="star-a41" value="5">
+			                  <label for="star-a41"></label>
+			                  <input type="radio" name="star-13" id="star-a42" value="4">
+			                  <label for="star-a42"></label>
+			                  <input type="radio" name="star-13" id="star-a43" value="3">
+			                  <label for="star-a43"></label>
+			                  <input type="radio" name="star-13" id="star-a44" value="2">
+			                  <label for="star-a44"></label>
+			                  <input type="radio" name="star-13" id="star-a45" value="1">
+			                  <label for="star-a45"></label>
 			                </div>
 											<p>860 грн</p>
 										</div>
@@ -465,17 +490,17 @@
 											<p>2 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-14">
+			                  <input type="radio" name="star-14" id="star-a46" value="5">
+			                  <label for="star-a46"></label>
+			                  <input type="radio" name="star-14" id="star-a47" value="4">
+			                  <label for="star-a47"></label>
+			                  <input type="radio" name="star-14" id="star-a48" value="3">
+			                  <label for="star-a48"></label>
+			                  <input type="radio" name="star-14" id="star-a49" value="2">
+			                  <label for="star-a49"></label>
+			                  <input type="radio" name="star-14" id="star-a50" value="1">
+			                  <label for="star-a50"></label>
 			                </div>
 											<p>1460 грн</p>
 										</div>
@@ -489,17 +514,17 @@
 											<p>1 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-15">
+			                  <input type="radio" name="star-15" id="star-a51" value="5">
+			                  <label for="star-a51"></label>
+			                  <input type="radio" name="star-15" id="star-a52" value="4">
+			                  <label for="star-a52"></label>
+			                  <input type="radio" name="star-15" id="star-a53" value="3">
+			                  <label for="star-a53"></label>
+			                  <input type="radio" name="star-15" id="star-a54" value="2">
+			                  <label for="star-a54"></label>
+			                  <input type="radio" name="star-15" id="star-a55" value="1">
+			                  <label for="star-a55"></label>
 			                </div>
 											<p>900 грн</p>
 										</div>
@@ -533,17 +558,17 @@
 											<p>1 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-16">
+			                  <input type="radio" name="star-16" id="star-a56" value="5">
+			                  <label for="star-a56"></label>
+			                  <input type="radio" name="star-16" id="star-a57" value="4">
+			                  <label for="star-a57"></label>
+			                  <input type="radio" name="star-16" id="star-a58" value="3">
+			                  <label for="star-a58"></label>
+			                  <input type="radio" name="star-16" id="star-a59" value="2">
+			                  <label for="star-a59"></label>
+			                  <input type="radio" name="star-16" id="star-a60" value="1">
+			                  <label for="star-a60"></label>
 			                </div>
 											<p>1050 грн</p>
 										</div>
@@ -557,17 +582,17 @@
 											<p>2 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-17">
+			                  <input type="radio" name="star-17" id="star-a61" value="5">
+			                  <label for="star-a61"></label>
+			                  <input type="radio" name="star-17" id="star-a62" value="4">
+			                  <label for="star-a62"></label>
+			                  <input type="radio" name="star-17" id="star-a63" value="3">
+			                  <label for="star-a63"></label>
+			                  <input type="radio" name="star-17" id="star-a64" value="2">
+			                  <label for="star-a64"></label>
+			                  <input type="radio" name="star-17" id="star-a-65" value="1">
+			                  <label for="star-a-65"></label>
 			                </div>
 											<p>890 грн</p>
 										</div>
@@ -581,17 +606,17 @@
 											<p>1 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-18">
+			                  <input type="radio" name="star-18" id="star-a66" value="5">
+			                  <label for="star-a66"></label>
+			                  <input type="radio" name="star-18" id="star-a67" value="4">
+			                  <label for="star-a67"></label>
+			                  <input type="radio" name="star-18" id="star-a68" value="3">
+			                  <label for="star-a68"></label>
+			                  <input type="radio" name="star-18" id="star-a69" value="2">
+			                  <label for="star-a69"></label>
+			                  <input type="radio" name="star-18" id="star-a70" value="1">
+			                  <label for="star-a70"></label>
 			                </div>
 											<p>890 грн</p>
 										</div>
@@ -605,17 +630,17 @@
 											<p>1 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-19">
+			                  <input type="radio" name="star-19" id="star-a71" value="5">
+			                  <label for="star-a71"></label>
+			                  <input type="radio" name="star-19" id="star-a72" value="4">
+			                  <label for="star-a72"></label>
+			                  <input type="radio" name="star-19" id="star-a73" value="3">
+			                  <label for="star-a73"></label>
+			                  <input type="radio" name="star-19" id="star-a74" value="2">
+			                  <label for="star-a74"></label>
+			                  <input type="radio" name="star-19" id="star-a75" value="1">
+			                  <label for="star-a75"></label>
 			                </div>
 											<p>860 грн</p>
 										</div>
@@ -629,17 +654,17 @@
 											<p>2 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-20">
+			                  <input type="radio" name="star-20" id="star-a76" value="5">
+			                  <label for="star-a76"></label>
+			                  <input type="radio" name="star-20" id="star-a77" value="4">
+			                  <label for="star-a77"></label>
+			                  <input type="radio" name="star-20" id="star-a78" value="3">
+			                  <label for="star-a78"></label>
+			                  <input type="radio" name="star-20" id="star-a79" value="2">
+			                  <label for="star-a79"></label>
+			                  <input type="radio" name="star-20" id="star-a80" value="1">
+			                  <label for="star-a80"></label>
 			                </div>
 											<p>1460 грн</p>
 										</div>
@@ -653,17 +678,17 @@
 											<p>1 шт</p>
 										</div>
 										<div class="rating-price">
-											<div class="star-rating">
-			                  <input type="radio" name="stars" id="star-a" value="5">
-			                  <label for="star-a"></label>
-			                  <input type="radio" name="stars" id="star-b" value="4">
-			                  <label for="star-b"></label>
-			                  <input type="radio" name="stars" id="star-c" value="3">
-			                  <label for="star-c"></label>
-			                  <input type="radio" name="stars" id="star-d" value="2">
-			                  <label for="star-d"></label>
-			                  <input type="radio" name="stars" id="star-e" value="1">
-			                  <label for="star-e"></label>
+											<div class="star-rating-21">
+			                  <input type="radio" name="star-21" id="star-a81" value="5">
+			                  <label for="star-a81"></label>
+			                  <input type="radio" name="star-21" id="star-a82" value="4">
+			                  <label for="star-a82"></label>
+			                  <input type="radio" name="star-21" id="star-a83" value="3">
+			                  <label for="star-a83"></label>
+			                  <input type="radio" name="star-21" id="star-a84" value="2">
+			                  <label for="star-a84"></label>
+			                  <input type="radio" name="star-21" id="star-a85" value="1">
+			                  <label for="star-a85"></label>
 			                </div>
 											<p>900 грн</p>
 										</div>
@@ -679,7 +704,7 @@
         </section>
 			</div>
 		</main>
-    <footer>
+		<footer>
 			<section class="footer-quick-contacts">
 				<div class="layout">
 					<h2 class="hidden">
@@ -688,18 +713,22 @@
 					<ul>
 						<li class="footer-instagram">
 							<a href="#" target="_blank" rel="noopener noreferrer">
+							  <!-- <img src="./images/icon_instagram.png" alt="Instagram icon"> -->
 						  </a>
 						</li>
 						<li class="footer-email">
 							<a href="#" target="_blank" rel="noopener noreferrer">
+								<!-- <img src="./images/icon_email.png" alt="E-mail icon"> -->
 							</a>
 						</li>
 						<li class="footer-phone">
 							<a href="#" target="_blank" rel="noopener noreferrer">
+								<!-- <img src="./images/icon_phone.png" alt="Phone icon"> -->
 							</a>
 						</li>
 						<li class="footer-location">
 							<a href="#" target="_blank" rel="noopener noreferrer">
+								<!-- <img src="./images/icon_location.png" alt="Location icon"> -->
 							</a>
 						</li>
 					</ul>
@@ -718,22 +747,20 @@
 					<div class="footer-nav">
 						<ul>
 							<li>
-								<a href="./catalogue.html" rel="noopener noreferrer">
+								<a href="./catalogue.html" target="_blank" rel="noopener noreferrer">
 									Каталог
 								</a>
 							</li>
 							<li>
-								<a href="./delivery_payment.html" rel="noopener noreferrer">
+								<a href="./delivery_payment.html" target="_blank" rel="noopener noreferrer">
 									Доставка та оплата
 								</a>
 							</li>
 							<li>
-								<a href="./blog/acne_stress.html" rel="noopener noreferrer">
-									Блог
-								</a>
+								<a href="./blog/acne_stress.html" target="_blank" rel="noopener noreferrer">Блог</a>
 							</li>
 							<li>
-								<a href="./contacts.html" rel="noopener noreferrer">
+								<a href="./contacts.html" target="_blank" rel="noopener noreferrer">
 									Контакти
 								</a>
 							</li>
@@ -769,18 +796,30 @@
 						<div class="payment-methods">
 							<ul>
 								<li class="mastercard">
+									<!-- <img src="./images/icon_mastercard.png" alt="Mastercard icon"> -->
 								</li>
 								<li class="visa">
+									<!-- <img src="./images/icon_visa.png" alt="Visa icon"> -->
 								</li>
 								<li class="apay">
+									<!-- <img src="./images/icon_apay.png" alt="Apple pay icon"> -->
 								</li>
 							</ul>
+							<!-- <div class="mastercard">
+								<img src="./images/icon_mastercard.png" alt="Mastercard icon">
+							</div>
+								<div class="visa">
+									<img src="./images/icon_visa.png" alt="Visa icon">
+								</div>
+								<div class="apay">
+									<img src="./images/icon_apay.png" alt="Apple pay icon">
+								</div> -->
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- <a href="#" class="main-scroll" id="main-scroll" style="visibility: visible;">
-				<img src="../images/round_scroll.png" alt="Scroll up">
+				<img src="./images/round_scroll.png" alt="Scroll up">
 			</a> -->
 		</footer>
 	</div>
