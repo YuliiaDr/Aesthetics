@@ -325,7 +325,7 @@ background-position: center;
 }
 .first-view .text-layout{
   width: 1074px;
-  margin: 0 auto 0 auto; 
+  margin: 0 auto 0 auto;
 }
 
 .first-view .text{
@@ -2265,7 +2265,7 @@ label::after+.filter-input:checked {
 /* ----------Personal Info Section*/
 
 .basket{
-  max-width: 880px;
+  /* max-width: 880px; */
   margin-left: 25.26%;
   margin-right: 28.9%;
 }
