@@ -2299,6 +2299,7 @@ input#two,  */
 }
 .basket .order-radio+label {
   display: inline-flex;
+  justify-content: space-between;
   align-items: center;
   user-select: none;
   transition: background 400ms ease-in-out;
