@@ -2306,7 +2306,7 @@ input#two,  */
   opacity: 0;
 }
 .basket .order-radio+label {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   user-select: none;
