@@ -816,8 +816,8 @@ background-position: center;
 .custom-radio+label::before {
   content: '';
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 1px solid #484847;
