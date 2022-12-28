@@ -307,8 +307,8 @@ background-position: center;
 .first-view .img-holder{
   display: block
   overflow: hidden;
-  max-width: 1123px;
-  min-height: 804px;
+  /* max-width: 1123px; */
+  max-height: 804px;
   position: absolute;
   z-index: 1;
   right: 0;
