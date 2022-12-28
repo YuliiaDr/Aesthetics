@@ -305,10 +305,10 @@ background-position: center;
 }
 
 .first-view .img-holder{
-  display: block;
+  display: block
+  overflow: hidden;
   max-width: 1123px;
-  max-height: 804px;
-  min-width: 60vw;
+  min-height: 804px;
   position: absolute;
   z-index: 1;
   right: 0;
