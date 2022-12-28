@@ -2266,6 +2266,7 @@ label::after+.filter-input:checked {
 
 .basket{
   max-width: 880px;
+  margin: 0 auto;
   /* margin-left: 25.26%; */
   /* margin-right: 28.9%; */
 }
