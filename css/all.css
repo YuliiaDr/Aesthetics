@@ -816,8 +816,8 @@ background-position: center;
 .custom-radio+label::before {
   content: '';
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 1px solid #484847;
@@ -915,6 +915,7 @@ background-position: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
+  padding-left: 4px;
 }
 .filter-range input::placeholder{
   padding-top: 9px;
