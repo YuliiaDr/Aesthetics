@@ -307,7 +307,7 @@ background-position: center;
 .first-view .img-holder{
   display: block
   overflow: hidden;
-  width: 60%;
+  width: 57%;
   max-height: 804px;
   position: absolute;
   z-index: 1;
