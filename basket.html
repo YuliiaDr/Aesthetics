@@ -81,83 +81,82 @@
 			<div id="content">
 				<div class="basket">
 				<h1>Оформлення замовлення</h1>
-        <section class="basket-info">
-					<h2 class="hidden">Замовлення</h2>
-					<input type="radio" name="basket-tab" id="one" class="order-radio" checked>
-					<label for="one" class="label-one">Особисті данні</label>
-					<input type="radio" name="basket-tab" id="two" class="order-radio">
-					<label for="two" class="label-two">Оплата / Доставка</label>
-					<div class="content one">
-						<form class="#" action="homepage.html" method="post">
-							<div class="field">
-								<label for="name">Ваше ім’я та прізвище</label>
-		    				<input type="text" name="name" id="name" placeholder="Шевченко Світлана" autofocus autocomplete="on" required>
-							</div>
-							<div class="field">
-								<label for="email">E-mail</label>
-		    				<input type="email" name="email" id="email" placeholder="shevSv002@gmail.com" autocomplete="on" required>
-							</div>
-							<div class="field">
-								<label for="tel">Номер телефону</label>
-		    				<input type="tel" name="tel" id="tel" placeholder="+38 068 564 77 99" autocomplete="on" required>
-							</div>
-						</form>
-					</div>
-					<div class="content two">
-						<div class="tab-payment-delivery">
-							<div class="delivery-payment-method">
-								<div class="delivery-method">
-									<h3>Оберіть спосіб доставки:</h3>
-									<form class="way-delivery" action="homepage.html" method="post">
-				  					<div>
-											<input type="radio" class="custom-radio" name="delivery" id="delivery-np">
-											<label for="delivery-np">Нова пошта</label>
-				  					</div>
-										<div>
-											<input type="radio" class="custom-radio" name="delivery" id="delivery-courier" checked>
-											<label for="delivery-courier">Доставка кур’єром (безкоштовно від 2000 грн)</label>
-										</div>
-									</form>
+        	<section class="basket-info">
+						<h2 class="hidden">Замовлення</h2>
+						<input type="radio" name="basket-tab" id="one" class="order-radio" checked>
+						<label for="one" class="label-one">Особисті данні</label>
+						<input type="radio" name="basket-tab" id="two" class="order-radio">
+						<label for="two" class="label-two">Оплата / Доставка</label>
+						<div class="content one">
+							<form class="#" action="homepage.html" method="post">
+								<div class="field">
+									<label for="name">Ваше ім’я та прізвище</label>
+			    				<input type="text" name="name" id="name" placeholder="Шевченко Світлана" autofocus autocomplete="on" required>
 								</div>
-								<div class="payment-method">
-									<h3>Оберіть спосіб оплати:</h3>
-									<form class="way-payment" action="homepage.html" method="post">
-										<div>
-											<input type="radio" class="custom-radio" name="payment" id="pay-cash" value="Оплата при отриманні" checked>
-											<label for="pay-cash">Оплата при отриманні</label>
-										</div>
-										<div>
-											<input type="radio" class="custom-radio" name="payment" id="pay-bank" value="Банківською картою">
-											<label for="pay-bank">Банківською картою</label>
-										</div>
-									</form>
+								<div class="field">
+									<label for="email">E-mail</label>
+			    				<input type="email" name="email" id="email" placeholder="shevSv002@gmail.com" autocomplete="on" required>
 								</div>
-							</div>
-							<div class="address">
-								<h3>Оберіть адресу доставки:</h3>
-								<form class="delivery-address" action="homepage.html" method="post">
-									<div>
-										<input type="radio" class="custom-radio" name="address" id="address-one" checked>
-										<label for="address-one">Шевченко Світлана
-										</label>
-										<label for="address-one">Місто КиЇв</label>
-										<label for="address-one">Градинська 11б, 85</label>
-										<label for="address-one">+38 068 564 77 99</label>
+								<div class="field">
+									<label for="tel">Номер телефону</label>
+			    				<input type="tel" name="tel" id="tel" placeholder="+38 068 564 77 99" autocomplete="on" required>
+								</div>
+							</form>
+						</div>
+						<div class="content two">
+							<div class="tab-payment-delivery">
+								<div class="delivery-payment-method">
+									<div class="delivery-method">
+										<h3>Оберіть спосіб доставки:</h3>
+										<form class="way-delivery" action="homepage.html" method="post">
+					  					<div>
+												<input type="radio" class="custom-radio" name="delivery" id="delivery-np">
+												<label for="delivery-np">Нова пошта</label>
+					  					</div>
+											<div>
+												<input type="radio" class="custom-radio" name="delivery" id="delivery-courier" checked>
+												<label for="delivery-courier">Доставка кур’єром (безкоштовно від 2000 грн)</label>
+											</div>
+										</form>
 									</div>
-			  					<div>
-										<input type="radio" class="custom-radio" name="address" id="address-two">
-										<label for="address-two">Шевченко Світлана
-										</label>
-										<label for="address-two">Місто Харків</label>
-										<label for="address-two">Трінклера 18, 65</label>
-										<label for="address-two">+38 068 564 77 99</label>
-			  					</div>
-								</form>
+									<div class="payment-method">
+										<h3>Оберіть спосіб оплати:</h3>
+										<form class="way-payment" action="homepage.html" method="post">
+											<div>
+												<input type="radio" class="custom-radio" name="payment" id="pay-cash" value="Оплата при отриманні" checked>
+												<label for="pay-cash">Оплата при отриманні</label>
+											</div>
+											<div>
+												<input type="radio" class="custom-radio" name="payment" id="pay-bank" value="Банківською картою">
+												<label for="pay-bank">Банківською картою</label>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="address">
+									<h3>Оберіть адресу доставки:</h3>
+									<form class="delivery-address" action="homepage.html" method="post">
+										<div>
+											<input type="radio" class="custom-radio" name="address" id="address-one" checked>
+											<label for="address-one">Шевченко Світлана
+											</label>
+											<label for="address-one">Місто КиЇв</label>
+											<label for="address-one">Градинська 11б, 85</label>
+											<label for="address-one">+38 068 564 77 99</label>
+										</div>
+				  					<div>
+											<input type="radio" class="custom-radio" name="address" id="address-two">
+											<label for="address-two">Шевченко Світлана</label>
+											<label for="address-two">Місто Харків</label>
+											<label for="address-two">Трінклера 18, 65</label>
+											<label for="address-two">+38 068 564 77 99</label>
+				  					</div>
+									</form>
+								</div>
 							</div>
 						</div>
-					</div>
-        </section>
-				<section class="basket-items">
+        	</section>
+					<section class="basket-items">
 					<h2 class="hidden">Перелік товарів</h2>
 					<ul class="scrollbar" id="wish-list">
 						<li>
@@ -246,8 +245,8 @@
 						<button type="button" name="button">Оформити</button>
 					</div>
 				</section>
+				</div>
 			</div>
-		</div>
 		</main>
 		<footer>
 			<section class="footer-quick-contacts">
