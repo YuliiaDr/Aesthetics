@@ -2265,8 +2265,8 @@ label::after+.filter-input:checked {
 /* ----------Personal Info Section*/
 
 .basket{
-  /* max-width: 880px; */
-  margin-left: 25.26%;
+  max-width: 880px;
+  /* margin-left: 25.26%; */
   /* margin-right: 28.9%; */
 }
 .basket h1{
@@ -2280,7 +2280,7 @@ label::after+.filter-input:checked {
 }
 .basket .basket-info{
   width: 877px;
-  margin: 0 auto 47px auto;
+  margin-bottom: 47px;
 }
 /* input#one,
 input#two,  */
