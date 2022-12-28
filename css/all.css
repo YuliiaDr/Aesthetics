@@ -2279,7 +2279,7 @@ label::after+.filter-input:checked {
 }
 .basket .basket-info{
   width: 877px;
-  margin-bottom: 47px;
+  margin: 0 auto 47px auto;
 }
 /* input#one,
 input#two,  */
@@ -2329,7 +2329,7 @@ input#two,  */
   position: absolute;
   top:0;
   right: 0;
-  margin-left: 386px;
+  /* margin-left: 386px; */
 }
 .order-radio#one+label::before {
   display: inline-block;
