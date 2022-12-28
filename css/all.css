@@ -308,6 +308,7 @@ background-position: center;
   display: block;
   max-width: 1123px;
   max-height: 804px;
+  min-width: 60vw;
   position: absolute;
   z-index: 1;
   right: 0;
@@ -321,6 +322,9 @@ background-position: center;
   display: block;
   overflow: hidden;
 }
+.first-view .layout{
+  width: 1074px;
+}
 
 .first-view .text{
   position: relative;
@@ -328,7 +332,7 @@ background-position: center;
   /* width: 55.93%; */
   max-height: 653px;
   margin-top: 75px;
-  margin-left: 21%;
+  /* margin-left: 21%; */
   text-align: left;
 }
 
