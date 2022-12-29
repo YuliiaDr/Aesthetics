@@ -704,9 +704,7 @@ background-position: center;
   color: var(--secondary-text-color);
 }
 .footer-main .footer-nav,
-.footer-main .footer-contacts
-/* .footer-main .conf-politics { */
-{
+.footer-main .footer-contacts{
   transition: all 400ms ease-in-out;
 }
 .footer-main .footer-nav li:hover,
@@ -714,8 +712,6 @@ background-position: center;
 .footer-main .footer-contacts a:hover {
   transform: scale(1.1);
 }
-
-
 .footer-main .payment-methods ul{
   display: flex;
   align-items: flex-end;
