@@ -3179,7 +3179,7 @@ content: url(../images/list_one_active.png);
   display: flex;
   flex-direction: column;
   gap: 5px;
-  height: 304px;
+  height: 303px;
   overflow-y: scroll;
 }
 .order-history-body li{
