@@ -312,10 +312,10 @@ background-position: center;
 .first-view .img-holder{
   display: block;
   overflow: hidden;
-  max-width: 1123px;
-  width: auto;
+  /* max-width: 1123px; */
+  width: 100%;
   /* width: 57%; */
-  height: auto;
+  height: 100%;
   position: absolute;
   z-index: 1;
   right: 0;
