@@ -307,7 +307,7 @@ background-position: center;
   align-items: center;
   overflow: hidden;
   width: 100%;
-  height: auto;
+  height: 100%;
   /* min-height: 804px; */
 }
 
@@ -315,9 +315,9 @@ background-position: center;
   display: block;
   overflow: hidden;
   width: auto;
-  width: 1123px;
+  max-width: 1123px;
   /* width: 57%; */
-  height: 804px;
+  height: 100%;
   position: absolute;
   z-index: 1;
   right: 0;
