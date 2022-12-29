@@ -315,7 +315,7 @@ background-position: center;
   /* max-width: 1123px; */
   width: 100%;
   /* width: 57%; */
-  height: 100%;
+  height: auto;
   position: absolute;
   z-index: 1;
   right: 0;
