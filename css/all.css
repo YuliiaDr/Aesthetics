@@ -334,12 +334,12 @@ background-position: center;
 .first-view .text-layout{
   width: 1074px;
   /* height: 804px; */
-  height: 100%;
-  margin: 0 auto;
+  /* height: 100%; */
+  margin: auto auto;
   display: flex;
   align-items: center;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  /* padding-top: 75px;
+  padding-bottom: 75px; */
 }
 
 .first-view .text{
