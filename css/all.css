@@ -2239,6 +2239,7 @@ label::after+.filter-input:checked {
   display: block;
   /* width: 100%; */
   width: 1920px;
+  height: 642px;
   max-width: 1920px;
   max-height: 642px;
   position: absolute;
