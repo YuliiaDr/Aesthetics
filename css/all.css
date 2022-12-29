@@ -2234,8 +2234,8 @@ label::after+.filter-input:checked {
 .gratitude .img-holder{
   display: block;
   /* max-width: 1123px; */
-  /* width: 58%; */
-  height: 642px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 1;
 }
