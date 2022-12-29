@@ -2234,14 +2234,14 @@ label::after+.filter-input:checked {
 .gratitude .img-holder{
   display: block;
   /* max-width: 1123px; */
-  width: 100%;
+  max-width: 1920px;
   height: 100%;
   position: absolute;
   z-index: 1;
 }
 
 .gratitude .img-holder img{
-  max-width: 1920px;
+  width: 100%;
   height: 100%;
   display: block;
   overflow: hidden;
