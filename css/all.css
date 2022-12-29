@@ -611,7 +611,7 @@ background-position: center;
 .footer-instagram,
 .footer-email,
 .footer-phone,
-.footer-location {
+.footer-location{
   width: 50px;
   height: 50px;
   transition: all 400ms ease-in-out;
@@ -704,11 +704,13 @@ background-position: center;
   color: var(--secondary-text-color);
 }
 .footer-main .footer-nav,
-.footer-main .footer-contacts{
+.footer-main .footer-contacts,
+.footer-main .conf-politics {
   transition: all 400ms ease-in-out;
 }
 .footer-main .footer-nav li:hover,
-.footer-main .footer-contacts li:hover{
+.footer-main .footer-contacts li:hover,
+.footer-main .conf-politics:hover {
   transform: scale(1.1);
 }
 
