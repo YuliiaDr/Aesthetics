@@ -353,6 +353,7 @@ background-position: center;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 92px; 
 }
 
 .first-view .text h2{
@@ -363,14 +364,14 @@ background-position: center;
   font-size: 60px;
   line-height: 1.17;
   color: var(--primary-text-color);
-  margin: 0 0 92px 0;
+  /* margin: 0 0 92px 0; */
 }
 
 .first-view .text p{
   max-width: 490px;
   line-height: 1.23;
   color: var(--primary-text-color);
-  margin: 0 0 100px 0;
+  /* margin: 0 0 100px 0; */
 }
 
 .first-view .catalogue-btn-container {
