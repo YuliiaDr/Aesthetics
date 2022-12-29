@@ -2235,7 +2235,7 @@ label::after+.filter-input:checked {
   display: block;
   /* max-width: 1123px; */
   /* width: 58%; */
-  max-height: 642px;
+  height: 642px;
   position: absolute;
   z-index: 1;
 }
@@ -2250,9 +2250,9 @@ label::after+.filter-input:checked {
 .gratitude .gratitude-text{
   position: relative;
   z-index: 2;
-  max-width: 749px;
-  max-height: 244px;
-  margin: 199px auto;
+  width: 749px;
+  height: 244px;
+  margin: auto auto;
   padding: 60px;
   color: var(--secondary-text-color);
   background-color: rgba(75, 96, 73, 0.3);
