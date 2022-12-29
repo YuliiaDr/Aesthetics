@@ -336,6 +336,8 @@ background-position: center;
   /* height: 804px; */
   height: 100%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .first-view .text{
