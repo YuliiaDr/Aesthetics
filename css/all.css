@@ -2235,7 +2235,7 @@ label::after+.filter-input:checked {
   display: block;
   width: 100%;
   /* max-width: 1920px; */
-  height: 100%;
+  height: 642px;
   position: absolute;
   z-index: 1;
 }
@@ -2252,7 +2252,7 @@ label::after+.filter-input:checked {
   z-index: 2;
   width: 749px;
   height: 244px;
-  margin: 119px auto;
+  margin: auto auto;
   padding: 60px;
   color: var(--secondary-text-color);
   background-color: rgba(75, 96, 73, 0.3);
