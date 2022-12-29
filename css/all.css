@@ -331,8 +331,8 @@ background-position: center;
 .first-view .text-layout{
   width: 1074px;
   max-height: 804px;
-  height: 100%;
-  margin: 0 auto 0 auto;
+  /* height: 100%; */
+  margin: 0 auto;
 }
 
 .first-view .text{
