@@ -338,6 +338,8 @@ background-position: center;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .first-view .text{
@@ -353,7 +355,7 @@ background-position: center;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 92px; 
+  gap: 92px;
 }
 
 .first-view .text h2{
