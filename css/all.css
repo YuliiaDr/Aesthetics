@@ -338,8 +338,8 @@ background-position: center;
   margin: auto auto;
   display: flex;
   align-items: center;
-  /* padding-top: 75px;
-  padding-bottom: 75px; */
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .first-view .text{
