@@ -2241,7 +2241,7 @@ label::after+.filter-input:checked {
 }
 
 .gratitude .img-holder img{
-  width: 100%;
+  max-width: 1920px;
   height: 100%;
   display: block;
   overflow: hidden;
