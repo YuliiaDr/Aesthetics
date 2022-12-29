@@ -312,7 +312,7 @@ background-position: center;
   display: block;
   overflow: hidden;
   max-width: 1123px;
-  height: auto;
+  height: 100%;
   /* width: 57%; */
   /* max-height: 804px; */
   position: absolute;
@@ -331,7 +331,7 @@ background-position: center;
 .first-view .text-layout{
   width: 1074px;
   max-height: 804px;
-  /* height: 100%; */
+  height: 100%;
   margin: 0 auto;
 }
 
