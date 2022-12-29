@@ -2577,6 +2577,9 @@ content: url(../images/list_one_active.png);
   width: 862px;
   height: 98px;
 }
+.basket .basket-items .scrollbar li:first-of-type{
+  border-top: none;
+}
 .basket .basket-items .scrollbar li:last-of-type{
   border-bottom: 0.5px solid var(--primary-accent-color);
 }
