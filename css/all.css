@@ -310,7 +310,7 @@ background-position: center;
 .first-view .img-holder{
   display: block
   overflow: hidden;
-  max-width: 1123px;
+  min-width: 57%;
   /* width: 57%; */
   max-height: 804px;
   position: absolute;
