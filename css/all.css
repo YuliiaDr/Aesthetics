@@ -2566,7 +2566,7 @@ content: url(../images/list_one_active.png);
   padding-top: 3.5px;
   padding-bottom: 3.5px;
   /* padding-right: 30px; */
-  height: 298px;
+  height: 293px;
   width: 916px;
 }
 .basket .basket-items .scrollbar li{
@@ -3179,7 +3179,7 @@ content: url(../images/list_one_active.png);
   display: flex;
   flex-direction: column;
   gap: 5px;
-  height: 305px;
+  height: 304px;
   overflow-y: scroll;
 }
 .order-history-body li{
