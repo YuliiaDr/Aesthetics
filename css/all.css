@@ -2230,7 +2230,7 @@ label::after+.filter-input:checked {
 .gratitude{
   margin: 17px 0 18px 0;
   background: url("../images/img_gratitude_2.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
   width: 1920px;
   height: 642px;
   /* display: flex;
