@@ -12,7 +12,7 @@
 	<script src="js/main.js"></script>
 	<title>Catalogue-AESTHETICS</title>
 </head>
-<body>
+<body onload="createItemsCatalogue(event)">
 	<div id="wrapper">
 		<header>
 			<div class="layout">
@@ -261,236 +261,239 @@
                   <li><a class="dropdown-item" href="#">За ціною: від нищої </a></li>
                 </ul>
               </div>
-              <ul class="catalogue-cards">
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Флюїд для обличчя  для сухої шкіри
-                  </h4>
-                  <p>630 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_antiox_cream.png" alt="Antioxidant face cream" class="item-pic" id="product-2">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Антиоксидантний крем для обличчя
-                  </h4>
-                  <p>850 грн</p>
-                  <div class="item-extra">
-                    <a href="./product/2.html">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_gel_problem.png" alt="Washing gel for problematic skin" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Гель для вмивання для проблемної шкіри
-                  </h4>
-                  <p>590 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Зволожуюча сироватка для нормальної шкіри
-                  </h4>
-                  <p>480 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_hydr_cream_dry.png" alt="Hydrating cream for dry skin" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Зволожуючий крем для сухої шкіри
-                  </h4>
-                  <p>830 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_tonic_norm.png" alt="Face tonic" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Тонік для обличчя для нормальної шкіри
-                  </h4>
-                  <p>450 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_foam_clean.png" alt="Face-cleaning foam" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Пінка для очищенняшкіри обличчя
-                  </h4>
-                  <p>560 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_set_day_night.png" alt="Set of night and day creams" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Набір
-                    <br>
-										Денний та нічний крем
-                  </h4>
-                  <p>1230 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Матуючий денний крем для жирної шкіри
-                  </h4>
-                  <p>680 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Нічний антивіковий крем для сухої шкіри
-                  </h4>
-                  <p>860 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_makeup_remover_gel.png" alt="Gel for makeup removing" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Гель для зняття макіяжу
-                  </h4>
-                  <p>730 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Антивікова сироватка для зони навколо очей
-                  </h4>
-                  <p>900 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_lotion_norm_comb.png" alt="Lotion for normal and combinated skin" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Лосьон для нормальної та комбінованої шкіри
-                  </h4>
-                  <p>1050 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_scrub_sens.png" alt="Scrub for sensitive skin" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Скраб для чутливої шкіри
-                  </h4>
-                  <p>890 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img-holder">
-                    <img src="./images/catalogue_gel_deep_clean.png" alt="Gel for deep cleaning" class="item-pic">
-                    <button type="button" name="to-favorite" class="item-icon"></button>
-                  </div>
-                  <h4>Гель для глубокого очищення шкіри обличчя
-                  </h4>
-                  <p>890 грн</p>
-                  <div class="item-extra">
-                    <a href="#">Детальніше</a>
-                    <div class="tobasket-btn-container">
-                      <button type="button" name="button">В кошик</button>
-          					</div>
-                  </div>
-                </li>
-              </ul>
-              <div class="show-more">
+								<ul class="catalogue-cards" id= "catalogue-cards">
+									<!-- <li>
+										<div class="img-holder">
+											<img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>
+											Флюїд для обличчя  для сухої шкіри
+										</h4>
+										<p>
+											630 грн
+										</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_antiox_cream.png" alt="Antioxidant face cream" class="item-pic" id="product-2">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Антиоксидантний крем для обличчя
+										</h4>
+										<p>850 грн</p>
+										<div class="item-extra">
+											<a href="./product/2.html">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_gel_problem.png" alt="Washing gel for problematic skin" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Гель для вмивання для проблемної шкіри
+										</h4>
+										<p>590 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Зволожуюча сироватка для нормальної шкіри
+										</h4>
+										<p>480 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_hydr_cream_dry.png" alt="Hydrating cream for dry skin" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Зволожуючий крем для сухої шкіри
+										</h4>
+										<p>830 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_tonic_norm.png" alt="Face tonic" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Тонік для обличчя для нормальної шкіри
+										</h4>
+										<p>450 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_foam_clean.png" alt="Face-cleaning foam" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Пінка для очищення шкіри обличчя
+										</h4>
+										<p>560 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_set_day_night.png" alt="Set of night and day creams" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Набір
+											<br>
+											Денний та нічний крем
+										</h4>
+										<p>1230 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Матуючий денний крем для жирної шкіри
+										</h4>
+										<p>680 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Нічний антивіковий крем для сухої шкіри
+										</h4>
+										<p>860 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_makeup_remover_gel.png" alt="Gel for makeup removing" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Гель для зняття макіяжу
+										</h4>
+										<p>730 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Антивікова сироватка для зони навколо очей
+										</h4>
+										<p>900 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_lotion_norm_comb.png" alt="Lotion for normal and combinated skin" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Лосьон для нормальної та комбінованої шкіри
+										</h4>
+										<p>1050 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_scrub_sens.png" alt="Scrub for sensitive skin" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Скраб для чутливої шкіри
+										</h4>
+										<p>890 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="img-holder">
+											<img src="./images/catalogue_gel_deep_clean.png" alt="Gel for deep cleaning" class="item-pic">
+											<button type="button" name="to-favorite" class="item-icon"></button>
+										</div>
+										<h4>Гель для глубокого очищення шкіри обличчя
+										</h4>
+										<p>890 грн</p>
+										<div class="item-extra">
+											<a href="#">Детальніше</a>
+											<div class="tobasket-btn-container">
+												<button type="button" name="button">В кошик</button>
+											</div>
+										</div>
+									</li> -->
+								</ul>
+              <div class="show-more" id="show-more-catalogue">
                 <a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
               </div>
             </section>
