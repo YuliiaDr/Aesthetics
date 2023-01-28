@@ -1853,7 +1853,7 @@ footer .payment-methods .apay:hover{
   margin-bottom: 5px;
 }
 .contacts .contacts-text .initial{
-  display: block;
+  display: none;
 }
 .contacts .contacts-text .initial p{
   margin-bottom: 5px;
@@ -1917,7 +1917,7 @@ footer .payment-methods .apay:hover{
   border: none;
 }
 .contacts button:hover {
-  transform: translateY(-9px) translateX(7px);
+  transform: translateY(-9px) translateX(7.5px);
 }
 .contacts button:focus {
   outline: none;
@@ -1945,6 +1945,9 @@ footer .payment-methods .apay:hover{
   white-space: nowrap;
 }
 .contacts .active{
+  display: block;
+}
+.contacts .contacts-text .visible{
   display: block;
 }
 

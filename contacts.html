@@ -84,7 +84,7 @@
             <img src="./images/contact_image.png" alt="Dispenser on the background of the cup">
           </div>
           <div class="contacts-text">
-            <div class="initial">
+            <div class="initial visible">
               <h3>
                 Режим роботи:
               </h3>
@@ -102,13 +102,14 @@
                   <a href="tel:+380956789900">+38 (095) 678 99 00</a>
                 </li>
               </ul>
-              <form class="contact-form" action="#" method="post">
+							<form class="contact-form" action="#" method="post">
                 <div class="contact-input">
-                  <input type="text" placeholder="Ваше ім’я" name="name" required autofocus>
-                  <input type="tel" placeholder="Номер телефону" name="number" required>
+                  <input type="text" placeholder="Ваше ім’я" name="name" id="contacts-name" required autofocus>
+                  <input type="tel" placeholder="Номер телефону" name="number" id="contacts-tel" required mask
+									>
                 </div>
                 <div class="callback-btn-container">
-                  <button type="button" name="button">Передзвоніть</button>
+                  <button type="button" name="button" onclick = 'validCallback(event)'>Передзвоніть</button>
                 </div>
               </form>
             </div>

@@ -180,3 +180,43 @@ function createItemsCatalogue(event) {
   )
 }
 
+
+// ---------------------------- Contacts Callback
+
+function validCallback(event){
+  event.preventDefault();
+  let name = document.querySelector('#contacts-name').value;
+  let nameRegex = /^\p{L}+$/u;
+  let phone = document.querySelector('#contacts-tel').value;
+  let phoneRegex = /^([+]\d{2})?\d{10}$/|/^([+]\d{2}[ ])?\d{10}$/;
+  // let phoneRegex = /^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$/;
+  if (name.match(nameRegex) === null || phone.match(phoneRegex) === null){
+    alert(`Будь ласка, перевірте коректність введених даних.`);
+  } else {
+    contactsFeedback();
+  }
+}
+  
+function contactsFeedback(){
+  let initialElem = document.querySelector(".initial");
+  let secondaryElem = document.querySelector(".secondary");
+  initialElem.style.display = 'none';
+  secondaryElem.style.display = 'block';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
