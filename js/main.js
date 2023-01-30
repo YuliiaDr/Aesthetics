@@ -206,7 +206,6 @@ function contactsFeedback(){
 // ---------------------------- Slider
 
 function showSlides(event){
-  // let sliderForm = document.querySelector('#slider-form');
   let slideBtn1 = document.querySelector('#newProductRadioBtn1');
   let slideBtn2 = document.querySelector('#newProductRadioBtn2');
   let slideBtn3 = document.querySelector('#newProductRadioBtn3');
@@ -237,19 +236,6 @@ function showSlides(event){
   }
 }
 
-// function showSlides(event){
-//   event.preventDefault();
-//   let sliderForm = document.querySelector('#slider-form');
-//   if(sliderForm){
-//     sliderForm.addEventListener('click', (event) => {
-//       if(event.target.tagName = 'input'){
-//         let activeBtn = querySelector('input:checked')
-//         console.log(activeBtn);
-//       }
-//     }
-//     )
-//   }
-// }
 
 
 
