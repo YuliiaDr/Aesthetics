@@ -180,7 +180,6 @@ function createItemsCatalogue(event) {
   )
 }
 
-
 // ---------------------------- Contacts Callback
 
 function validCallback(event){
@@ -204,7 +203,53 @@ function contactsFeedback(){
   secondaryElem.style.display = 'block';
 }
 
+// ---------------------------- Slider
 
+function showSlides(event){
+  // let sliderForm = document.querySelector('#slider-form');
+  let slideBtn1 = document.querySelector('#newProductRadioBtn1');
+  let slideBtn2 = document.querySelector('#newProductRadioBtn2');
+  let slideBtn3 = document.querySelector('#newProductRadioBtn3');
+  let imgSlide1 = document.querySelector('#slide1');
+  let imgSlide2 = document.querySelector('#slide2');
+  let imgSlide3 = document.querySelector('#slide3');
+  if(event.target == slideBtn1) {
+    slideBtn2.removeAttribute('checked', 'checked');
+    slideBtn3.removeAttribute('checked', 'checked');
+    slideBtn1.setAttribute('checked', 'checked');
+    imgSlide3.style.display = "none";
+    imgSlide2.style.display = "none";
+    imgSlide1.style.display = "block";
+  } else if (event.target == slideBtn2) {
+    slideBtn1.removeAttribute('checked', 'checked');
+    slideBtn3.removeAttribute('checked', 'checked');
+    slideBtn2.setAttribute('checked', 'checked');
+    imgSlide3.style.display = "none";
+    imgSlide1.style.display = "none";
+    imgSlide2.style.display = "block";
+  } else{
+    slideBtn2.removeAttribute('checked', 'checked');
+    slideBtn1.removeAttribute('checked', 'checked');
+    slideBtn3.setAttribute('checked', 'checked');
+    imgSlide2.style.display = "none";
+    imgSlide1.style.display = "none";
+    imgSlide3.style.display = "block";
+  }
+}
+
+// function showSlides(event){
+//   event.preventDefault();
+//   let sliderForm = document.querySelector('#slider-form');
+//   if(sliderForm){
+//     sliderForm.addEventListener('click', (event) => {
+//       if(event.target.tagName = 'input'){
+//         let activeBtn = querySelector('input:checked')
+//         console.log(activeBtn);
+//       }
+//     }
+//     )
+//   }
+// }
 
 
 
