@@ -461,6 +461,7 @@ header .nav-basket a:hover{
   position: relative;
   z-index: 1;
   max-width: 1920px;
+  max-height: 1060px;
   /* height: 100%; */
 }
 .novelty .img-holder img{
@@ -1857,17 +1858,20 @@ footer .payment-methods .apay:hover{
 .contacts .contacts-text .initial h3{
   font-weight: 400;
   font-size: 26px;
-  line-height: 32px;
-  margin-bottom: 5px;
+  line-height: 1.23; /* 32px/26 */
+  margin-bottom: 6px;
 }
 .contacts .contacts-text .initial{
   display: none;
 }
 .contacts .contacts-text .initial p{
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 .contacts .contacts-text .initial ul{
-  margin-top: 25px;
+  margin-top: 30px;
+}
+.contacts .contacts-text .initial ul li:first-of-type{
+  margin-bottom: 12px;
 }
 .contacts .contacts-text .initial ul::after{
   content: "";
