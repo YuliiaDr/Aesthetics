@@ -14,7 +14,7 @@
   <script src="../js/main.js"></script>
 	<title>Antioxidant Face Cream-AESTHETICS</title>
 </head>
-<body>
+<body class="antioxidant-face-cream">
 	<div id="wrapper">
 		<header>
 			<div class="layout">
@@ -28,7 +28,7 @@
 							<a href="../catalogue.html" target="_blank" rel="noopener noreferrer">Каталог</a>
 						</li>
 						<li>
-              <a href="../delivery_payment.html" target="_blank" rel="noopener noreferrer">Доставка та оплата</a>
+							<a href="../delivery_payment.html" target="_blank" rel="noopener noreferrer">Доставка та оплата</a>
 						</li>
 						<li>
 							<a href="../blog/acne_stress.html" target="_blank" rel="noopener noreferrer">Блог</a>
@@ -51,16 +51,36 @@
 						<a href="../basket.html" target="_blank" rel="noopener noreferrer">
 						</a>
 					</li>
+					<li class="burger-menu">
+						<button class="burger-btn-extra"><img src="../images/burger-btn.png" alt="burger menu button"></button>
+						<ul class="menu">
+							<li>
+								<a href="../catalogue.html" target="_blank" rel="noopener noreferrer">Каталог</a>
+							</li>
+							<li>
+								<a href="../delivery_payment.html" target="_blank" rel="noopener noreferrer">Доставка та оплата</a>
+							</li>
+							<li>
+								<a href="../blog/acne_stress.html" target="_blank" rel="noopener noreferrer">Блог</a>
+							</li>
+							<li>
+								<a href="../contacts.html" target="_blank" rel="noopener noreferrer">Контакти</a>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</header>
 		<main>
 			<div id="content">
         <div class="layout">
-          <div class="arrow-back">
-            <a href="../catalogue.html#product-2"><img src="../images/icon_arrow_left.png" alt="Go back arrow"></a>
+          <div class="product-icons">
+            <div class="arrow-back">
+              <a href="../catalogue.html#product-2"><img src="../images/icon_arrow_left.png" alt="Go back arrow"></a>
+            </div>
+            <button type="button" name="to-favorite" class="item-icon"></button>
           </div>
-          <section class="product-info layout">
+          <section class="product-info">
             <h2 class="hidden">Product Information</h2>
             <div class="description-main">
               <div class="img-holder">
@@ -70,6 +90,9 @@
                 <h3>
                   Антиоксидантний крем для обличчя
                 </h3>
+                <p class="price-mob">
+                  850 грн
+                </p>
                 <div class="star-rating">
                   <input type="radio" name="stars" id="star-a" value="5">
                   <label for="star-a"></label>
@@ -101,121 +124,220 @@
             </div>
             <div class="description-extra tabs">
               <div class="tab ingridients">
-               <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-               <label for="tab-1" class="tab-label">Склад</label>
-               <div class="tab-content">
-                 <p>
-                   Aqua (вода), Grape Seed (Vitis Vinifera) Oil (олія виноградної кісточки), Triolein, Glyceryl Dioleate, Polyglyceryl-3 Cetyl Ether (емульгатор з оливкової олії), Butyrospermum Parkii (Shea) Butter (баттер ши (каріте)), Cetearyl Alcohol (цетилстеариловий спирт), Complex of phytoе strogens: Glycine Soja Extract, Trifolium Pratense Extract, Tamarindus Indica Fruit Extract, Medicago Sativa Extract, Glycyrrhiza glabra Root Extract, Vitis Vinifera Leaf Extract, Humulus Lupulus Cone Extract (комплекс фітоестрогенів: екстракти сої, конюшини, фініка, люцерни, солодки, червоного винограду, хмелю), Optiphen BD* (харчовий консервант), Limnanthes Alba (Meadowfoam) Seed Oil (олія пінника), Сhaulmoogra (Hydnocarpus laurifolia) Seed Oil (чаульмугри олія), Carapa Guianensis Seed Oil (олія андироби), Pinus Sylvestris Bark Extract (екстракт швейцарської кам’яної сосни), Lactose, Milk Protein (молочні поліпептиди), Vitamin E (Вітамін Е), Blend of Essential Oils: Ylang Ylang (Cananga odorata) Flower Oil, Neroli (Citrus aurantium var. amara) Essential Oil, Patchouli (Pogostemon Cablin Blanco) Essential Oil, Cinnamon Bark (Cinnamomum verum) Essential Oil, Grapefruite (Citrus paradisi) Essential Oil, European mandarin (Citrus mandurensis) Essential Oil, Citrus Aurantium Dulcis Peel Extract, Rosa centifolia Flower Extract (композиція натуральних ефірних олій: іланг – ілангу, неролі, пачулі, кориці, грейпфрута, мандарина, апельсина, абсолют троянди), Camellia Sinensis Leaf Extract (екстракт чаю матча), Beta Glucan (бета-глюкан), (Coenzyme Q10) Ubiquinone (Коензим Q10).
-                   <br>
-									 *Сертифікат Ecocert.
-                </p>
+                <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                <label for="tab-1" class="tab-label">Склад</label>
+              <div class="tab-content">
+                <p>
+                  Aqua (вода), Grape Seed (Vitis Vinifera) Oil (олія виноградної кісточки), Triolein, Glyceryl Dioleate, Polyglyceryl-3 Cetyl Ether (емульгатор з оливкової олії), Butyrospermum Parkii (Shea) Butter (баттер ши (каріте)), Cetearyl Alcohol (цетилстеариловий спирт), Complex of phytoе strogens: Glycine Soja Extract, Trifolium Pratense Extract, Tamarindus Indica Fruit Extract, Medicago Sativa Extract, Glycyrrhiza glabra Root Extract, Vitis Vinifera Leaf Extract, Humulus Lupulus Cone Extract (комплекс фітоестрогенів: екстракти сої, конюшини, фініка, люцерни, солодки, червоного винограду, хмелю), Optiphen BD* (харчовий консервант), Limnanthes Alba (Meadowfoam) Seed Oil (олія пінника), Сhaulmoogra (Hydnocarpus laurifolia) Seed Oil (чаульмугри олія), Carapa Guianensis Seed Oil (олія андироби), Pinus Sylvestris Bark Extract (екстракт швейцарської кам’яної сосни), Lactose, Milk Protein (молочні поліпептиди), Vitamin E (Вітамін Е), Blend of Essential Oils: Ylang Ylang (Cananga odorata) Flower Oil, Neroli (Citrus aurantium var. amara) Essential Oil, Patchouli (Pogostemon Cablin Blanco) Essential Oil, Cinnamon Bark (Cinnamomum verum) Essential Oil, Grapefruite (Citrus paradisi) Essential Oil, European mandarin (Citrus mandurensis) Essential Oil, Citrus Aurantium Dulcis Peel Extract, Rosa centifolia Flower Extract (композиція натуральних ефірних олій: іланг – ілангу, неролі, пачулі, кориці, грейпфрута, мандарина, апельсина, абсолют троянди), Camellia Sinensis Leaf Extract (екстракт чаю матча), Beta Glucan (бета-глюкан), (Coenzyme Q10) Ubiquinone (Коензим Q10).
+                  <br>
+                  *Сертифікат Ecocert.
+                  </p>
               </div>
-             </div>
-             <div class="tab reviews">
-               <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-               <label for="tab-2" class="tab-label">Відгуки</label>
-               <div class="tab-content">
-                 <button type="button" name="leave-review-btn">Залишити відгук</button>
-                 <div class="review-description">
-                   <div class="reviewer">
-                     <h3>Катерина</h3>
-                     <p>5.08.2022</p>
-                   </div>
-                   <div class="star-rating-1">
-                     <input type="radio" name="star-1" id="star-f" value="5">
-                     <label for="star-f"></label>
-                     <input type="radio" name="star-1" id="star-g" value="4">
-                     <label for="star-g"></label>
-                     <input type="radio" name="star-1" id="star-h" value="3">
-                     <label for="star-h"></label>
-                     <input type="radio" name="star-1" id="star-i" value="2">
-                     <label for="star-i"></label>
-                     <input type="radio" name="star-1" id="star-j" value="1">
-                     <label for="star-j"></label>
-                   </div>
-                   <p class="text-review">
-                     Цей крем замовляю вдруге, дуже задоволена. Дякую за швидку доставку!
+              </div>
+              <div class="tab reviews">
+                <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                <label for="tab-2" class="tab-label">Відгуки</label>
+                <div class="tab-content">
+                  <button type="button" name="leave-review-btn">Залишити відгук</button>
+                  <div class="review-description">
+                    <div class="reviewer">
+                      <h3>Катерина</h3>
+                      <p>5.08.2022</p>
+                    </div>
+                    <div class="star-rating-1">
+                      <input type="radio" name="star-1" id="star-f" value="5">
+                      <label for="star-f"></label>
+                      <input type="radio" name="star-1" id="star-g" value="4">
+                      <label for="star-g"></label>
+                      <input type="radio" name="star-1" id="star-h" value="3">
+                      <label for="star-h"></label>
+                      <input type="radio" name="star-1" id="star-i" value="2">
+                      <label for="star-i"></label>
+                      <input type="radio" name="star-1" id="star-j" value="1">
+                      <label for="star-j"></label>
+                    </div>
+                    <p class="text-review">
+                      Цей крем замовляю вдруге, дуже задоволена. Дякую за швидку доставку!
+                    </p>
+                  </div>
+                  <div class="review-description">
+                    <div class="reviewer">
+                      <h3>Поліна</h3>
+                      <p>3.08.2022</p>
+                    </div>
+                    <div class="star-rating-2">
+                      <input type="radio" name="star-2" id="star-k" value="5">
+                      <label for="star-k"></label>
+                      <input type="radio" name="star-2" id="star-l" value="4">
+                      <label for="star-l"></label>
+                      <input type="radio" name="star-2" id="star-m" value="3">
+                      <label for="star-m"></label>
+                      <input type="radio" name="star-2" id="star-n" value="2">
+                      <label for="star-n"></label>
+                      <input type="radio" name="star-2" id="star-o" value="1">
+                      <label for="star-o"></label>
+                    </div>
+                    <p class="text-review">
+                      Товар дуже якісний, крем не залишає липку плівку. Дякую!
+                    </p>
+                  </div>
+                  <div class="review-description">
+                    <div class="reviewer">
+                      <h3>Олена</h3>
+                      <p>28.07.2022</p>
+                    </div>
+                    <div class="star-rating-3">
+                      <input type="radio" name="star-3" id="star-p" value="5">
+                      <label for="star-p"></label>
+                      <input type="radio" name="star-3" id="star-q" value="4">
+                      <label for="star-q"></label>
+                      <input type="radio" name="star-3" id="star-r" value="3">
+                      <label for="star-r"></label>
+                      <input type="radio" name="star-3" id="star-s" value="2">
+                      <label for="star-s"></label>
+                      <input type="radio" name="star-3" id="star-t" value="1">
+                      <label for="star-t"></label>
+                    </div>
+                    <p class="text-review">
+                      Почитала відгуки і вирішила спробувати цей засіб. Я дуже вдячна магазину за такий якісний продукт!
+                    </p>
+                  </div>
+                  <div class="show-more">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-wrapper">
+              <div class="tab-mobile">
+                <input name="css-tabs" id="tab-3" checked class="tab-switch">
+                <label for="tab-3" class="tab-label">Склад</label>
+              <div class="tab-content-mobile">
+                <p>
+                  Aqua (вода), Grape Seed (Vitis Vinifera) Oil (олія виноградної кісточки), Triolein, Glyceryl Dioleate, Polyglyceryl-3 Cetyl Ether (емульгатор з оливкової олії), Butyrospermum Parkii (Shea) Butter (баттер ши (каріте)), Cetearyl Alcohol (цетилстеариловий спирт), Complex of phytoе strogens: Glycine Soja Extract, Trifolium Pratense Extract, Tamarindus Indica Fruit Extract, Medicago Sativa Extract, Glycyrrhiza glabra Root Extract, Vitis Vinifera Leaf Extract, Humulus Lupulus Cone Extract (комплекс фітоестрогенів: екстракти сої, конюшини, фініка, люцерни, солодки, червоного винограду, хмелю), Optiphen BD* (харчовий консервант), Limnanthes Alba (Meadowfoam) Seed Oil (олія пінника), Сhaulmoogra (Hydnocarpus laurifolia) Seed Oil (чаульмугри олія), Carapa Guianensis Seed Oil (олія андироби), Pinus Sylvestris Bark Extract (екстракт швейцарської кам’яної сосни), Lactose, Milk Protein (молочні поліпептиди), Vitamin E (Вітамін Е), Blend of Essential Oils: Ylang Ylang (Cananga odorata) Flower Oil, Neroli (Citrus aurantium var. amara) Essential Oil, Patchouli (Pogostemon Cablin Blanco) Essential Oil, Cinnamon Bark (Cinnamomum verum) Essential Oil, Grapefruite (Citrus paradisi) Essential Oil, European mandarin (Citrus mandurensis) Essential Oil, Citrus Aurantium Dulcis Peel Extract, Rosa centifolia Flower Extract (композиція натуральних ефірних олій: іланг – ілангу, неролі, пачулі, кориці, грейпфрута, мандарина, апельсина, абсолют троянди), Camellia Sinensis Leaf Extract (екстракт чаю матча), Beta Glucan (бета-глюкан), (Coenzyme Q10) Ubiquinone (Коензим Q10).
+                  <br>
+                  *Сертифікат Ecocert.
                   </p>
-                 </div>
-                 <div class="review-description">
-                   <div class="reviewer">
-                     <h3>Поліна</h3>
-                     <p>3.08.2022</p>
-                   </div>
-									 <div class="star-rating-2">
-                     <input type="radio" name="star-2" id="star-k" value="5">
-                     <label for="star-k"></label>
-                     <input type="radio" name="star-2" id="star-l" value="4">
-                     <label for="star-l"></label>
-                     <input type="radio" name="star-2" id="star-m" value="3">
-                     <label for="star-m"></label>
-                     <input type="radio" name="star-2" id="star-n" value="2">
-                     <label for="star-n"></label>
-                     <input type="radio" name="star-2" id="star-o" value="1">
-                     <label for="star-o"></label>
-                   </div>
-                   <p class="text-review">
-                     Товар дуже якісний, крем не залишає липку плівку. Дякую!
-                  </p>
-                 </div>
-                 <div class="review-description">
-                   <div class="reviewer">
-                     <h3>Олена</h3>
-                     <p>28.07.2022</p>
-                   </div>
-                   <div class="star-rating-3">
-                     <input type="radio" name="star-3" id="star-p" value="5">
-                     <label for="star-p"></label>
-                     <input type="radio" name="star-3" id="star-q" value="4">
-                     <label for="star-q"></label>
-                     <input type="radio" name="star-3" id="star-r" value="3">
-                     <label for="star-r"></label>
-                     <input type="radio" name="star-3" id="star-s" value="2">
-                     <label for="star-s"></label>
-                     <input type="radio" name="star-3" id="star-t" value="1">
-                     <label for="star-t"></label>
-                   </div>
-                   <p class="text-review">
-                     Почитала відгуки і вирішила спробувати цей засіб. Я дуже вдячна магазину за такий якісний продукт!
-                  </p>
-                 </div>
-                 <div class="show-more">
-                   <a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
-                 </div>
-               </div>
-             </div>
+              </div>
+              </div>
+              <div class="tab-mobile">
+                <input name="css-tabs" id="tab-4" class="tab-switch">
+                <label for="tab-4" class="tab-label">Відгуки</label>
+                <div class="tab-content-mobile">
+                  <button type="button" name="leave-review-btn">Залишити відгук</button>
+                  <div class="review-description">
+                    <div class="reviewer">
+                      <h3>Катерина</h3>
+                      <p>5.08.2022</p>
+                    </div>
+                    <div class="star-rating-22">
+                      <input type="radio" name="star-1" id="star-111" value="5">
+                      <label for="star-111"></label>
+                      <input type="radio" name="star-1" id="star-112" value="4">
+                      <label for="star112"></label>
+                      <input type="radio" name="star-1" id="star-113" value="3">
+                      <label for="star-113"></label>
+                      <input type="radio" name="star-1" id="star-114" value="2">
+                      <label for="star-114"></label>
+                      <input type="radio" name="star-1" id="star-115" value="1">
+                      <label for="star-115"></label>
+                    </div>
+                    <p class="text-review">
+                      Цей крем замовляю вдруге, дуже задоволена. Дякую за швидку доставку!
+                    </p>
+                  </div>
+                  <div class="review-description">
+                    <div class="reviewer">
+                      <h3>Поліна</h3>
+                      <p>3.08.2022</p>
+                    </div>
+                    <div class="star-rating-23">
+                      <input type="radio" name="star-2" id="star-116" value="5">
+                      <label for="star-116"></label>
+                      <input type="radio" name="star-2" id="star-117" value="4">
+                      <label for="star-117"></label>
+                      <input type="radio" name="star-2" id="star-118" value="3">
+                      <label for="star-118"></label>
+                      <input type="radio" name="star-2" id="star-119" value="2">
+                      <label for="star-119"></label>
+                      <input type="radio" name="star-2" id="star-120" value="1">
+                      <label for="star-120"></label>
+                    </div>
+                    <p class="text-review">
+                      Товар дуже якісний, крем не залишає липку плівку. Дякую!
+                    </p>
+                  </div>
+                  <div class="review-description">
+                    <div class="reviewer">
+                      <h3>Олена</h3>
+                      <p>28.07.2022</p>
+                    </div>
+                    <div class="star-rating-24">
+                      <input type="radio" name="star-3" id="star-121" value="5">
+                      <label for="star-121"></label>
+                      <input type="radio" name="star-3" id="star-122" value="4">
+                      <label for="star-122"></label>
+                      <input type="radio" name="star-3" id="star-123" value="3">
+                      <label for="star-123"></label>
+                      <input type="radio" name="star-3" id="star-124" value="2">
+                      <label for="star-124"></label>
+                      <input type="radio" name="star-3" id="star-125" value="1">
+                      <label for="star-125"></label>
+                    </div>
+                    <p class="text-review">
+                      Почитала відгуки і вирішила спробувати цей засіб. Я дуже вдячна магазину за такий якісний продукт!
+                    </p>
+                  </div>
+                  <div class="show-more">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
           <section class="related-items">
-            <div class="layout">
-              <h2 class="hidden">Схожі товари</h2>
-              <h3>Схожі товари:</h3>
-              <ul class="catalogue-cards">
+            <h2 class="hidden">Схожі товари</h2>
+            <h3>Схожі товари:</h3>
+            <div class="slider-container">
+              <ul class="catalogue-cards" id="catalogue-slider">
                 <li>
                   <div class="img-holder">
                     <img src="../images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream" class="item-pic">
+                    <button type='button' name='to-favorite' class='item-icon'></button>
                   </div>
                   <h4>Матуючий денний крем для жирної шкіри
                   </h4>
-                  <p>680 грн</p>
+                  <div class="mobile-extra">
+                    <button type='button' name='button' class='basket-icon'><img src='../images/icon_basket.png'></img></button>
+                    <p>680 грн</p>
+                  </div>
                 </li>
                 <li>
                   <div class="img-holder">
                     <img src="../images/catalogue_hydr_cream_dry.png" alt="Hydrating cream for dry skin" class="item-pic">
+                    <button type='button' name='to-favorite' class='item-icon'></button>
                   </div>
                   <h4>Зволожуючий крем для сухої шкіри
                   </h4>
-                  <p>830 грн</p>
+                  <div class="mobile-extra">
+                    <button type='button' name='button' class='basket-icon'><img src='../images/icon_basket.png'></img></button>
+                    <p>830 грн</p>
+                  </div>
                 </li>
                 <li>
                   <div class="img-holder">
                     <img src="../images/catalogue_night_antiage_cream_dry.png" alt="Нічний антивіковий крем для сухої шкіри" class="item-pic">
+                    <button type='button' name='to-favorite' class='item-icon'></button>
                   </div>
                   <h4>Нічний антивіковий крем для сухої шкіри
                   </h4>
-                  <p>860 грн</p>
+                  <div class="mobile-extra">
+                    <button type='button' name='button' class='basket-icon'><img src='../images/icon_basket.png'></img></button>
+                    <p>860 грн</p>
+                  </div>
                 </li>
               </ul>
+              <div class="slider-dots"></div>
             </div>
           </section>
         </div>
@@ -230,7 +352,7 @@
 					<ul>
 						<li class="footer-instagram">
 							<a href="#" target="_blank" rel="noopener noreferrer">
-						  </a>
+							</a>
 						</li>
 						<li class="footer-email">
 							<a href="#" target="_blank" rel="noopener noreferrer">
@@ -255,27 +377,25 @@
 					<div class="footer-logo">
 						<a href="../index.html" target="_blank" rel="noopener noreferrer">
 						<img src="../images/logo_3.png" alt="logo" width="232">
-					  </a>
+						</a>
 					</div>
 					<div class="footer-nav">
 						<ul>
 							<li>
-								<a href="../catalogue.html" target="-_blank" rel="noopener noreferrer">
+								<a href="../catalogue.html" target="_blank" rel="noopener noreferrer">
 									Каталог
 								</a>
 							</li>
 							<li>
-								<a href="../delivery_payment.html" target="-_blank" rel="noopener noreferrer">
+								<a href="../delivery_payment.html" target="_blank" rel="noopener noreferrer">
 									Доставка та оплата
 								</a>
 							</li>
 							<li>
-								<a href="../blog/acne_stress.html" target="-_blank" rel="noopener noreferrer">
-									Блог
-								</a>
+								<a href="../blog/acne_stress.html" target="_blank" rel="noopener noreferrer">Блог</a>
 							</li>
 							<li>
-								<a href="../contacts.html" target="-_blank" rel="noopener noreferrer">
+								<a href="../contacts.html" target="_blank" rel="noopener noreferrer">
 									Контакти
 								</a>
 							</li>
@@ -296,15 +416,24 @@
 					</div>
 					<div class="footer-last">
 						<ul class="footer-contacts">
-							<li>
-								<a href="#">Політика конфіденційності</a>
-							</li>
-							<li>
+								<li>
+									<a href="#">Політика конфіденційності</a>
+								</li>
+								<li>
+									<a href="tel:+380635542221">+38 (063) 554 22 21</a>
+								</li>
+								<li>
+									<a href="tel:+380956789900">+38 (095) 678 99 00</a>
+								</li>
+						</ul>
+						<div class="footer-contacts-mobile">
+							<a href="#">Політика конфіденційності</a>
+							<div>
 								<a href="tel:+380635542221">+38 (063) 554 22 21</a>
-							</li>
-							<li>
+								<br>
 								<a href="tel:+380956789900">+38 (095) 678 99 00</a>
-							</li>
+							</div>
+						</div>
 						</ul>
 						<div class="payment-methods">
 							<ul>
@@ -319,9 +448,9 @@
 					</div>
 				</div>
 			</section>
-			<!-- <a href="#" class="main-scroll" id="main-scroll" style="visibility: visible;">
+			<a href="#" class="main-scroll" id="main-scroll" style="visibility: visible;">
 				<img src="../images/round_scroll.png" alt="Scroll up">
-			</a> -->
+			</a>
 		</footer>
 	</div>
 </body>
