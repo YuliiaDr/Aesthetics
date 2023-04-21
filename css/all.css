@@ -2754,6 +2754,13 @@ footer .payment-methods .apay:hover{
   .delivery-payment{
     margin: 30px 0;
     width: 100%;
+    gap: 30px;
+  }
+}
+@media(max-width: 946px){
+  .delivery-payment .np-delivery,
+  .delivery-payment .courier-delivery{
+    width: 100%;
   }
 }
 @media(max-width: 946px){
@@ -2768,17 +2775,6 @@ footer .payment-methods .apay:hover{
   padding-left: 47px;
   margin: 0 0 0 auto;
   background-color: var(--primary-accent-color);
-}
-@media(max-width: 946px){
-  .delivery-payment .payment-title{
-    margin: 0;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 10px;
-    font-size: 18px;
-    line-height: 1.22;
-  }
 }
 .delivery-payment .payment-title h3,
 .delivery-payment .courier-delivery-title h3,
@@ -2799,6 +2795,12 @@ footer .payment-methods .apay:hover{
   .delivery-payment .delivery-payment-info{
     padding: 10px 0 2px 0;
     height: auto;
+    border: none;
+  }
+}
+@media(max-width: 360px){
+  .delivery-payment .delivery-payment-info{
+    border: none;
   }
 }
 .delivery-payment .delivery-payment-text{
@@ -2845,21 +2847,53 @@ footer .payment-methods .apay:hover{
   margin: 0 0 0 auto;
   background-color: var(--primary-accent-color);
 }
+@media(max-width: 946px){
+  .delivery-payment .payment-title,
+  .delivery-payment .courier-delivery-title,
+  .delivery-payment .np-delivery .np-delivery-title{
+    margin: 0;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+@media(max-width: 946px){
+  .delivery-payment .np-delivery .np-delivery-title p,
+  .delivery-payment .courier-delivery .courier-delivery-title p{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.21; /* 17px/14 */
+  }
+}
 
 /* ------------------------------Delivery-Payment Page Scrollbar */
 .delivery-payment .courier-delivery .delivery-payment-info{
 	float: left;
-	height: 448px;
+	min-height: 448px;
   overflow-y: scroll;
   border-right: none;
-  padding-top: 29px 9px 35px 27px;
+  /* padding: 29px 9px 35px 27px; */
   color: var(--primary-accent-color);
+}
+@media(max-width: 946px){
+  .delivery-payment .courier-delivery .delivery-payment-info{
+    max-height: 453px;
+  }
 }
 .delivery-payment .courier-delivery .delivery-payment-text{
   width: 890px;
   display: flex;
   flex-direction: column;
   gap: 24.4px;
+}
+@media(max-width: 946px){
+  .delivery-payment .courier-delivery .delivery-payment-text{
+    gap: 12px;
+  }
 }
 .delivery-payment .courier-delivery .scrollbar::-webkit-scrollbar {
   border: 0.5px solid var(--primary-accent-color);
