@@ -2881,6 +2881,17 @@ footer .payment-methods .apay:hover{
 }
 @media(max-width: 946px){
   .delivery-payment .courier-delivery .delivery-payment-info{
+    min-height: 230px;
+    max-height: 230px;
+  }
+}
+@media(max-width: 710px){
+  .delivery-payment .courier-delivery .delivery-payment-info{
+    max-height: 300px;
+  }
+}
+@media(max-width: 360px){
+  .delivery-payment .courier-delivery .delivery-payment-info{
     max-height: 453px;
   }
 }
@@ -2898,9 +2909,14 @@ footer .payment-methods .apay:hover{
 .delivery-payment .courier-delivery .scrollbar::-webkit-scrollbar {
   border: 0.5px solid var(--primary-accent-color);
   width: 20px;
-  height: 400px;
+  height: 100%;
   margin-top: 13px;
 }
+/* @media(max-width: 946px){
+  .delivery-payment .courier-delivery .scrollbar::-webkit-scrollbar {
+    height: 200px;
+  }
+} */
 .delivery-payment .courier-delivery .scrollbar::-webkit-scrollbar-thumb {
   background: linear-gradient(90deg, var(--primary-accent-color) 0%, var(--primary-accent-color) 5%, white 5%, white 18%, var(--primary-accent-color) 18%, var(--primary-accent-color) 82%, white 82%, white 95%, rgb(17, 125, 54) 95%, var(--primary-accent-color) 100%);
 }
