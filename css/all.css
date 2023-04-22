@@ -3094,11 +3094,23 @@ footer .payment-methods .apay:hover{
   display: flex;
   margin: 19px auto 21px auto;
 }
+@media(max-width: 1279px){
+  .contacts{
+    margin: 30px auto;
+  }
+}
 .contacts .img-holder{
   display: block;
+  max-width: 1074px;
+  min-height: 342px;
   max-height: 608px;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
+}
+@media(max-width: 480px){
+  .contacts .img-holder{
+    height: 342px;
+  }
 }
 .contacts .img-holder img{
   width: 100%;
@@ -3106,9 +3118,14 @@ footer .payment-methods .apay:hover{
   display: block;
   overflow: hidden;
 }
+@media(max-width: 480px){
+  .contacts .img-holder img{
+    width: 328px;
+  }
+}
 .contacts .contacts-text{
   position: relative;
-  z-index: 2;
+  z-index: 0;
   max-width: 582px;
   max-height: 390px;
   margin: 110px auto 108px 20px;
@@ -3119,11 +3136,57 @@ footer .payment-methods .apay:hover{
   font-size: 20px;
   line-height: 1.22;
 }
+@media(max-width: 1279px){
+  .contacts .contacts-text{
+    margin: 22px auto 92px 22px;
+  }
+}
+@media(max-width: 900px){
+  .contacts .contacts-text{
+    margin-bottom: 72px;
+  }
+}
+@media(max-width: 830px){
+  .contacts .contacts-text{
+    margin-bottom: 142px;
+    font-size: 14px;
+    line-height: 1.21; /* 17px/14 */
+  }
+}
+@media(max-width: 740px){
+  .contacts .contacts-text{
+    margin-bottom: 112px;
+  }
+}
+@media(max-width: 640px){
+  .contacts .contacts-text{
+    margin-bottom: 82px;
+  }
+}
+@media(max-width: 540px){
+  .contacts .contacts-text{
+    margin-bottom: 42px;
+    padding: 15px;
+    margin-top: 0;
+  }
+}
+@media(max-width: 480px){
+  .contacts .contacts-text{
+    margin-bottom: 22px;
+    margin-top: 22px;
+  }
+}
 .contacts .contacts-text .initial h3{
   font-weight: 400;
   font-size: 26px;
   line-height: 1.23; /* 32px/26 */
   margin-bottom: 6px;
+}
+@media(max-width: 830px){
+  .contacts .contacts-text .initial h3{
+    font-size: 18px;
+    line-height: 1.22; /* 22/18px */
+  }
 }
 .contacts .contacts-text .initial{
   display: none;
@@ -3133,6 +3196,11 @@ footer .payment-methods .apay:hover{
 }
 .contacts .contacts-text .initial ul{
   margin-top: 30px;
+}
+@media(max-width: 830px){
+  .contacts .contacts-text .initial ul{
+    margin-top: 15px;
+  }
 }
 .contacts .contacts-text .initial ul li:first-of-type{
   margin-bottom: 12px;
@@ -3144,9 +3212,24 @@ footer .payment-methods .apay:hover{
   border-bottom: 1px solid #FFFBF5;
   margin: 30px auto 30px 0;
 }
+@media(max-width: 830px){
+  .contacts .contacts-text .initial ul::after{
+    margin: 15px auto 15px 0;
+  }
+}
 .contacts .contact-form{
   display: flex;
   gap: 39px;
+}
+@media(max-width: 830px){
+  .contacts .contact-form{
+    gap: 15px;
+  }
+}
+@media(max-width: 480px){
+  .contacts .contact-form{
+    flex-direction: column;
+  }
 }
 .contacts input{
   display: block;
@@ -3161,6 +3244,15 @@ footer .payment-methods .apay:hover{
   border: 1px solid var(--secondary-text-color);
   padding-left: 15px;
 }
+@media(max-width: 830px){
+  .contacts input{
+    width: 214px;
+    height: 27px;
+    font-size: 14px;
+    line-height: 1.22;
+    padding-left: 5px;
+  }
+}
 .contacts input::placeholder{
   color: #B2B2B2;
 }
@@ -3171,10 +3263,22 @@ footer .payment-methods .apay:hover{
   display: block;
   margin-top: 38px;
   width: 219px;
-  height:59px;
+  height: 59px;
   position: relative;
   background-color: transparent;
   border: 1px solid var(--secondary-text-color);
+}
+@media(max-width: 830px){
+  .contacts .callback-btn-container{
+    width: 132px;
+    height: 42px;
+    margin-top: 15px;
+  }
+}
+@media(max-width: 480px){
+  .contacts .callback-btn-container{
+    margin-top: 0;
+  }
 }
 .contacts button{
   display: block;
@@ -3192,8 +3296,23 @@ footer .payment-methods .apay:hover{
   transition: all 400ms ease-in-out;
   border: none;
 }
+@media(max-width: 830px){
+  .contacts button{
+    width: 132px;
+    height: 42px;
+    margin: 4px 4px -4px -4px;
+    font-size: 18px;
+    line-height: 1.22; /* 22/18px */
+    padding: 10px 12.5px;
+  }
+}
 .contacts button:hover {
   transform: translateY(-9px) translateX(7.5px);
+}
+@media(max-width: 830px){
+  .contacts button:hover {
+    transform: translateY(-4.7px) translateX(3.2px);
+  }
 }
 .contacts button:focus {
   outline: none;
