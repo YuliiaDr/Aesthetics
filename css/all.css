@@ -2955,16 +2955,36 @@ footer .payment-methods .apay:hover{
 .arrow-back-blog:focus{
  transform: rotate(360deg);
 }
+@media(max-width: 880px){
+  .arrow-back-blog{
+    width: 23px;
+    height: 13px;
+  }
+}
 .blog-acne-stress{
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 68px;
+}
+@media(max-width: 640px){
+  .blog-acne-stress{
+    font-size: 14px;
+    line-height: 1.21; /* 17/14 */
+    margin-bottom: 20px;
+  }
 }
 .blog-acne-stress h1{
   font-weight: 400;
   font-size: 40px;
   color: #000000;
   margin: 0 auto 30px 66px;
+}
+@media(max-width: 640px){
+  .blog-acne-stress h1{
+    margin: 10px auto 0 0;
+    font-size: 18px;
+    line-height: 1.22; /* 22px/18 */
+  }
 }
 .blog-acne-stress .acne-stress-beginning,
 .blog-acne-stress .acne-stress-end{
@@ -2974,6 +2994,14 @@ footer .payment-methods .apay:hover{
   gap: 21px;
   margin-bottom: 30px;
 }
+@media(max-width: 640px){
+  .blog-acne-stress .acne-stress-beginning,
+  .blog-acne-stress .acne-stress-end{
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+}
 .blog-acne-stress .cortisol,
 .blog-acne-stress .bio-clock{
   max-width: 552px;
@@ -2981,17 +3009,41 @@ footer .payment-methods .apay:hover{
 .blog-acne-stress .cortisol{
   margin: 51px 0 72px 0;
 }
+@media(max-width: 1035px){
+  .blog-acne-stress .cortisol{
+    margin: 10px 0 0 0;
+    max-width: 100%;
+  }
+}
+@media(max-width: 640px){
+  .blog-acne-stress .cortisol{
+    margin: 10px 0 0 0;
+    max-width: 100%;
+  }
+}
 .blog-acne-stress .indent{
   padding-left: 20px;
 }
 .blog-acne-stress .bio-clock{
   margin-top: 55px;
 }
+@media(max-width: 1035px){
+  .blog-acne-stress .bio-clock{
+    margin-top: 0;
+    max-width: 100%;
+  }
+}
+@media(max-width: 640px){
+  .blog-acne-stress .bio-clock{
+    max-width: 100%;
+  }
+}
 .blog-acne-stress .img-holder{
   display: block;
   overflow: hidden;
   max-width: 500px;
   max-height: 500px;
+  min-width: 250px;
 }
 .blog-acne-stress .img{
   display: block;
@@ -3000,9 +3052,41 @@ footer .payment-methods .apay:hover{
   height: 100%;
   margin-bottom: 13px;
 }
+@media(max-width: 640px){
+  .blog-acne-stress .img-holder{
+    margin: 0 auto;
+  }
+}
+@media(max-width: 360px){
+  .blog-acne-stress .img-holder{
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media(max-width: 640px){
+  .blog-acne-stress img{
+    margin-bottom: 0;
+  }
+}
 .blog-acne-stress .stress{
  display: block;
  margin-bottom: 72px;
+}
+@media(max-width: 1035px){
+  .blog-acne-stress .stress{
+    margin-bottom: 40px;
+  }
+}
+@media(max-width: 640px){
+  .blog-acne-stress .stress{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media(max-width: 640px){
+  .blog-acne-stress .summary{
+    margin-top: 10px;
+  }
 }
 
 /* ------------------------------Contacts Page */
