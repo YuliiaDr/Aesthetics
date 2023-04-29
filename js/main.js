@@ -304,3 +304,17 @@ slider.addEventListener('touchend', () => {
   }
 });
 });
+
+
+// ---------------------------- Personal Cabinet Accordion
+let summaries = document.querySelectorAll('.accordion-container summary');
+
+summaries.forEach(summary => {
+   summary.addEventListener('click', () => {
+      summaries.forEach(s => {
+         if (s !== summary) {
+            s.removeAttribute('open');
+         }
+      });
+   });
+});

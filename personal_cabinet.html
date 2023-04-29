@@ -42,39 +42,32 @@
 				<ul class="user-utilities">
 					<li class="nav-cabinet">
 						<a href="./personal_cabinet.html" target="_blank" rel="noopener noreferrer">
-							<!-- <div class="image">
-								<div class="front">
-									<img src="./images/iconcabinet.svg" alt="cabinet icon" width="36">
-								</div>
-								<div class="back">
-									<img src="./images/icon_cabinet_hover.svg" alt="cabinet icon">
-								</div>
-							</div> -->
 						</a>
 					</li>
 					<li class="nav-favorite">
 						<a href="./personal_cabinet.html#wish-list" target="_blank" rel="noopener noreferrer">
-							<!-- <div class="image">
-								<div class="front">
-									<img src="./images/iconfavorite.svg" alt="favorite icon" width="36">
-								</div>
-								<div class="back">
-									<img src="./images/icon_favorite_hover.svg" alt="favorite icon">
-								</div>
-							</div> -->
 						</a>
 					</li>
 					<li class="nav-basket">
 						<a href="./basket.html" target="_blank" rel="noopener noreferrer">
-							<!-- <div class="image">
-								<div class="front">
-									<img src="./images/iconbasket.svg" alt="basket icon">
-								</div>
-								<div class="back">
-									<img src="./images/icon_basket_hover.svg" alt="basket icon">
-								</div>
-							</div> -->
 						</a>
+					</li>
+					<li class="burger-menu">
+						<button class="burger-btn"><img src="./images/burger-btn.png" alt="burger menu button"></button>
+						<ul class="menu">
+							<li>
+								<a href="./catalogue.html" target="_blank" rel="noopener noreferrer">Каталог</a>
+							</li>
+							<li>
+								<a href="./delivery_payment.html" target="_blank" rel="noopener noreferrer">Доставка та оплата</a>
+							</li>
+							<li>
+								<a href="./blog/acne_stress.html" target="_blank" rel="noopener noreferrer">Блог</a>
+							</li>
+							<li>
+								<a href="./contacts.html" target="_blank" rel="noopener noreferrer">Контакти</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -82,8 +75,9 @@
 		<main>
 			<div id="content">
 				<h1 class="hidden">Особистий кабінет</h1>
-				<section class="cabinet-info">
+				<section class="cabinet-info layout">
 					<h2>Особистий кабінет</h2>
+					<div class="personal-info-full">
 						<input type="radio" name="cabinet-tab" id="lb-contact" class="cabinet-radio" checked>
 						<label for="lb-contact" class="label-contact">Контактна інформація </label>
 						<input type="radio" name="cabinet-tab" id="lb-address" class="cabinet-radio">
@@ -92,617 +86,1163 @@
 						<label for="lb-wishlist" class="label-wishlist">Список бажань</label>
 						<input type="radio" name="cabinet-tab" id="lb-order" class="cabinet-radio">
 						<label for="lb-order" class="label-order">Історія замовлень</label>
-					<div class="content content-personal-info">
-						<form>
-							<div class="personal-info-first">
-								<div>
-									<label for="first-name-cabinet">Ваше ім’я</label>
-									<input type="text" name="name" id="first-name-cabinet" placeholder="Світлана">
+						<div class="content content-personal-info">
+							<form>
+								<div class="personal-info-first">
+									<div>
+										<label for="first-name-cabinet">Ваше ім’я</label>
+										<input type="text" name="name" id="first-name-cabinet" placeholder="Світлана">
+									</div>
+									<div>
+										<label for="last-name-cabinet">Ваше прізвище</label>
+										<input type="text" name="surname" id="last-name-cabinet" placeholder="Шевченко">
+									</div>
+									<div>
+										<label for="email-cabinet">E-mail</label>
+										<input type="text" name="email" id="email-cabinet" placeholder="shevSv002@gmail.com">
+									</div>
 								</div>
-								<div>
-									<label for="last-name-cabinet">Ваше прізвище</label>
-									<input type="text" name="surname" id="last-name-cabinet" placeholder="Шевченко">
+								<div class="save-btn-container">
+									<button type="submit" name="button">Зберегти</button>
 								</div>
-								<div>
-									<label for="email-cabinet">E-mail</label>
-									<input type="text" name="email" id="email-cabinet" placeholder="shevSv002@gmail.com">
+								<div class="personal-info-second">
+									<div>
+										<label for="tel-cabinet">Номер телефону</label>
+										<input type="tel" name="tel" id="tel-cabinet" placeholder="+38 068 564 77 99">
+									</div>
+									<div>
+										<label for="birth-date-cabinet">Дата народження</label>
+										<input type="text" name="birth-date" id="birth-date-cabinet" placeholder="8.10.1989">
+									</div>
 								</div>
+								<a href="./index.html" class="exit-btn">Вийти</a>
+							</form>
+						</div>
+						<div class="content cabinet-address">
+							<div class="cabinet-address-main">
+								<ul class="delivery-address">
+									<li class="first-delivery-address">
+										<img src="./images/list_one_active.png" alt="first list icon">
+										<div class="address-one-info">
+											<p>Шевченко Світлана</p>
+											<p>Місто КиЇв</p>
+											<p>Градинська 11б, 85</p>
+											<p>+38 068 564 77 99</p>
+											<div class="change-address">
+												<button type="button" name="edit">Редагувати</button>
+												<button type="button" name="delete">Видалити</button>
+											</div>
+										</div>
+									</li>
+									<li class="second-delivery-address">
+										<img src="./images/list_two_active.png" alt="second list icon">
+										<div class="address-two-info">
+											<p>Шевченко Світлана</p>
+											<p>Місто Харків</p>
+											<p>Трінклера 18, 65</p>
+											<p>+38 068 564 77 99</p>
+											<div class="change-address">
+												<button type="button" name="edit">Редагувати</button>
+												<button type="button" name="delete">Видалити</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<fieldset>
+									<legend>Додати нову адресу:</legend>
+									<input type="text" id="name-surname" name="name-surname" placeholder="ПІБ" required>
+									<input type="text" id="city" name="city" placeholder="Місто" required>
+									<div>
+										<input type="text" id="street" name="street" placeholder="Вулиця" required>
+										<input type="text" id="block" name="block" placeholder="Корпус">
+										<input type="number" id="flat" name="flat" placeholder="Квартира">
+									</div>
+									<input type="text" id="post-number" name="post-name" placeholder="Поштове відділення" required>
+									<input type="tel" id="tel-number" name="tel-number" placeholder="Номер телефону" required>
+								</fieldset>
 							</div>
 							<div class="save-btn-container">
 								<button type="submit" name="button">Зберегти</button>
 							</div>
-							<div class="personal-info-second">
-								<div>
-									<label for="tel-cabinet">Номер телефону</label>
-									<input type="tel" name="tel" id="tel-cabinet" placeholder="+38 068 564 77 99">
-								</div>
-								<div>
-									<label for="birth-date-cabinet">Дата народження</label>
-									<input type="text" name="birth-date" id="birth-date-cabinet" placeholder="8.10.1989">
-								</div>
-							</div>
-							<a href="./index.html" class="exit-btn">Вийти</a>
-						</form>
-					</div>
-					<div class="content cabinet-address">
-						<div class="cabinet-address-main">
-							<ul class="delivery-address">
-								<li class="first-delivery-address">
-									<img src="./images/list_one_active.png" alt="first list icon">
-									<div class="address-one-info">
-										<p>Шевченко Світлана</p>
-										<p>Місто КиЇв</p>
-										<p>Градинська 11б, 85</p>
-										<p>+38 068 564 77 99</p>
-										<div class="change-address">
-											<button type="button" name="edit">Редагувати</button>
-											<button type="button" name="delete">Видалити</button>
+						</div>
+						<div class="content cabinet-wishlist">
+							<h2 class="hidden">Список бажань</h2>
+							<ul class="scrollbar" id="wish-list">
+								<li>
+									<div class="img-holder">
+										<img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin">
+									</div>
+									<div class="rating-availability">
+										<div class="star-rating-4">
+											<input type="radio" name="star-4" id="star-u" value="5">
+											<label for="star-u"></label>
+											<input type="radio" name="star-4" id="star-v" value="4">
+											<label for="star-v"></label>
+											<input type="radio" name="star-4" id="star-w" value="3">
+											<label for="star-w"></label>
+											<input type="radio" name="star-4" id="star-x" value="2">
+											<label for="star-x"></label>
+											<input type="radio" name="star-4" id="star-y" value="1">
+											<label for="star-y"></label>
 										</div>
+										<p class="availability-fluid-dry-skin">В наявності</p>
+									</div>
+									<h3>
+										Флюид для обличчя для сухої шкіри
+									</h3>
+									<p class="wishlist-price">
+										630 грн
+									</p>
+									<div class="wishlist-buttons">
+										<div class="tobasket-btn-container">
+											<button type="button" name="button">В кошик</button>
+										</div>
+										<button type="button" name="delete" class="wishlist-delete">Видалити</button>
 									</div>
 								</li>
-								<li class="second-delivery-address">
-									<img src="./images/list_two_active.png" alt="second list icon">
-									<div class="address-two-info">
-										<p>Шевченко Світлана</p>
-										<p>Місто Харків</p>
-										<p>Трінклера 18, 65</p>
-										<p>+38 068 564 77 99</p>
-										<div class="change-address">
-											<button type="button" name="edit">Редагувати</button>
-											<button type="button" name="delete">Видалити</button>
+								<li>
+									<div class="img-holder">
+										<img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream for oily skin">
+									</div>
+									<div class="rating-availability">
+										<div class="star-rating-5">
+											<input type="radio" name="star-5" id="star-z" value="5">
+											<label for="star-z"></label>
+											<input type="radio" name="star-5" id="star-a1" value="4">
+											<label for="star-a1"></label>
+											<input type="radio" name="star-5" id="star-a2" value="3">
+											<label for="star-a2"></label>
+											<input type="radio" name="star-5" id="star-a3" value="2">
+											<label for="star-a3"></label>
+											<input type="radio" name="star-5" id="star-a4" value="1">
+											<label for="star-a4"></label>
 										</div>
+										<p>Залишилось 3 шт</p>
+									</div>
+									<h3>
+										Матуючий денний крем для жирної шкіри
+									</h3>
+									<p class="wishlist-price">
+										680 грн
+									</p>
+									<div class="wishlist-buttons">
+										<div class="tobasket-btn-container">
+											<button type="button" name="button">В кошик</button>
+										</div>
+										<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+									</div>
+								</li>
+								<li>
+									<div class="img-holder">
+										<img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin">
+									</div>
+									<div class="rating-availability">
+										<div class="star-rating-6">
+											<input type="radio" name="star-6" id="star-a5" value="5">
+											<label for="star-a5"></label>
+											<input type="radio" name="star-6" id="star-a6" value="4">
+											<label for="star-a6"></label>
+											<input type="radio" name="star-6" id="star-a7" value="3">
+											<label for="star-a7"></label>
+											<input type="radio" name="star-6" id="star-a8" value="2">
+											<label for="star-a8"></label>
+											<input type="radio" name="star-6" id="star-a9" value="1">
+											<label for="star-a9"></label>
+										</div>
+										<p class="availability-fluid-dry-skin">В наявності</p>
+									</div>
+									<h3>
+										Зволожуюча сироватка для нормальної шкіри
+									</h3>
+									<p class="wishlist-price">
+										480 грн
+									</p>
+									<div class="wishlist-buttons">
+										<div class="tobasket-btn-container">
+											<button type="button" name="button">В кошик</button>
+										</div>
+										<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+									</div>
+								</li>
+								<li>
+									<div class="img-holder">
+										<img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin">
+									</div>
+									<div class="rating-availability">
+										<div class="star-rating-7">
+											<input type="radio" name="star-7" id="star-a10" value="5">
+											<label for="star-a10"></label>
+											<input type="radio" name="star-7" id="star-a11" value="4">
+											<label for="star-a11"></label>
+											<input type="radio" name="star-7" id="star-a12" value="3">
+											<label for="star-a12"></label>
+											<input type="radio" name="star-7" id="star-a13" value="2">
+											<label for="star-a13"></label>
+											<input type="radio" name="star-7" id="star-a14" value="1">
+											<label for="star-a14"></label>
+										</div>
+										<p class="availability-fluid-dry-skin">В наявності</p>
+									</div>
+									<h3>
+										Флюид для обличчя для сухої шкіри
+									</h3>
+									<p class="wishlist-price">
+										630 грн
+									</p>
+									<div class="wishlist-buttons">
+										<div class="tobasket-btn-container">
+											<button type="button" name="button">В кошик</button>
+										</div>
+										<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+									</div>
+								</li>
+								<li>
+									<div class="img-holder">
+										<img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream for oily skin">
+									</div>
+									<div class="rating-availability">
+										<div class="star-rating-8">
+											<input type="radio" name="star-8" id="star-a15" value="5">
+											<label for="star-a15"></label>
+											<input type="radio" name="star-8" id="star-a16" value="4">
+											<label for="star-a16"></label>
+											<input type="radio" name="star-8" id="star-a17" value="3">
+											<label for="star-a17"></label>
+											<input type="radio" name="star-8" id="star-a18" value="2">
+											<label for="star-a18"></label>
+											<input type="radio" name="star-8" id="star-a19" value="1">
+											<label for="star-a19"></label>
+										</div>
+										<p>Залишилось 3 шт</p>
+									</div>
+									<h3>
+										Матуючий денний крем для жирної шкіри
+									</h3>
+									<p class="wishlist-price">
+										680 грн
+									</p>
+									<div class="wishlist-buttons">
+										<div class="tobasket-btn-container">
+											<button type="button" name="button">В кошик</button>
+										</div>
+										<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+									</div>
+								</li>
+								<li>
+									<div class="img-holder">
+										<img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin">
+									</div>
+									<div class="rating-availability">
+										<div class="star-rating-9">
+											<input type="radio" name="star-9" id="star-a20" value="5">
+											<label for="star-a20"></label>
+											<input type="radio" name="star-9" id="star-a21" value="4">
+											<label for="star-a21"></label>
+											<input type="radio" name="star-9" id="star-a22" value="3">
+											<label for="star-a22"></label>
+											<input type="radio" name="star-9" id="star-a23" value="2">
+											<label for="star-a23"></label>
+											<input type="radio" name="star-9" id="star-a24" value="1">
+											<label for="star-a24"></label>
+										</div>
+										<p class="availability-fluid-dry-skin">В наявності</p>
+									</div>
+									<h3>
+										Зволожуюча сироватка для нормальної шкіри
+									</h3>
+									<p class="wishlist-price">
+										480 грн
+									</p>
+									<div class="wishlist-buttons">
+										<div class="tobasket-btn-container">
+											<button type="button" name="button">В кошик</button>
+										</div>
+										<button type="button" name="delete" class="wishlist-delete">Видалити</button>
 									</div>
 								</li>
 							</ul>
-							<fieldset>
-						    <legend>Додати нову адресу:</legend>
-						    <input type="text" id="name-surname" name="name-surname" placeholder="ПІБ" required>
-						    <input type="text" id="city" name="city" placeholder="Місто" required>
-								<div>
-									<input type="text" id="street" name="street" placeholder="Вулиця" required>
-									<input type="text" id="block" name="block" placeholder="Корпус">
-									<input type="number" id="flat" name="flat" placeholder="Квартира">
-								</div>
-								<input type="text" id="post-number" name="post-name" placeholder="Поштове відділення" required>
-						    <input type="tel" id="tel-number" name="tel-number" placeholder="Номер телефону" required>
-							</fieldset>
 						</div>
-						<div class="save-btn-container">
-							<button type="submit" name="button">Зберегти</button>
-						</div>
-					</div>
-					<div class="content cabinet-wishlist">
-						<h2 class="hidden">Список бажань</h2>
-						<ul class="scrollbar" id="wish-list">
-							<li>
-								<div class="img-holder">
-									<img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin">
-								</div>
-								<div class="rating-availability">
-									<div class="star-rating-4">
-	                  <input type="radio" name="star-4" id="star-u" value="5">
-	                  <label for="star-u"></label>
-	                  <input type="radio" name="star-4" id="star-v" value="4">
-	                  <label for="star-v"></label>
-	                  <input type="radio" name="star-4" id="star-w" value="3">
-	                  <label for="star-w"></label>
-	                  <input type="radio" name="star-4" id="star-x" value="2">
-	                  <label for="star-x"></label>
-	                  <input type="radio" name="star-4" id="star-y" value="1">
-	                  <label for="star-y"></label>
-	                </div>
-									<p class="availability-fluid-dry-skin">В наявності</p>
-								</div>
-								<h3>
-									Флюид для обличчя для сухої шкіри
-								</h3>
-								<p class="wishlist-price">
-									630 грн
-								</p>
-								<div class="wishlist-buttons">
-									<div class="tobasket-btn-container">
-										<button type="button" name="button">В кошик</button>
+						<div class="content cabinet-order">
+							<div class="cabinet-order-wrapper">
+								<div class="cabinet-order-one">
+									<h3>Замовлення №5647</h3>
+									<div class="order-history-header">
+										<p>Дата замовлення:
+											<br>
+											<span>
+												9.08.2022
+											</span>
+										</p>
+										<p>Статус:
+											<br>
+											<span>
+												В обробці
+											</span>
+										</p>
 									</div>
-									<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+									<ul class="order-history-body scrollbar">
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
+											</div>
+											<div class="name-quantity">
+												<h4>Нічний антивіковій крем для сухої шкіри</h4>
+												<p>1 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-10">
+													<input type="radio" name="star-10" id="star-a25" value="5">
+													<label for="star-a25"></label>
+													<input type="radio" name="star-10" id="star-a26" value="4">
+													<label for="star-a26"></label>
+													<input type="radio" name="star-10" id="star-a27" value="3">
+													<label for="star-a27"></label>
+													<input type="radio" name="star-10" id="star-a28" value="2">
+													<label for="star-a28"></label>
+													<input type="radio" name="star-10" id="star-a29" value="1">
+													<label for="star-a29"></label>
+												</div>
+												<p>860 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
+											</div>
+											<div class="name-quantity">
+												<h4>Гель для зняття макіяжу</h4>
+												<p>2 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-11">
+													<input type="radio" name="star-11" id="star-a30" value="5">
+													<label for="star-a30"></label>
+													<input type="radio" name="star-11" id="star-a31" value="4">
+													<label for="star-a31"></label>
+													<input type="radio" name="star-11" id="star-a32" value="3">
+													<label for="star-a32"></label>
+													<input type="radio" name="star-11" id="star-a33" value="2">
+													<label for="star-a33"></label>
+													<input type="radio" name="star-11" id="star-a34" value="1">
+													<label for="star-a34"></label>
+												</div>
+												<p>1460 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
+											</div>
+											<div class="name-quantity">
+												<h4>Антивікова сироватка для зони навколо очей</h4>
+												<p>1 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-12">
+													<input type="radio" name="star-12" id="star-a36" value="5">
+													<label for="star-a36"></label>
+													<input type="radio" name="star-12" id="star-a37" value="4">
+													<label for="star-a37"></label>
+													<input type="radio" name="star-12" id="star-a38" value="3">
+													<label for="star-a38"></label>
+													<input type="radio" name="star-12" id="star-a39" value="2">
+													<label for="star-a39"></label>
+													<input type="radio" name="star-12" id="star-a-40" value="1">
+													<label for="star-a-40"></label>
+												</div>
+												<p>900 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
+											</div>
+											<div class="name-quantity">
+												<h4>Нічний антивіковій крем для сухої шкіри</h4>
+												<p>1 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-13">
+													<input type="radio" name="star-13" id="star-a41" value="5">
+													<label for="star-a41"></label>
+													<input type="radio" name="star-13" id="star-a42" value="4">
+													<label for="star-a42"></label>
+													<input type="radio" name="star-13" id="star-a43" value="3">
+													<label for="star-a43"></label>
+													<input type="radio" name="star-13" id="star-a44" value="2">
+													<label for="star-a44"></label>
+													<input type="radio" name="star-13" id="star-a45" value="1">
+													<label for="star-a45"></label>
+												</div>
+												<p>860 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
+											</div>
+											<div class="name-quantity">
+												<h4>Гель для зняття макіяжу</h4>
+												<p>2 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-14">
+													<input type="radio" name="star-14" id="star-a46" value="5">
+													<label for="star-a46"></label>
+													<input type="radio" name="star-14" id="star-a47" value="4">
+													<label for="star-a47"></label>
+													<input type="radio" name="star-14" id="star-a48" value="3">
+													<label for="star-a48"></label>
+													<input type="radio" name="star-14" id="star-a49" value="2">
+													<label for="star-a49"></label>
+													<input type="radio" name="star-14" id="star-a50" value="1">
+													<label for="star-a50"></label>
+												</div>
+												<p>1460 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
+											</div>
+											<div class="name-quantity">
+												<h4>Антивікова сироватка для зони навколо очей</h4>
+												<p>1 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-15">
+													<input type="radio" name="star-15" id="star-a51" value="5">
+													<label for="star-a51"></label>
+													<input type="radio" name="star-15" id="star-a52" value="4">
+													<label for="star-a52"></label>
+													<input type="radio" name="star-15" id="star-a53" value="3">
+													<label for="star-a53"></label>
+													<input type="radio" name="star-15" id="star-a54" value="2">
+													<label for="star-a54"></label>
+													<input type="radio" name="star-15" id="star-a55" value="1">
+													<label for="star-a55"></label>
+												</div>
+												<p>900 грн</p>
+											</div>
+										</li>
+									</ul>
+									<p class="cabinet-order-total">Загальна сумма:<span>3220 грн</span></p>
 								</div>
-							</li>
-							<li>
-								<div class="img-holder">
-									<img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream for oily skin">
-								</div>
-								<div class="rating-availability">
-									<div class="star-rating-5">
-	                  <input type="radio" name="star-5" id="star-z" value="5">
-	                  <label for="star-z"></label>
-	                  <input type="radio" name="star-5" id="star-a1" value="4">
-	                  <label for="star-a1"></label>
-	                  <input type="radio" name="star-5" id="star-a2" value="3">
-	                  <label for="star-a2"></label>
-	                  <input type="radio" name="star-5" id="star-a3" value="2">
-	                  <label for="star-a3"></label>
-	                  <input type="radio" name="star-5" id="star-a4" value="1">
-	                  <label for="star-a4"></label>
-	                </div>
-									<p>Залишилось 3 шт</p>
-								</div>
-								<h3>
-									Матуючий денний крем для жирної шкіри
-								</h3>
-								<p class="wishlist-price">
-									680 грн
-								</p>
-								<div class="wishlist-buttons">
-									<div class="tobasket-btn-container">
-										<button type="button" name="button">В кошик</button>
+								<div class="cabinet-order-two">
+									<h3>Замовлення №4596</h3>
+									<div class="order-history-header">
+										<p>Дата замовлення:
+											<br>
+											<span>
+												14.07.2022
+											</span>
+										</p>
+										<p>Статус:
+											<br>
+											<span>
+												Доставлений
+											</span>
+										</p>
 									</div>
-									<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+									<ul class="order-history-body scrollbar">
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_lotion_norm_comb.png" alt="Lotion for normal and combinated skin">
+											</div>
+											<div class="name-quantity">
+												<h4>Лосьон для нормальної та комбінованої шкіри</h4>
+												<p>1 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-16">
+													<input type="radio" name="star-16" id="star-a56" value="5">
+													<label for="star-a56"></label>
+													<input type="radio" name="star-16" id="star-a57" value="4">
+													<label for="star-a57"></label>
+													<input type="radio" name="star-16" id="star-a58" value="3">
+													<label for="star-a58"></label>
+													<input type="radio" name="star-16" id="star-a59" value="2">
+													<label for="star-a59"></label>
+													<input type="radio" name="star-16" id="star-a60" value="1">
+													<label for="star-a60"></label>
+												</div>
+												<p>1050 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_scrub_sens.png" alt="Scrub for sensitive skin">
+											</div>
+											<div class="name-quantity">
+												<h4>Скраб для чутливої шкіри</h4>
+												<p>2 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-17">
+													<input type="radio" name="star-17" id="star-a61" value="5">
+													<label for="star-a61"></label>
+													<input type="radio" name="star-17" id="star-a62" value="4">
+													<label for="star-a62"></label>
+													<input type="radio" name="star-17" id="star-a63" value="3">
+													<label for="star-a63"></label>
+													<input type="radio" name="star-17" id="star-a64" value="2">
+													<label for="star-a64"></label>
+													<input type="radio" name="star-17" id="star-a-65" value="1">
+													<label for="star-a-65"></label>
+												</div>
+												<p>890 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_gel_deep_clean.png" alt="Face deep cleaning gel">
+											</div>
+											<div class="name-quantity">
+												<h4>Гель для глубокого очищення шкіри обличчя</h4>
+												<p>1 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-18">
+													<input type="radio" name="star-18" id="star-a66" value="5">
+													<label for="star-a66"></label>
+													<input type="radio" name="star-18" id="star-a67" value="4">
+													<label for="star-a67"></label>
+													<input type="radio" name="star-18" id="star-a68" value="3">
+													<label for="star-a68"></label>
+													<input type="radio" name="star-18" id="star-a69" value="2">
+													<label for="star-a69"></label>
+													<input type="radio" name="star-18" id="star-a70" value="1">
+													<label for="star-a70"></label>
+												</div>
+												<p>890 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
+											</div>
+											<div class="name-quantity">
+												<h4>Нічний антивіковій крем для сухої шкіри</h4>
+												<p>1 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-19">
+													<input type="radio" name="star-19" id="star-a71" value="5">
+													<label for="star-a71"></label>
+													<input type="radio" name="star-19" id="star-a72" value="4">
+													<label for="star-a72"></label>
+													<input type="radio" name="star-19" id="star-a73" value="3">
+													<label for="star-a73"></label>
+													<input type="radio" name="star-19" id="star-a74" value="2">
+													<label for="star-a74"></label>
+													<input type="radio" name="star-19" id="star-a75" value="1">
+													<label for="star-a75"></label>
+												</div>
+												<p>860 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
+											</div>
+											<div class="name-quantity">
+												<h4>Гель для зняття макіяжу</h4>
+												<p>2 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-20">
+													<input type="radio" name="star-20" id="star-a76" value="5">
+													<label for="star-a76"></label>
+													<input type="radio" name="star-20" id="star-a77" value="4">
+													<label for="star-a77"></label>
+													<input type="radio" name="star-20" id="star-a78" value="3">
+													<label for="star-a78"></label>
+													<input type="radio" name="star-20" id="star-a79" value="2">
+													<label for="star-a79"></label>
+													<input type="radio" name="star-20" id="star-a80" value="1">
+													<label for="star-a80"></label>
+												</div>
+												<p>1460 грн</p>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+													<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
+											</div>
+											<div class="name-quantity">
+												<h4>Антивікова сироватка для зони навколо очей</h4>
+												<p>1 шт</p>
+											</div>
+											<div class="rating-price">
+												<div class="star-rating-21">
+													<input type="radio" name="star-21" id="star-a81" value="5">
+													<label for="star-a81"></label>
+													<input type="radio" name="star-21" id="star-a82" value="4">
+													<label for="star-a82"></label>
+													<input type="radio" name="star-21" id="star-a83" value="3">
+													<label for="star-a83"></label>
+													<input type="radio" name="star-21" id="star-a84" value="2">
+													<label for="star-a84"></label>
+													<input type="radio" name="star-21" id="star-a85" value="1">
+													<label for="star-a85"></label>
+												</div>
+												<p>900 грн</p>
+											</div>
+										</li>
+									</ul>
+									<p class="cabinet-order-total">Загальна сумма:<span>3010 грн</span></p>
 								</div>
-							</li>
-							<li>
-								<div class="img-holder">
-									<img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin">
-								</div>
-								<div class="rating-availability">
-									<div class="star-rating-6">
-	                  <input type="radio" name="star-6" id="star-a5" value="5">
-	                  <label for="star-a5"></label>
-	                  <input type="radio" name="star-6" id="star-a6" value="4">
-	                  <label for="star-a6"></label>
-	                  <input type="radio" name="star-6" id="star-a7" value="3">
-	                  <label for="star-a7"></label>
-	                  <input type="radio" name="star-6" id="star-a8" value="2">
-	                  <label for="star-a8"></label>
-	                  <input type="radio" name="star-6" id="star-a9" value="1">
-	                  <label for="star-a9"></label>
-	                </div>
-									<p class="availability-fluid-dry-skin">В наявності</p>
-								</div>
-								<h3>
-									Зволожуюча сироватка для нормальної шкіри
-								</h3>
-								<p class="wishlist-price">
-									480 грн
-								</p>
-								<div class="wishlist-buttons">
-									<div class="tobasket-btn-container">
-										<button type="button" name="button">В кошик</button>
-									</div>
-									<button type="button" name="delete" class="wishlist-delete">Видалити</button>
-								</div>
-							</li>
-							<li>
-								<div class="img-holder">
-									<img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin">
-								</div>
-								<div class="rating-availability">
-									<div class="star-rating-7">
-	                  <input type="radio" name="star-7" id="star-a10" value="5">
-	                  <label for="star-a10"></label>
-	                  <input type="radio" name="star-7" id="star-a11" value="4">
-	                  <label for="star-a11"></label>
-	                  <input type="radio" name="star-7" id="star-a12" value="3">
-	                  <label for="star-a12"></label>
-	                  <input type="radio" name="star-7" id="star-a13" value="2">
-	                  <label for="star-a13"></label>
-	                  <input type="radio" name="star-7" id="star-a14" value="1">
-	                  <label for="star-a14"></label>
-	                </div>
-									<p class="availability-fluid-dry-skin">В наявності</p>
-								</div>
-								<h3>
-									Флюид для обличчя для сухої шкіри
-								</h3>
-								<p class="wishlist-price">
-									630 грн
-								</p>
-								<div class="wishlist-buttons">
-									<div class="tobasket-btn-container">
-										<button type="button" name="button">В кошик</button>
-									</div>
-									<button type="button" name="delete" class="wishlist-delete">Видалити</button>
-								</div>
-							</li>
-							<li>
-								<div class="img-holder">
-									<img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream for oily skin">
-								</div>
-								<div class="rating-availability">
-									<div class="star-rating-8">
-	                  <input type="radio" name="star-8" id="star-a15" value="5">
-	                  <label for="star-a15"></label>
-	                  <input type="radio" name="star-8" id="star-a16" value="4">
-	                  <label for="star-a16"></label>
-	                  <input type="radio" name="star-8" id="star-a17" value="3">
-	                  <label for="star-a17"></label>
-	                  <input type="radio" name="star-8" id="star-a18" value="2">
-	                  <label for="star-a18"></label>
-	                  <input type="radio" name="star-8" id="star-a19" value="1">
-	                  <label for="star-a19"></label>
-	                </div>
-									<p>Залишилось 3 шт</p>
-								</div>
-								<h3>
-									Матуючий денний крем для жирної шкіри
-								</h3>-8
-								<p class="wishlist-price">
-									680 грн
-								</p>
-								<div class="wishlist-buttons">
-									<div class="tobasket-btn-container">
-										<button type="button" name="button">В кошик</button>
-									</div>
-									<button type="button" name="delete" class="wishlist-delete">Видалити</button>
-								</div>
-							</li>
-							<li>
-								<div class="img-holder">
-									<img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin">
-								</div>
-								<div class="rating-availability">
-									<div class="star-rating-9">
-	                  <input type="radio" name="star-9" id="star-a20" value="5">
-	                  <label for="star-a20"></label>
-	                  <input type="radio" name="star-9" id="star-a21" value="4">
-	                  <label for="star-a21"></label>
-	                  <input type="radio" name="star-9" id="star-a22" value="3">
-	                  <label for="star-a22"></label>
-	                  <input type="radio" name="star-9" id="star-a23" value="2">
-	                  <label for="star-a23"></label>
-	                  <input type="radio" name="star-9" id="star-a24" value="1">
-	                  <label for="star-a24"></label>
-	                </div>
-									<p class="availability-fluid-dry-skin">В наявності</p>
-								</div>
-								<h3>
-									Зволожуюча сироватка для нормальної шкіри
-								</h3>
-								<p class="wishlist-price">
-									480 грн
-								</p>
-								<div class="wishlist-buttons">
-									<div class="tobasket-btn-container">
-										<button type="button" name="button">В кошик</button>
-									</div>
-									<button type="button" name="delete" class="wishlist-delete">Видалити</button>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="content cabinet-order">
-						<div class="cabinet-order-wrapper">
-							<div class="cabinet-order-one">
-								<h3>Замовлення №5647</h3>
-								<div class="order-history-header">
-									<p>Дата замовлення:
-										<br>
-										<span>
-											9.08.2022
-										</span>
-									</p>
-									<p>Статус:
-										<br>
-										<span>
-											В обробці
-										</span>
-									</p>
-								</div>
-								<ul class="order-history-body scrollbar">
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
-										</div>
-										<div class="name-quantity">
-											<h4>Нічний антивіковій крем для сухої шкіри</h4>
-											<p>1 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-10">
-			                  <input type="radio" name="star-10" id="star-a25" value="5">
-			                  <label for="star-a25"></label>
-			                  <input type="radio" name="star-10" id="star-a26" value="4">
-			                  <label for="star-a26"></label>
-			                  <input type="radio" name="star-10" id="star-a27" value="3">
-			                  <label for="star-a27"></label>
-			                  <input type="radio" name="star-10" id="star-a28" value="2">
-			                  <label for="star-a28"></label>
-			                  <input type="radio" name="star-10" id="star-a29" value="1">
-			                  <label for="star-a29"></label>
-			                </div>
-											<p>860 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
-										</div>
-										<div class="name-quantity">
-											<h4>Гель для зняття макіяжу</h4>
-											<p>2 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-11">
-			                  <input type="radio" name="star-11" id="star-a30" value="5">
-			                  <label for="star-a30"></label>
-			                  <input type="radio" name="star-11" id="star-a31" value="4">
-			                  <label for="star-a31"></label>
-			                  <input type="radio" name="star-11" id="star-a32" value="3">
-			                  <label for="star-a32"></label>
-			                  <input type="radio" name="star-11" id="star-a33" value="2">
-			                  <label for="star-a33"></label>
-			                  <input type="radio" name="star-11" id="star-a34" value="1">
-			                  <label for="star-a34"></label>
-			                </div>
-											<p>1460 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
-										</div>
-										<div class="name-quantity">
-											<h4>Антивікова сироватка для зони навколо очей</h4>
-											<p>1 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-12">
-			                  <input type="radio" name="star-12" id="star-a36" value="5">
-			                  <label for="star-a36"></label>
-			                  <input type="radio" name="star-12" id="star-a37" value="4">
-			                  <label for="star-a37"></label>
-			                  <input type="radio" name="star-12" id="star-a38" value="3">
-			                  <label for="star-a38"></label>
-			                  <input type="radio" name="star-12" id="star-a39" value="2">
-			                  <label for="star-a39"></label>
-			                  <input type="radio" name="star-12" id="star-a-40" value="1">
-			                  <label for="star-a-40"></label>
-			                </div>
-											<p>900 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
-										</div>
-										<div class="name-quantity">
-											<h4>Нічний антивіковій крем для сухої шкіри</h4>
-											<p>1 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-13">
-			                  <input type="radio" name="star-13" id="star-a41" value="5">
-			                  <label for="star-a41"></label>
-			                  <input type="radio" name="star-13" id="star-a42" value="4">
-			                  <label for="star-a42"></label>
-			                  <input type="radio" name="star-13" id="star-a43" value="3">
-			                  <label for="star-a43"></label>
-			                  <input type="radio" name="star-13" id="star-a44" value="2">
-			                  <label for="star-a44"></label>
-			                  <input type="radio" name="star-13" id="star-a45" value="1">
-			                  <label for="star-a45"></label>
-			                </div>
-											<p>860 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
-										</div>
-										<div class="name-quantity">
-											<h4>Гель для зняття макіяжу</h4>
-											<p>2 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-14">
-			                  <input type="radio" name="star-14" id="star-a46" value="5">
-			                  <label for="star-a46"></label>
-			                  <input type="radio" name="star-14" id="star-a47" value="4">
-			                  <label for="star-a47"></label>
-			                  <input type="radio" name="star-14" id="star-a48" value="3">
-			                  <label for="star-a48"></label>
-			                  <input type="radio" name="star-14" id="star-a49" value="2">
-			                  <label for="star-a49"></label>
-			                  <input type="radio" name="star-14" id="star-a50" value="1">
-			                  <label for="star-a50"></label>
-			                </div>
-											<p>1460 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
-										</div>
-										<div class="name-quantity">
-											<h4>Антивікова сироватка для зони навколо очей</h4>
-											<p>1 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-15">
-			                  <input type="radio" name="star-15" id="star-a51" value="5">
-			                  <label for="star-a51"></label>
-			                  <input type="radio" name="star-15" id="star-a52" value="4">
-			                  <label for="star-a52"></label>
-			                  <input type="radio" name="star-15" id="star-a53" value="3">
-			                  <label for="star-a53"></label>
-			                  <input type="radio" name="star-15" id="star-a54" value="2">
-			                  <label for="star-a54"></label>
-			                  <input type="radio" name="star-15" id="star-a55" value="1">
-			                  <label for="star-a55"></label>
-			                </div>
-											<p>900 грн</p>
-										</div>
-									</li>
-								</ul>
-								<p class="cabinet-order-total">Загальна сумма:<span>3220 грн</span></p>
 							</div>
-							<div class="cabinet-order-two">
-								<h3>Замовлення №4596</h3>
-								<div class="order-history-header">
-									<p>Дата замовлення:
-										<br>
-										<span>
-											14.07.2022
-										</span>
-									</p>
-									<p>Статус:
-										<br>
-										<span>
-											Доставлений
-										</span>
-									</p>
-								</div>
-								<ul class="order-history-body scrollbar">
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_lotion_norm_comb.png" alt="Lotion for normal and combinated skin">
-										</div>
-										<div class="name-quantity">
-											<h4>Лосьон для нормальної та комбінованої шкіри</h4>
-											<p>1 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-16">
-			                  <input type="radio" name="star-16" id="star-a56" value="5">
-			                  <label for="star-a56"></label>
-			                  <input type="radio" name="star-16" id="star-a57" value="4">
-			                  <label for="star-a57"></label>
-			                  <input type="radio" name="star-16" id="star-a58" value="3">
-			                  <label for="star-a58"></label>
-			                  <input type="radio" name="star-16" id="star-a59" value="2">
-			                  <label for="star-a59"></label>
-			                  <input type="radio" name="star-16" id="star-a60" value="1">
-			                  <label for="star-a60"></label>
-			                </div>
-											<p>1050 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_scrub_sens.png" alt="Scrub for sensitive skin">
-										</div>
-										<div class="name-quantity">
-											<h4>Скраб для чутливої шкіри</h4>
-											<p>2 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-17">
-			                  <input type="radio" name="star-17" id="star-a61" value="5">
-			                  <label for="star-a61"></label>
-			                  <input type="radio" name="star-17" id="star-a62" value="4">
-			                  <label for="star-a62"></label>
-			                  <input type="radio" name="star-17" id="star-a63" value="3">
-			                  <label for="star-a63"></label>
-			                  <input type="radio" name="star-17" id="star-a64" value="2">
-			                  <label for="star-a64"></label>
-			                  <input type="radio" name="star-17" id="star-a-65" value="1">
-			                  <label for="star-a-65"></label>
-			                </div>
-											<p>890 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_gel_deep_clean.png" alt="Face deep cleaning gel">
-										</div>
-										<div class="name-quantity">
-											<h4>Гель для глубокого очищення шкіри обличчя</h4>
-											<p>1 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-18">
-			                  <input type="radio" name="star-18" id="star-a66" value="5">
-			                  <label for="star-a66"></label>
-			                  <input type="radio" name="star-18" id="star-a67" value="4">
-			                  <label for="star-a67"></label>
-			                  <input type="radio" name="star-18" id="star-a68" value="3">
-			                  <label for="star-a68"></label>
-			                  <input type="radio" name="star-18" id="star-a69" value="2">
-			                  <label for="star-a69"></label>
-			                  <input type="radio" name="star-18" id="star-a70" value="1">
-			                  <label for="star-a70"></label>
-			                </div>
-											<p>890 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
-										</div>
-										<div class="name-quantity">
-											<h4>Нічний антивіковій крем для сухої шкіри</h4>
-											<p>1 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-19">
-			                  <input type="radio" name="star-19" id="star-a71" value="5">
-			                  <label for="star-a71"></label>
-			                  <input type="radio" name="star-19" id="star-a72" value="4">
-			                  <label for="star-a72"></label>
-			                  <input type="radio" name="star-19" id="star-a73" value="3">
-			                  <label for="star-a73"></label>
-			                  <input type="radio" name="star-19" id="star-a74" value="2">
-			                  <label for="star-a74"></label>
-			                  <input type="radio" name="star-19" id="star-a75" value="1">
-			                  <label for="star-a75"></label>
-			                </div>
-											<p>860 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
-										</div>
-										<div class="name-quantity">
-											<h4>Гель для зняття макіяжу</h4>
-											<p>2 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-20">
-			                  <input type="radio" name="star-20" id="star-a76" value="5">
-			                  <label for="star-a76"></label>
-			                  <input type="radio" name="star-20" id="star-a77" value="4">
-			                  <label for="star-a77"></label>
-			                  <input type="radio" name="star-20" id="star-a78" value="3">
-			                  <label for="star-a78"></label>
-			                  <input type="radio" name="star-20" id="star-a79" value="2">
-			                  <label for="star-a79"></label>
-			                  <input type="radio" name="star-20" id="star-a80" value="1">
-			                  <label for="star-a80"></label>
-			                </div>
-											<p>1460 грн</p>
-										</div>
-									</li>
-									<li>
-										<div class="img-holder">
-												<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
-										</div>
-										<div class="name-quantity">
-											<h4>Антивікова сироватка для зони навколо очей</h4>
-											<p>1 шт</p>
-										</div>
-										<div class="rating-price">
-											<div class="star-rating-21">
-			                  <input type="radio" name="star-21" id="star-a81" value="5">
-			                  <label for="star-a81"></label>
-			                  <input type="radio" name="star-21" id="star-a82" value="4">
-			                  <label for="star-a82"></label>
-			                  <input type="radio" name="star-21" id="star-a83" value="3">
-			                  <label for="star-a83"></label>
-			                  <input type="radio" name="star-21" id="star-a84" value="2">
-			                  <label for="star-a84"></label>
-			                  <input type="radio" name="star-21" id="star-a85" value="1">
-			                  <label for="star-a85"></label>
-			                </div>
-											<p>900 грн</p>
-										</div>
-									</li>
-								</ul>
-								<p class="cabinet-order-total">Загальна сумма:<span>3010 грн</span></p>
+							<div class="show-more">
+								<a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
 							</div>
 						</div>
-						<div class="show-more">
-							<a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
-						</div>
 					</div>
+					<ul class="accordion-container">
+						<li>
+							<details>
+								<summary>Контактна інформація</summary>
+								<div class="content-personal-info">
+									<form>
+										<div class="personal-info-first">
+											<div>
+												<label for="first-name-cabinet">Ваше ім’я</label>
+												<input type="text" name="name" id="first-name-cabinet" placeholder="Світлана">
+											</div>
+											<div>
+												<label for="last-name-cabinet">Ваше прізвище</label>
+												<input type="text" name="surname" id="last-name-cabinet" placeholder="Шевченко">
+											</div>
+											<div>
+												<label for="email-cabinet">E-mail</label>
+												<input type="text" name="email" id="email-cabinet" placeholder="shevSv002@gmail.com">
+											</div>
+										</div>
+										<div class="personal-info-second">
+											<div>
+												<label for="tel-cabinet">Номер телефону</label>
+												<input type="tel" name="tel" id="tel-cabinet" placeholder="+38 068 564 77 99">
+											</div>
+											<div>
+												<label for="birth-date-cabinet">Дата народження</label>
+												<input type="text" name="birth-date" id="birth-date-cabinet" placeholder="8.10.1989">
+											</div>
+										</div>
+										<div class="personal-info-third">
+											<div class="save-btn-container">
+												<button type="submit" name="button">Зберегти</button>
+											</div>
+											<a href="./index.html" class="exit-btn">Вийти</a>
+										</div>
+									</form>
+								</div> 
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>Адресна книга</summary>
+								<div class="cabinet-address">
+									<div class="cabinet-address-main">
+										<ul class="delivery-address">
+											<li class="first-delivery-address">
+												<img src="./images/list_one_active.png" alt="first list icon">
+												<div class="address-one-info">
+													<p>Шевченко Світлана</p>
+													<p>Місто КиЇв</p>
+													<p>Градинська 11б, 85</p>
+													<p>+38 068 564 77 99</p>
+													<div class="change-address">
+														<button type="button" name="edit">Редагувати</button>
+														<button type="button" name="delete">Видалити</button>
+													</div>
+												</div>
+											</li>
+											<li class="second-delivery-address">
+												<img src="./images/list_two_active.png" alt="second list icon">
+												<div class="address-two-info">
+													<p>Шевченко Світлана</p>
+													<p>Місто Харків</p>
+													<p>Трінклера 18, 65</p>
+													<p>+38 068 564 77 99</p>
+													<div class="change-address">
+														<button type="button" name="edit">Редагувати</button>
+														<button type="button" name="delete">Видалити</button>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<fieldset>
+											<legend>Додати нову адресу:</legend>
+											<input type="text" id="name-surname" name="name-surname" placeholder="ПІБ" required>
+											<input type="text" id="city" name="city" placeholder="Місто" required>
+											<div>
+												<input type="text" id="street" name="street" placeholder="Вулиця" required>
+												<input type="text" id="block" name="block" placeholder="Корпус">
+												<input type="number" id="flat" name="flat" placeholder="Квартира">
+											</div>
+											<input type="text" id="post-number" name="post-name" placeholder="Поштове відділення" required>
+											<input type="tel" id="tel-number" name="tel-number" placeholder="Номер телефону" required>
+										</fieldset>
+									</div>
+									<div class="save-btn-container">
+										<button type="submit" name="button">Зберегти</button>
+									</div>
+								</div>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>Список бажань</summary>
+								<div class="cabinet-wishlist">
+									<h2 class="hidden">Список бажань</h2>
+									<ul class="scrollbar" id="wish-list">
+										<li>
+											<div class="img-holder">
+												<img src="./images/catalogue_fluid_dry.png" alt="Fluid for dry skin">
+											</div>
+											<div class="rating-availability">
+												<div class="star-rating-25">
+													<input type="radio" name="star-4" id="star-a85" value="5">
+													<label for="star-a85"></label>
+													<input type="radio" name="star-4" id="star-a86" value="4">
+													<label for="star-a86"></label>
+													<input type="radio" name="star-4" id="star-a87" value="3">
+													<label for="star-a87"></label>
+													<input type="radio" name="star-4" id="star-a88" value="2">
+													<label for="star-a88"></label>
+													<input type="radio" name="star-4" id="star-a89" value="1">
+													<label for="star-a89"></label>
+												</div>
+												<p class="availability-fluid-dry-skin">В наявності</p>
+											</div>
+											<h3>
+												Флюид для обличчя для сухої шкіри
+											</h3>
+											<p class="wishlist-price">
+												630 грн
+											</p>
+											<div class="wishlist-buttons">
+												<div class="tobasket-btn-container">
+													<button type="button" name="button">В кошик</button>
+												</div>
+												<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+												<img src="./images/catalogue_mattif_day_cream_oil.png" alt="Mattifying day cream for oily skin">
+											</div>
+											<div class="rating-availability">
+												<div class="star-rating-26">
+													<input type="radio" name="star-5" id="star-a90" value="5">
+													<label for="star-a90"></label>
+													<input type="radio" name="star-5" id="star-a91" value="4">
+													<label for="star-a91"></label>
+													<input type="radio" name="star-5" id="star-a92" value="3">
+													<label for="star-a92"></label>
+													<input type="radio" name="star-5" id="star-a93" value="2">
+													<label for="star-a93"></label>
+													<input type="radio" name="star-5" id="star-a94" value="1">
+													<label for="star-a94"></label>
+												</div>
+												<p>Залишилось 3 шт</p>
+											</div>
+											<h3>
+												Матуючий денний крем для жирної шкіри
+											</h3>
+											<p class="wishlist-price">
+												680 грн
+											</p>
+											<div class="wishlist-buttons">
+												<div class="tobasket-btn-container">
+													<button type="button" name="button">В кошик</button>
+												</div>
+												<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+											</div>
+										</li>
+										<li>
+											<div class="img-holder">
+												<img src="./images/catalogue_hydr_serum_norm.png" alt="Hydrating serum for normal skin">
+											</div>
+											<div class="rating-availability">
+												<div class="star-rating-27">
+													<input type="radio" name="star-6" id="star-a95" value="5">
+													<label for="star-a95"></label>
+													<input type="radio" name="star-6" id="star-a96" value="4">
+													<label for="star-a6"></label>
+													<input type="radio" name="star-6" id="star-a97" value="3">
+													<label for="star-a97"></label>
+													<input type="radio" name="star-6" id="star-a98" value="2">
+													<label for="star-a98"></label>
+													<input type="radio" name="star-6" id="star-a99" value="1">
+													<label for="star-a99"></label>
+												</div>
+												<p class="availability-fluid-dry-skin">В наявності</p>
+											</div>
+											<h3>
+												Зволожуюча сироватка для нормальної шкіри
+											</h3>
+											<p class="wishlist-price">
+												480 грн
+											</p>
+											<div class="wishlist-buttons">
+												<div class="tobasket-btn-container">
+													<button type="button" name="button">В кошик</button>
+												</div>
+												<button type="button" name="delete" class="wishlist-delete">Видалити</button>
+											</div>
+										</li>
+									</ul>
+									<div class="show-more">
+										<a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
+									</div>
+								</div>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary>Історія замовлень</summary>
+								<div class="cabinet-order">
+									<div class="cabinet-order-wrapper">
+										<div class="cabinet-order-one">
+											<h3>Замовлення №5647</h3>
+											<div class="order-history-header">
+												<p>Дата замовлення:
+													<br>
+													<span>
+														9.08.2022
+													</span>
+												</p>
+												<p>Статус:
+													<br>
+													<span>
+														В обробці
+													</span>
+												</p>
+											</div>
+											<ul class="order-history-body scrollbar">
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
+													</div>
+													<div class="name-quantity">
+														<h4>Нічний антивіковій крем для сухої шкіри</h4>
+														<p>1 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-10">
+															<input type="radio" name="star-10" id="star-a25" value="5">
+															<label for="star-a25"></label>
+															<input type="radio" name="star-10" id="star-a26" value="4">
+															<label for="star-a26"></label>
+															<input type="radio" name="star-10" id="star-a27" value="3">
+															<label for="star-a27"></label>
+															<input type="radio" name="star-10" id="star-a28" value="2">
+															<label for="star-a28"></label>
+															<input type="radio" name="star-10" id="star-a29" value="1">
+															<label for="star-a29"></label>
+														</div>
+														<p class="price-mob">1 шт</p>
+														<p>860 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
+													</div>
+													<div class="name-quantity">
+														<h4>Гель для зняття макіяжу</h4>
+														<p>2 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-11">
+															<input type="radio" name="star-11" id="star-a30" value="5">
+															<label for="star-a30"></label>
+															<input type="radio" name="star-11" id="star-a31" value="4">
+															<label for="star-a31"></label>
+															<input type="radio" name="star-11" id="star-a32" value="3">
+															<label for="star-a32"></label>
+															<input type="radio" name="star-11" id="star-a33" value="2">
+															<label for="star-a33"></label>
+															<input type="radio" name="star-11" id="star-a34" value="1">
+															<label for="star-a34"></label>
+														</div>
+														<p class="price-mob">2 шт</p>
+														<p>1460 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
+													</div>
+													<div class="name-quantity">
+														<h4>Антивікова сироватка для зони навколо очей</h4>
+														<p>1 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-12">
+															<input type="radio" name="star-12" id="star-a36" value="5">
+															<label for="star-a36"></label>
+															<input type="radio" name="star-12" id="star-a37" value="4">
+															<label for="star-a37"></label>
+															<input type="radio" name="star-12" id="star-a38" value="3">
+															<label for="star-a38"></label>
+															<input type="radio" name="star-12" id="star-a39" value="2">
+															<label for="star-a39"></label>
+															<input type="radio" name="star-12" id="star-a-40" value="1">
+															<label for="star-a-40"></label>
+														</div>
+														<p class="price-mob">1 шт</p>
+														<p>900 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
+													</div>
+													<div class="name-quantity">
+														<h4>Нічний антивіковій крем для сухої шкіри</h4>
+														<p>1 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-13">
+															<input type="radio" name="star-13" id="star-a41" value="5">
+															<label for="star-a41"></label>
+															<input type="radio" name="star-13" id="star-a42" value="4">
+															<label for="star-a42"></label>
+															<input type="radio" name="star-13" id="star-a43" value="3">
+															<label for="star-a43"></label>
+															<input type="radio" name="star-13" id="star-a44" value="2">
+															<label for="star-a44"></label>
+															<input type="radio" name="star-13" id="star-a45" value="1">
+															<label for="star-a45"></label>
+														</div>
+														<p>860 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
+													</div>
+													<div class="name-quantity">
+														<h4>Гель для зняття макіяжу</h4>
+														<p>2 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-14">
+															<input type="radio" name="star-14" id="star-a46" value="5">
+															<label for="star-a46"></label>
+															<input type="radio" name="star-14" id="star-a47" value="4">
+															<label for="star-a47"></label>
+															<input type="radio" name="star-14" id="star-a48" value="3">
+															<label for="star-a48"></label>
+															<input type="radio" name="star-14" id="star-a49" value="2">
+															<label for="star-a49"></label>
+															<input type="radio" name="star-14" id="star-a50" value="1">
+															<label for="star-a50"></label>
+														</div>
+														<p>1460 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
+													</div>
+													<div class="name-quantity">
+														<h4>Антивікова сироватка для зони навколо очей</h4>
+														<p>1 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-15">
+															<input type="radio" name="star-15" id="star-a51" value="5">
+															<label for="star-a51"></label>
+															<input type="radio" name="star-15" id="star-a52" value="4">
+															<label for="star-a52"></label>
+															<input type="radio" name="star-15" id="star-a53" value="3">
+															<label for="star-a53"></label>
+															<input type="radio" name="star-15" id="star-a54" value="2">
+															<label for="star-a54"></label>
+															<input type="radio" name="star-15" id="star-a55" value="1">
+															<label for="star-a55"></label>
+														</div>
+														<p>900 грн</p>
+													</div>
+												</li>
+											</ul>
+											<p class="cabinet-order-total">Загальна сумма: <span>3220 грн</span></p>
+										</div>
+										<div class="cabinet-order-two">
+											<h3>Замовлення №4596</h3>
+											<div class="order-history-header">
+												<p>Дата замовлення:
+													<br>
+													<span>
+														14.07.2022
+													</span>
+												</p>
+												<p>Статус:
+													<br>
+													<span>
+														Доставлений
+													</span>
+												</p>
+											</div>
+											<ul class="order-history-body scrollbar">
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_lotion_norm_comb.png" alt="Lotion for normal and combinated skin">
+													</div>
+													<div class="name-quantity">
+														<h4>Лосьон для нормальної та комбінованої шкіри</h4>
+														<p>1 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-16">
+															<input type="radio" name="star-16" id="star-a56" value="5">
+															<label for="star-a56"></label>
+															<input type="radio" name="star-16" id="star-a57" value="4">
+															<label for="star-a57"></label>
+															<input type="radio" name="star-16" id="star-a58" value="3">
+															<label for="star-a58"></label>
+															<input type="radio" name="star-16" id="star-a59" value="2">
+															<label for="star-a59"></label>
+															<input type="radio" name="star-16" id="star-a60" value="1">
+															<label for="star-a60"></label>
+														</div>
+														<p>1050 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_scrub_sens.png" alt="Scrub for sensitive skin">
+													</div>
+													<div class="name-quantity">
+														<h4>Скраб для чутливої шкіри</h4>
+														<p>2 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-17">
+															<input type="radio" name="star-17" id="star-a61" value="5">
+															<label for="star-a61"></label>
+															<input type="radio" name="star-17" id="star-a62" value="4">
+															<label for="star-a62"></label>
+															<input type="radio" name="star-17" id="star-a63" value="3">
+															<label for="star-a63"></label>
+															<input type="radio" name="star-17" id="star-a64" value="2">
+															<label for="star-a64"></label>
+															<input type="radio" name="star-17" id="star-a-65" value="1">
+															<label for="star-a-65"></label>
+														</div>
+														<p>890 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_gel_deep_clean.png" alt="Face deep cleaning gel">
+													</div>
+													<div class="name-quantity">
+														<h4>Гель для глубокого очищення шкіри обличчя</h4>
+														<p>1 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-18">
+															<input type="radio" name="star-18" id="star-a66" value="5">
+															<label for="star-a66"></label>
+															<input type="radio" name="star-18" id="star-a67" value="4">
+															<label for="star-a67"></label>
+															<input type="radio" name="star-18" id="star-a68" value="3">
+															<label for="star-a68"></label>
+															<input type="radio" name="star-18" id="star-a69" value="2">
+															<label for="star-a69"></label>
+															<input type="radio" name="star-18" id="star-a70" value="1">
+															<label for="star-a70"></label>
+														</div>
+														<p>890 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_night_antiage_cream_dry.png" alt="Night antiage cream for dry skin">
+													</div>
+													<div class="name-quantity">
+														<h4>Нічний антивіковій крем для сухої шкіри</h4>
+														<p>1 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-19">
+															<input type="radio" name="star-19" id="star-a71" value="5">
+															<label for="star-a71"></label>
+															<input type="radio" name="star-19" id="star-a72" value="4">
+															<label for="star-a72"></label>
+															<input type="radio" name="star-19" id="star-a73" value="3">
+															<label for="star-a73"></label>
+															<input type="radio" name="star-19" id="star-a74" value="2">
+															<label for="star-a74"></label>
+															<input type="radio" name="star-19" id="star-a75" value="1">
+															<label for="star-a75"></label>
+														</div>
+														<p>860 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_makeup_remover_gel.png" alt="Makeup removering gel">
+													</div>
+													<div class="name-quantity">
+														<h4>Гель для зняття макіяжу</h4>
+														<p>2 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-20">
+															<input type="radio" name="star-20" id="star-a76" value="5">
+															<label for="star-a76"></label>
+															<input type="radio" name="star-20" id="star-a77" value="4">
+															<label for="star-a77"></label>
+															<input type="radio" name="star-20" id="star-a78" value="3">
+															<label for="star-a78"></label>
+															<input type="radio" name="star-20" id="star-a79" value="2">
+															<label for="star-a79"></label>
+															<input type="radio" name="star-20" id="star-a80" value="1">
+															<label for="star-a80"></label>
+														</div>
+														<p>1460 грн</p>
+													</div>
+												</li>
+												<li>
+													<div class="img-holder">
+															<img src="./images/catalogue_antiage_serum_night.png" alt="Antiage serum">
+													</div>
+													<div class="name-quantity">
+														<h4>Антивікова сироватка для зони навколо очей</h4>
+														<p>1 шт</p>
+													</div>
+													<div class="rating-price">
+														<div class="star-rating-21">
+															<input type="radio" name="star-21" id="star-a81" value="5">
+															<label for="star-a81"></label>
+															<input type="radio" name="star-21" id="star-a82" value="4">
+															<label for="star-a82"></label>
+															<input type="radio" name="star-21" id="star-a83" value="3">
+															<label for="star-a83"></label>
+															<input type="radio" name="star-21" id="star-a84" value="2">
+															<label for="star-a84"></label>
+															<input type="radio" name="star-21" id="star-a85" value="1">
+															<label for="star-a85"></label>
+														</div>
+														<p>900 грн</p>
+													</div>
+												</li>
+											</ul>
+											<p class="cabinet-order-total">Загальна сумма:<span>3010 грн</span></p>
+										</div>
+									</div>
+									<div class="show-more order-more">
+										<a href="#" target="_blank" rel="noopener noreferrer" class="show-more-btn">Показати ще</a>
+									</div>
+								</div>
+							</details>
+						</li>
+					</ul>
         </section>
 			</div>
 		</main>
@@ -789,6 +1329,15 @@
 									<a href="tel:+380956789900">+38 (095) 678 99 00</a>
 								</li>
 						</ul>
+						<div class="footer-contacts-mobile">
+							<a href="#">Політика конфіденційності</a>
+							<div>
+								<a href="tel:+380635542221">+38 (063) 554 22 21</a>
+								<br>
+								<a href="tel:+380956789900">+38 (095) 678 99 00</a>
+							</div>
+						</div>
+						</ul>
 						<div class="payment-methods">
 							<ul>
 								<li class="mastercard">
@@ -802,9 +1351,6 @@
 					</div>
 				</div>
 			</section>
-			<!-- <a href="#" class="main-scroll" id="main-scroll" style="visibility: visible;">
-				<img src="./images/round_scroll.png" alt="Scroll up">
-			</a> -->
 		</footer>
 	</div>
 </body>
