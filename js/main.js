@@ -318,3 +318,31 @@ summaries.forEach(summary => {
       });
    });
 });
+
+// ---------------------------- Gratitude Pop Up Window
+document.addEventListener('DOMContentLoaded', function() {
+  const orderButton = document.querySelector('#order-button');
+  orderButton.addEventListener('click', function() {
+    console.log('Button is clicked');
+    window.location.href = '../gratitude.html';
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const orderButtonMob = document.querySelector('#order-button-mob');
+  let basket = document.querySelector('#basket');
+  orderButtonMob.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log('Button is clicked');
+          let popup = document.createElement('div');
+          popup.className = 'popup';
+          popup.innerHTML = '<h4>Дякуємо за замовлення!</h4><p>Оплата пройшла успішно</p>';
+          console.log(popup);
+          basket.prepend(popup);
+          setTimeout(function() {
+              popup.remove();
+          }, 13000);
+      })
+  });
+
+

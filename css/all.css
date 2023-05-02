@@ -3399,7 +3399,6 @@ header .burger-btn-extra img{
   }
 }
 
-
 /* ------------------------------Gratitude Page */
 .gratitude{
   margin: 17px 0 18px 0;
@@ -3408,6 +3407,11 @@ header .burger-btn-extra img{
   max-width: 1920px;
   height: 642px;
 }
+/* @media(max-width: 958px){
+  .gratitude{
+    height: auto;
+  }
+} */
 
 /* ------------------------------Basket Page */
 /* ----------Personal Info Section*/
@@ -3944,6 +3948,9 @@ header .burger-btn-extra img{
     line-height: 1.22;
     margin: 4px 4px -4px -4px;
   }
+  .basket>.tobasket-btn-container button:hover {
+    transform: translateY(-4px) translateX(4px);
+  }
 }
 @media(max-width: 958px){
   .basket .basket-items ul li>input,
@@ -3972,6 +3979,37 @@ header .burger-btn-extra img{
   .basket .basket-items ul li p{
     margin: 0 auto 0 0;
   }
+}
+
+/*---------------------------------Style for pop-up */
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10px;
+  gap: 10px;
+  color: #FFFBF5;
+  z-index: 999;
+  background: rgba(75, 96, 73, 0.6);
+  backdrop-filter: blur(7.5px);
+  width: 328px;
+  height: 189px;
+  text-align: center;
+}
+.popup h4{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+}
+.popup p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
 }
 
 /* ------------------------------Cabinet Page */
