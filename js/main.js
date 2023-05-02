@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
           basket.prepend(popup);
           setTimeout(function() {
               popup.remove();
-          }, 13000);
+          }, 5000);
       })
   });
 
