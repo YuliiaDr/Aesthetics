@@ -3,7 +3,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width; initial-scale=1" />
-	<!-- <link href="//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara" rel="stylesheet" type="text/css"/> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
@@ -194,6 +193,7 @@
 							<h3>
 								Лосьон для нормальної та комбінованої шкіри
 							</h3>
+							<input type="number" class="basket-quantity" name="quantity" min="1" max="10" value="1">
 							<div class="mob-basket">
 								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
 								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
@@ -210,6 +210,7 @@
 							<h3>
 								Антиоксидантний крем для обличчя
 							</h3>
+							<input type="number" class="basket-quantity" name="quantity" min="1" max="10" value="1">
 							<div class="mob-basket">
 								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
 								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
@@ -226,6 +227,7 @@
 							<h3>
 								Антивікова сироватка для зони навколо очей
 							</h3>
+							<input type="number" class="basket-quantity" name="quantity" min="1" max="10" value="1">
 							<div class="mob-basket">
 								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
 								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
@@ -242,6 +244,7 @@
 							<h3>
 								Лосьон для нормальної та комбінованої шкіри
 							</h3>
+							<input type="number" class="basket-quantity" name="quantity" min="1" max="10" value="1">
 							<div class="mob-basket">
 								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
 								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
@@ -264,16 +267,16 @@
 						<h2>Особисті дані</h2>
 						<form class="#" action="index.html" method="post">
 							<div class="field">
-								<label for="name">Ваше ім’я та прізвище</label>
-								<input type="text" name="name" id="name" placeholder="Шевченко Світлана" autofocus autocomplete="on" required>
+								<label for="name-mob">Ваше ім’я та прізвище</label>
+								<input type="text" name="name" id="name-mob" placeholder="Шевченко Світлана" autocomplete="on" required>
 							</div>
 							<div class="field">
-								<label for="email">E-mail</label>
-								<input type="email" name="email" id="email" placeholder="shevSv002@gmail.com" autocomplete="on" required>
+								<label for="email-mob">E-mail</label>
+								<input type="email" name="email" id="email-mob" placeholder="shevSv002@gmail.com" autocomplete="on" required>
 							</div>
 							<div class="field">
-								<label for="tel">Номер телефону</label>
-								<input type="tel" name="tel" id="tel" placeholder="+38 068 564 77 99" autocomplete="on" required>
+								<label for="tel-mob">Номер телефону</label>
+								<input type="tel" name="tel" id="tel-mob" placeholder="+38 068 564 77 99" autocomplete="on" required>
 							</div>
 						</form>
 					</div>
@@ -425,7 +428,6 @@
 								<a href="tel:+380956789900">+38 (095) 678 99 00</a>
 							</div>
 						</div>
-						</ul>
 						<div class="payment-methods">
 							<ul>
 								<li class="mastercard">
