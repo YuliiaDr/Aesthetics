@@ -15,7 +15,7 @@
 	<title>Contacts-AESTHETICS</title>
 </head>
 <body>
-	<div id="wrapper">
+	<div class="wrapper">
 		<header>
 			<div class="layout">
 				<h1 class="hidden">Контакти- Aesthetics</h1>
@@ -72,49 +72,47 @@
 			</div>
 		</header>
 		<main>
-			<div id="content">
-        <section class="contacts layout">
-          <h2 class="hidden">Секція контактів</h2>
-          <div class="img-holder">
-            <img src="./images/contact_image.png" alt="Dispenser on the background of the cup">
-          </div>
-          <div class="contacts-text">
-            <div class="initial visible">
-              <h3>
-                Режим роботи:
-              </h3>
-              <p>
-                Понеділок - Субота
-              </p>
-              <p>
-                З 9:00 до 21:00
-              </p>
-              <ul>
-                <li>
-                  <a href="tel:+380635542221">+38 (063) 554 22 21</a>
-                </li>
-                <li>
-                  <a href="tel:+380956789900">+38 (095) 678 99 00</a>
-                </li>
-              </ul>
-							<form class="contact-form" action="#" method="post">
-                <div class="contact-input">
-                  <input type="text" placeholder="Ваше ім’я" name="name" id="contacts-name" required autofocus>
-                  <input type="tel" placeholder="Номер телефону" name="number" id="contacts-tel" required mask
-									>
-                </div>
-                <div class="callback-btn-container">
-                  <button type="button" name="button" onclick = 'validCallback(event)'>Передзвоніть</button>
-                </div>
-              </form>
-            </div>
-            <div class="secondary">
-              <h3>Дякуємо!</h3>
-              <p>Ми вже телефонуємо вам</p>
-            </div>
-          </div>
-        </section>
-			</div>
+			<section class="contacts layout">
+				<h2 class="hidden">Секція контактів</h2>
+				<div class="img-holder">
+					<img src="./images/contact_image.png" alt="Dispenser on the background of the cup">
+				</div>
+				<div class="contacts-text">
+					<div class="initial visible">
+						<h3>
+							Режим роботи:
+						</h3>
+						<p>
+							Понеділок - Субота
+						</p>
+						<p>
+							З 9:00 до 21:00
+						</p>
+						<ul>
+							<li>
+								<a href="tel:+380635542221">+38 (063) 554 22 21</a>
+							</li>
+							<li>
+								<a href="tel:+380956789900">+38 (095) 678 99 00</a>
+							</li>
+						</ul>
+						<form class="contact-form" action="#" method="post">
+							<div class="contact-input">
+								<input type="text" placeholder="Ваше ім’я" name="name" id="contacts-name" required autofocus>
+								<input type="tel" placeholder="Номер телефону" name="number" id="contacts-tel" required mask
+								>
+							</div>
+							<div class="callback-btn-container">
+								<button type="button" name="button" onclick = 'validCallback(event)'>Передзвоніть</button>
+							</div>
+						</form>
+					</div>
+					<div class="secondary">
+						<h3>Дякуємо!</h3>
+						<p>Ми вже телефонуємо вам</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<section class="footer-quick-contacts">

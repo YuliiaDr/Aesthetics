@@ -96,7 +96,7 @@ body {
   font-size: 26px;
   line-height: 1.23;
 }
-#wrapper {
+.wrapper {
 	display:block;
 	position:relative;
 	width:100%;
@@ -3123,7 +3123,7 @@ header .burger-btn-extra img{
   display: flex;
   margin: 19px auto 21px auto;
 }
-@media(max-width: 1279px){
+@media(max-width: 1400px){
   .contacts{
     margin: 30px auto;
   }
@@ -3133,6 +3133,7 @@ header .burger-btn-extra img{
   max-width: 1074px;
   min-height: 342px;
   max-height: 608px;
+  width: 100%;
   position: absolute;
   z-index: -1;
 }
@@ -3374,6 +3375,30 @@ header .burger-btn-extra img{
 .contacts .contacts-text .visible{
   display: block;
 }
+@media(max-width: 830px){
+  .contacts .contacts-text .secondary{
+    margin: 50px auto 150px auto;
+    width: 250px;
+    height: 25px;
+  }
+  .contacts .contacts-text .secondary h3{
+    font-size: 36px;
+    line-height: 1.22; /* 22/18px */
+  }
+  .contacts .secondary p{
+    font-size: 30px;
+    line-height: 1.21;
+    white-space: pre-wrap;
+    text-align: center;
+  }
+}
+@media(max-width: 480px){
+  .contacts .contacts-text .secondary{
+    margin: 50px auto 170px auto;
+    height: 35px;
+  }
+}
+
 
 /* ------------------------------Gratitude Page */
 .gratitude{
@@ -3389,6 +3414,13 @@ header .burger-btn-extra img{
 .basket{
   max-width: 880px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+@media(max-width: 958px){
+  .basket{
+    width: 328px;
+  }
 }
 .basket h1{
   margin: 54px auto 20px auto;
@@ -3399,9 +3431,30 @@ header .burger-btn-extra img{
   line-height: 1.22;
   color: var(--primary-text-color);
 }
+@media(max-width: 958px){
+  .basket h1{
+    margin: 30px auto 35px auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
 .basket .basket-info{
   width: 880px;
   margin-bottom: 47px;
+}
+.basket .basket-info-mob{
+  display: none;
+}
+@media(max-width: 958px){
+  .basket .basket-info{
+    display: none;
+  }
+  .basket .basket-info-mob{
+    display: block;
+    width: 328px;
+  }
 }
 .content {
   display: none;
@@ -3421,7 +3474,7 @@ header .burger-btn-extra img{
   justify-content: space-between;
   align-items: center;
   user-select: none;
-  transition: background 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .basket .label-one,
 .basket .label-two {
@@ -3433,7 +3486,7 @@ header .burger-btn-extra img{
   font-size: 26px;
   line-height: 1.23;
   color: #000000;
-  transition: background 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   display: inline-block;
   transition: all 400ms ease-in-out;
 }
@@ -3477,13 +3530,58 @@ header .burger-btn-extra img{
   transition: all 400ms ease-in-out;
   transform: rotate(360deg);
 }
-.basket .basket-info .content.one form{
+@media (max-width: 958px) {
+  .basket .basket-info-mob .two h2::before{
+    display: inline-block;
+    content: "";
+    background-image: url(../images/list_two_active.png);
+    background-size: 33px 32px;
+    transition: all 400ms ease-in-out;
+    width: 33px;
+    height: 32px;
+  }
+  .basket .basket-info-mob .one h2::before{
+    display: inline-block;
+    content: "";
+    background-image: url(../images/list_one_active.png);
+    background-size: 33px 32px;
+    transition: all 400ms ease-in-out;
+    width: 33px;
+    height: 32px;
+  }
+  .basket .basket-info-mob h2::before:hover{
+    transform: rotate(360deg);
+  }
+  .basket .basket-info-mob h2 {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 7.62px;
+    align-items: center;
+    user-select: none;
+    transition: all 400ms ease-in-out;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.22;
+  }
+}
+@media (max-width: 958px) {
+  .basket .basket-info-mob .two h2::before{
+    display: inline-block;
+    content: "";
+    background-image: url(../images/list_two_active.png);
+    background-size: 33px 32px;
+    transition: all 400ms ease-in-out;
+    width: 33px;
+    height: 32px;
+  }
+}
+.basket .one form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
 }
-.basket .basket-info .content.one form .field{
+.basket .one form .field{
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -3492,7 +3590,7 @@ header .burger-btn-extra img{
   line-height: 1.5;
   color: #000000;
 }
-.basket .basket-info .content.one form .field input{
+.basket .one form .field input{
   width: 368px;
   height: 50px;
   border: 0.5px solid #000000;
@@ -3502,12 +3600,30 @@ header .burger-btn-extra img{
   line-height: 1.5;
   color: #000000;
 }
-.basket .basket-info .content.two .tab-payment-delivery{
+@media (max-width: 958px) {
+  .basket .one form{
+    align-items: flex-end;
+    gap: 10px;
+    margin: 10px 0 30px auto;
+  }
+  .basket .one form .field{
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .basket .one form .field input{
+    width: 280px;
+    height: 37px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.basket .two .tab-payment-delivery{
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method{
+.basket .two .delivery-payment-method{
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -3517,48 +3633,75 @@ header .burger-btn-extra img{
   line-height: 1.5;
   color: #000000;
 }
-.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method .delivery-method,
-.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method .payment-method{
+.basket .two .delivery-payment-method .delivery-method,
+.basket .two .delivery-payment-method .payment-method{
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method h3,
-.basket .basket-info .content.two .tab-payment-delivery .address h3{
+@media(max-width:958px){
+  .basket .two .delivery-payment-method{
+    gap: 30px;
+    font-size: 14px;
+    line-height: 1.21;
+    margin: 20px auto 30px auto;
+  }
+  .basket .two .delivery-payment-method .delivery-method,
+  .basket .two .delivery-payment-method .payment-method{
+    gap: 20px;
+  }
+}
+.basket .two .delivery-payment-method h3,
+.basket .two .address h3{
   font-family: 'Candara', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   color: #000000;
 }
-.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method form{
+.basket .two .delivery-payment-method form{
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.basket .basket-info .content.two .tab-payment-delivery .delivery-payment-method form div label{
+.basket .two .delivery-payment-method form div label{
   display: flex;
   align-items: center;
 }
-.basket .basket-info .content.two .tab-payment-delivery .address{
+.basket .two .address{
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 266px;
 }
-.basket .basket-info .content.two .tab-payment-delivery .address form{
+.basket .two .address form{
   display: flex;
   flex-direction: column;
   gap: 28px;
   font-size: 20px;
   line-height: 24px;
 }
-.basket .basket-info .content.two .tab-payment-delivery .address form div{
+@media(max-width: 958px){
+  .basket .two .address{
+    /* gap: 30px; */
+    margin: 0 0 50px auto;
+    width: 328px;
+  }
+  .basket .two .address form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.basket .two .address form div{
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.basket .basket-info .content.two .tab-payment-delivery .address form div label:nth-of-type(n+2){
+.basket .two .address form div label:nth-of-type(n+2){
   padding-left: 27px;
 }
 /* стилі при наведенні курсора на радіо */
@@ -3583,6 +3726,12 @@ header .burger-btn-extra img{
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 958px) {
+  .basket .basket-items{
+    width: 328px;
+    margin-bottom: 30px;
+  }
+}
 .basket .basket-items .scrollbar{
   overflow-y: scroll;
   margin-bottom: 5px;
@@ -3593,12 +3742,33 @@ header .burger-btn-extra img{
   height: 293px;
   width: 916px;
 }
+@media(max-width: 958px){
+  .basket .basket-items .scrollbar{
+    overflow-y: clip;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    width: 328px;
+  }
+}
 .basket .basket-items .scrollbar li{
   display: flex;
   justify-content: space-between;
   border-top: 0.5px solid var(--primary-accent-color);
   width: 862px;
   height: 98px;
+}
+@media(max-width: 958px){
+  .basket .basket-items .scrollbar li{
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    /* border-top: none;
+    border-bottom: 0.5px solid var(--primary-accent-color); */
+    width: 328px;
+    height: 176px;
+  }
 }
 .basket .basket-items .scrollbar li:first-of-type{
   border-top: none;
@@ -3607,13 +3777,26 @@ header .burger-btn-extra img{
   border-bottom: 0.5px solid var(--primary-accent-color);
 }
 .basket .basket-items ul li .img-holder{
-  width:80px;
+  width: 80px;
   height: 80px;
   margin: 9px 100px 9px 0;
+}
+@media(max-width: 958px){
+  .basket .basket-items ul li .img-holder{
+    width: 156px;
+    height: 156px;
+    margin: 0 17px 0 0;
+  }
 }
 .basket .basket-items ul li .img-holder img{
   width: 80px;
   height: 100%;
+}
+@media(max-width: 958px){
+  .basket .basket-items ul li .img-holder img{
+    width: 156px;
+    height: 156px;
+  }
 }
 .basket .basket-items ul li h3{
   width: 240px;
@@ -3624,7 +3807,18 @@ header .burger-btn-extra img{
   font-size: 20px;
   line-height: 1.2;
 }
-.basket .basket-items ul li input{
+@media(max-width: 958px){
+  .basket .basket-items ul li h3{
+    width: 155px;
+    word-wrap: wrap;
+    height: auto;
+    margin: 0 auto 31px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.basket .basket-items ul li>input{
   width: 86px;
   height: 49px;
   padding: 5px 17px 5px 17px;
@@ -3635,6 +3829,9 @@ header .burger-btn-extra img{
   line-height: 1.5;
   color: var(--primary-text-color);
   border: 1px solid #484847;
+}
+.basket .basket-items ul li .mob-basket{
+  display: none;
 }
 .basket .basket-items ul li p{
   width: 75px;
@@ -3695,11 +3892,86 @@ header .burger-btn-extra img{
   border: none;
   transition: all 400ms ease-in-out;
 }
+.basket .tobasket-btn-container {
+  position: relative;
+  right: 0;
+  width: 219px;
+  height: 59px;
+  border: 0.5px solid var(--primary-accent-color);
+  margin: 49px 0 8px auto;
+}
 .basket .tobasket-btn-container button:hover {
   transform: translateY(-8px) translateX(8px);
 }
 .basket .tobasket-btn-container button:focus {
    outline: none;
+}
+.basket>.tobasket-btn-container{
+  display: none;
+}
+@media(max-width: 958px){
+  .basket .basket-items .tobasket-btn-container,
+  .basket .basket-items .tobasket-btn-container button{
+    display: none;
+  }
+  .basket .basket-items .total{
+    font-size: 18px;
+    line-height: 1.22;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+@media(max-width: 958px){
+  .basket>.tobasket-btn-container,
+  .basket>.tobasket-btn-container button{
+    display: block;
+    width: 132px;
+    height: 42px;
+    /* margin: 0 auto 50px 0; */
+  }
+  .basket>.tobasket-btn-container{
+    width: 132px;
+    height: 42px;
+    margin: 0 auto 50px 0;
+  }
+  .basket>.tobasket-btn-container button{
+    width: 132px;
+    height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.22;
+    margin: 4px 4px -4px -4px;
+  }
+}
+@media(max-width: 958px){
+  .basket .basket-items ul li>input,
+  .basket .remove-btn{
+    display: none;
+  }
+  .basket .basket-items ul li .mob-basket{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26px 32px 0;
+    width: 110px;
+  }
+  .basket .basket-items ul li .mob-basket input{
+    width: 54px;
+    height: 32px;
+    padding: 5px 10px;
+    margin: 0;
+  }
+  .basket .basket-items ul li .mob-basket input::placeholder{
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .basket .basket-items ul li .mob-basket .remove-btn-mob{
+    margin: 0;
+  }
+  .basket .basket-items ul li p{
+    margin: 0 auto 0 0;
+  }
 }
 
 /* ------------------------------Cabinet Page */
@@ -3746,7 +4018,7 @@ header .burger-btn-extra img{
   display: inline-flex;
   align-items: center;
   user-select: none;
-  transition: background 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 .label-contact,
 .label-address,

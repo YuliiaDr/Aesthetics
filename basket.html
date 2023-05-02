@@ -16,7 +16,7 @@
 	<title>My order-AESTHETICS</title>
 </head>
 <body>
-	<div id="wrapper">
+	<div class="wrapper">
 		<header>
 			<div class="layout">
 				<h1 class="hidden">Замовлення- Aesthetics</h1>
@@ -42,123 +42,115 @@
 				<ul class="user-utilities">
 					<li class="nav-cabinet">
 						<a href="./personal_cabinet.html" target="_blank" rel="noopener noreferrer">
-							<!-- <div class="image">
-								<div class="front">
-									<img src="./images/iconcabinet.svg" alt="cabinet icon" width="36">
-								</div>
-								<div class="back">
-									<img src="./images/icon_cabinet_hover.svg" alt="cabinet icon">
-								</div>
-							</div> -->
 						</a>
 					</li>
 					<li class="nav-favorite">
 						<a href="./personal_cabinet.html#wish-list" target="_blank" rel="noopener noreferrer">
-							<!-- <div class="image">
-								<div class="front">
-									<img src="./images/iconfavorite.svg" alt="favorite icon" width="36">
-								</div>
-								<div class="back">
-									<img src="./images/icon_favorite_hover.svg" alt="favorite icon">
-								</div>
-							</div> -->
 						</a>
 					</li>
 					<li class="nav-basket">
 						<a href="./basket.html" target="_blank" rel="noopener noreferrer">
-							<!-- <div class="image">
-								<div class="front">
-									<img src="./images/iconbasket.svg" alt="basket icon">
-								</div>
-								<div class="back">
-									<img src="./images/icon_basket_hover.svg" alt="basket icon">
-								</div>
-							</div> -->
 						</a>
+					</li>
+					<li class="burger-menu">
+						<button class="burger-btn"><img src="./images/burger-btn.png" alt="burger menu button"></button>
+						<ul class="menu">
+							<li>
+								<a href="./catalogue.html" target="_blank" rel="noopener noreferrer">Каталог</a>
+							</li>
+							<li>
+								<a href="./delivery_payment.html" target="_blank" rel="noopener noreferrer">Доставка та оплата</a>
+							</li>
+							<li>
+								<a href="./blog/acne_stress.html" target="_blank" rel="noopener noreferrer">Блог</a>
+							</li>
+							<li>
+								<a href="./contacts.html" target="_blank" rel="noopener noreferrer">Контакти</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
 		</header>
 		<main>
-			<div id="content">
-				<div class="basket">
+			<div class="basket">
 				<h1>Оформлення замовлення</h1>
-        	<section class="basket-info">
-						<h2 class="hidden">Замовлення</h2>
-						<input type="radio" name="basket-tab" id="one" class="order-radio" checked>
-						<label for="one" class="label-one">Особисті данні</label>
-						<input type="radio" name="basket-tab" id="two" class="order-radio">
-						<label for="two" class="label-two">Оплата / Доставка</label>
-						<div class="content one">
-							<form class="#" action="index.html" method="post">
-								<div class="field">
-									<label for="name">Ваше ім’я та прізвище</label>
-			    				<input type="text" name="name" id="name" placeholder="Шевченко Світлана" autofocus autocomplete="on" required>
-								</div>
-								<div class="field">
-									<label for="email">E-mail</label>
-			    				<input type="email" name="email" id="email" placeholder="shevSv002@gmail.com" autocomplete="on" required>
-								</div>
-								<div class="field">
-									<label for="tel">Номер телефону</label>
-			    				<input type="tel" name="tel" id="tel" placeholder="+38 068 564 77 99" autocomplete="on" required>
-								</div>
-							</form>
-						</div>
-						<div class="content two">
-							<div class="tab-payment-delivery">
-								<div class="delivery-payment-method">
-									<div class="delivery-method">
-										<h3>Оберіть спосіб доставки:</h3>
-										<form class="way-delivery" action="index.html" method="post">
-					  					<div>
-												<input type="radio" class="custom-radio" name="delivery" id="delivery-np">
-												<label for="delivery-np">Нова пошта</label>
-					  					</div>
-											<div>
-												<input type="radio" class="custom-radio" name="delivery" id="delivery-courier" checked>
-												<label for="delivery-courier">Доставка кур’єром (безкоштовно від 2000 грн)</label>
-											</div>
-										</form>
-									</div>
-									<div class="payment-method">
-										<h3>Оберіть спосіб оплати:</h3>
-										<form class="way-payment" action="index.html" method="post">
-											<div>
-												<input type="radio" class="custom-radio" name="payment" id="pay-cash" value="Оплата при отриманні" checked>
-												<label for="pay-cash">Оплата при отриманні</label>
-											</div>
-											<div>
-												<input type="radio" class="custom-radio" name="payment" id="pay-bank" value="Банківською картою">
-												<label for="pay-bank">Банківською картою</label>
-											</div>
-										</form>
-									</div>
-								</div>
-								<div class="address">
-									<h3>Оберіть адресу доставки:</h3>
-									<form class="delivery-address" action="index.html" method="post">
+				<section class="basket-info">
+					<h2 class="hidden">Замовлення</h2>
+					<input type="radio" name="basket-tab" id="one" class="order-radio" checked>
+					<label for="one" class="label-one">Особисті данні</label>
+					<input type="radio" name="basket-tab" id="two" class="order-radio">
+					<label for="two" class="label-two">Оплата / Доставка</label>
+					<div class="content one">
+						<form class="#" action="index.html" method="post">
+							<div class="field">
+								<label for="name">Ваше ім’я та прізвище</label>
+								<input type="text" name="name" id="name" placeholder="Шевченко Світлана" autofocus autocomplete="on" required>
+							</div>
+							<div class="field">
+								<label for="email">E-mail</label>
+								<input type="email" name="email" id="email" placeholder="shevSv002@gmail.com" autocomplete="on" required>
+							</div>
+							<div class="field">
+								<label for="tel">Номер телефону</label>
+								<input type="tel" name="tel" id="tel" placeholder="+38 068 564 77 99" autocomplete="on" required>
+							</div>
+						</form>
+					</div>
+					<div class="content two">
+						<div class="tab-payment-delivery">
+							<div class="delivery-payment-method">
+								<div class="delivery-method">
+									<h3>Оберіть спосіб доставки:</h3>
+									<form class="way-delivery" action="index.html" method="post">
 										<div>
-											<input type="radio" class="custom-radio" name="address" id="address-one" checked>
-											<label for="address-one">Шевченко Світлана
-											</label>
-											<label for="address-one">Місто КиЇв</label>
-											<label for="address-one">Градинська 11б, 85</label>
-											<label for="address-one">+38 068 564 77 99</label>
+											<input type="radio" class="custom-radio" name="delivery" id="delivery-np">
+											<label for="delivery-np">Нова пошта</label>
 										</div>
-				  					<div>
-											<input type="radio" class="custom-radio" name="address" id="address-two">
-											<label for="address-two">Шевченко Світлана</label>
-											<label for="address-two">Місто Харків</label>
-											<label for="address-two">Трінклера 18, 65</label>
-											<label for="address-two">+38 068 564 77 99</label>
-				  					</div>
+										<div>
+											<input type="radio" class="custom-radio" name="delivery" id="delivery-courier" checked>
+											<label for="delivery-courier">Доставка кур’єром (безкоштовно від 2000 грн)</label>
+										</div>
+									</form>
+								</div>
+								<div class="payment-method">
+									<h3>Оберіть спосіб оплати:</h3>
+									<form class="way-payment" action="index.html" method="post">
+										<div>
+											<input type="radio" class="custom-radio" name="payment" id="pay-cash" value="Оплата при отриманні" checked>
+											<label for="pay-cash">Оплата при отриманні</label>
+										</div>
+										<div>
+											<input type="radio" class="custom-radio" name="payment" id="pay-bank" value="Банківською картою">
+											<label for="pay-bank">Банківською картою</label>
+										</div>
 									</form>
 								</div>
 							</div>
+							<div class="address">
+								<h3>Оберіть адресу доставки:</h3>
+								<form class="delivery-address" action="index.html" method="post">
+									<div>
+										<input type="radio" class="custom-radio" name="address" id="address-one" checked>
+										<label for="address-one">Шевченко Світлана
+										</label>
+										<label for="address-one">Місто КиЇв</label>
+										<label for="address-one">Градинська 11б, 85</label>
+										<label for="address-one">+38 068 564 77 99</label>
+									</div>
+									<div>
+										<input type="radio" class="custom-radio" name="address" id="address-two">
+										<label for="address-two">Шевченко Світлана</label>
+										<label for="address-two">Місто Харків</label>
+										<label for="address-two">Трінклера 18, 65</label>
+										<label for="address-two">+38 068 564 77 99</label>
+									</div>
+								</form>
+							</div>
 						</div>
-        	</section>
-					<section class="basket-items">
+					</div>
+				</section>
+				<section class="basket-items">
 					<h2 class="hidden">Перелік товарів</h2>
 					<ul class="scrollbar" id="wish-list">
 						<li>
@@ -168,11 +160,15 @@
 							<h3>
 								Антиоксидантний крем для обличчя
 							</h3>
-							<input type="number" name="quantity" min="1" max="10" value="1">
+							<input type="number" class="basket-quantity" name="quantity" min="1" max="10" value="1">
+							<div class="mob-basket">
+								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
+								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
+							</div>
 							<p>
 								850 грн
 							</p>
-							<button type="button" aria-label="Remove item from cart"></button>
+							<button type="button" class="remove-btn" aria-label="Remove item from cart"></button>
 						</li>
 						<li>
 							<div class="img-holder">
@@ -181,11 +177,15 @@
 							<h3>
 								Антивікова сироватка для зони навколо очей
 							</h3>
-							<input type="number" name="quantity" min="1" max="10" value="1">
+							<input type="number" class="basket-quantity" name="quantity" min="1" max="10" value="1">
+							<div class="mob-basket">
+								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
+								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
+							</div>								
 							<p>
 								900 грн
 							</p>
-							<button type="button" aria-label="Remove item from cart"></button>
+							<button type="button" class="remove-btn" aria-label="Remove item from cart"></button>
 						</li>
 						<li>
 							<div class="img-holder">
@@ -194,11 +194,14 @@
 							<h3>
 								Лосьон для нормальної та комбінованої шкіри
 							</h3>
-							<input type="number" name="quantity" min="1" max="10" value="1">
+							<div class="mob-basket">
+								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
+								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
+							</div>								
 							<p>
 								1050 грн
 							</p>
-							<button type="button" aria-label="Remove item from cart"></button>
+							<button type="button" class="remove-btn" aria-label="Remove item from cart"></button>
 						</li>
 						<li>
 							<div class="img-holder">
@@ -207,11 +210,14 @@
 							<h3>
 								Антиоксидантний крем для обличчя
 							</h3>
-							<input type="number" name="quantity" min="1" max="10" value="1">
+							<div class="mob-basket">
+								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
+								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
+							</div>								
 							<p>
 								850 грн
 							</p>
-							<button type="button" aria-label="Remove item from cart"></button>
+							<button type="button" class="remove-btn" aria-label="Remove item from cart"></button>
 						</li>
 						<li>
 							<div class="img-holder">
@@ -220,11 +226,14 @@
 							<h3>
 								Антивікова сироватка для зони навколо очей
 							</h3>
-							<input type="number" name="quantity" min="1" max="10" value="1">
+							<div class="mob-basket">
+								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
+								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
+							</div>								
 							<p>
 								900 грн
 							</p>
-							<button type="button" aria-label="Remove item from cart"></button>
+							<button type="button" class="remove-btn" aria-label="Remove item from cart"></button>
 						</li>
 						<li>
 							<div class="img-holder">
@@ -233,11 +242,14 @@
 							<h3>
 								Лосьон для нормальної та комбінованої шкіри
 							</h3>
-							<input type="number" name="quantity" min="1" max="10" value="1">
+							<div class="mob-basket">
+								<input type="number" class= "basket-quantity-mob" name="quantity" min="1" max="10" value="1">
+								<button type="button" class="remove-btn-mob" aria-label="Remove item from cart"></button>
+							</div>								
 							<p>
-								1050 грн
+								900 грн
 							</p>
-							<button type="button" aria-label="Remove item from cart"></button>
+							<button type="button" class="remove-btn" aria-label="Remove item from cart"></button>
 						</li>
 					</ul>
 					<p class="total">
@@ -247,6 +259,78 @@
 						<button type="button" name="button">Оформити</button>
 					</div>
 				</section>
+				<section class="basket-info-mob">
+					<div class="one">
+						<h2>Особисті дані</h2>
+						<form class="#" action="index.html" method="post">
+							<div class="field">
+								<label for="name">Ваше ім’я та прізвище</label>
+								<input type="text" name="name" id="name" placeholder="Шевченко Світлана" autofocus autocomplete="on" required>
+							</div>
+							<div class="field">
+								<label for="email">E-mail</label>
+								<input type="email" name="email" id="email" placeholder="shevSv002@gmail.com" autocomplete="on" required>
+							</div>
+							<div class="field">
+								<label for="tel">Номер телефону</label>
+								<input type="tel" name="tel" id="tel" placeholder="+38 068 564 77 99" autocomplete="on" required>
+							</div>
+						</form>
+					</div>
+					<div class="two">
+						<h2>Оплата / Доставка</h2>
+						<div class="delivery-payment-method">
+							<div class="delivery-method">
+								<h3>Оберіть спосіб доставки:</h3>
+								<form class="way-delivery" action="index.html" method="post">
+									<div>
+										<input type="radio" class="custom-radio" name="delivery" id="delivery-np-mob">
+										<label for="delivery-np-mob">Нова пошта</label>
+									</div>
+									<div>
+										<input type="radio" class="custom-radio" name="delivery" id="delivery-courier-mob" checked>
+										<label for="delivery-courier-mob">Доставка кур’єром (безкоштовно від 2000 грн)</label>
+									</div>
+								</form>
+							</div>
+							<div class="payment-method">
+								<h3>Оберіть спосіб оплати:</h3>
+								<form class="way-payment" action="index.html" method="post">
+									<div>
+										<input type="radio" class="custom-radio" name="payment" id="pay-cash-mob" value="Оплата при отриманні" checked>
+										<label for="pay-cash-mob">Оплата при отриманні</label>
+									</div>
+									<div>
+										<input type="radio" class="custom-radio" name="payment" id="pay-bank-mob" value="Банківською картою">
+										<label for="pay-bank-mob">Банківською картою</label>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="address">
+							<h3>Оберіть адресу доставки:</h3>
+							<form class="delivery-address" action="index.html" method="post">
+								<div>
+									<input type="radio" class="custom-radio" name="address" id="address-one-mob" checked>
+									<label for="address-one-mob">Шевченко Світлана
+									</label>
+									<label for="address-one-mob">Місто КиЇв</label>
+									<label for="address-one-mob">Градинська 11б, 85</label>
+									<label for="address-one-mob">+38 068 564 77 99</label>
+								</div>
+								<div>
+									<input type="radio" class="custom-radio" name="address" id="address-two-mob">
+									<label for="address-two-mob">Шевченко Світлана</label>
+									<label for="address-two-mob">Місто Харків</label>
+									<label for="address-two-mob">Трінклера 18, 65</label>
+									<label for="address-two-mob">+38 068 564 77 99</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+				<div class="tobasket-btn-container">
+					<button type="button" name="button">Оформити</button>
 				</div>
 			</div>
 		</main>
@@ -333,6 +417,15 @@
 									<a href="tel:+380956789900">+38 (095) 678 99 00</a>
 								</li>
 						</ul>
+						<div class="footer-contacts-mobile">
+							<a href="#">Політика конфіденційності</a>
+							<div>
+								<a href="tel:+380635542221">+38 (063) 554 22 21</a>
+								<br>
+								<a href="tel:+380956789900">+38 (095) 678 99 00</a>
+							</div>
+						</div>
+						</ul>
 						<div class="payment-methods">
 							<ul>
 								<li class="mastercard">
@@ -346,9 +439,6 @@
 					</div>
 				</div>
 			</section>
-			<!-- <a href="#" class="main-scroll" id="main-scroll" style="visibility: visible;">
-				<img src="./images/round_scroll.png" alt="Scroll up">
-			</a> -->
 		</footer>
 	</div>
 </body>
