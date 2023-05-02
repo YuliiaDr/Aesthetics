@@ -3995,7 +3995,7 @@ header .burger-btn-extra img{
   gap: 10px;
   color: #FFFBF5;
   z-index: 999;
-  background: rgba(75, 96, 73, 0.6);
+  background: rgba(75, 96, 73, 0.5);
   backdrop-filter: blur(7.5px);
   width: 328px;
   height: 189px;
