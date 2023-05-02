@@ -3984,7 +3984,7 @@ header .burger-btn-extra img{
 /*---------------------------------Style for pop-up */
 .popup {
   position: fixed;
-  top: 30%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
